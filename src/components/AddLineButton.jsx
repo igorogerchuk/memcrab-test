@@ -7,7 +7,6 @@ import createRandomArray from "../services/randomArray";
 class AddLineButton extends Component {
   addHandler = () => {
     const { lineLength, onAdd } = this.props;
-    console.log(lineLength);
     onAdd(createRandomArray(1, lineLength));
   };
 

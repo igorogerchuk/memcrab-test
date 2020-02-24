@@ -1,18 +1,36 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as actions from "../redux/actions";
+import styled from "styled-components";
+
+const TdSum = styled.td`
+  background-color: cadetblue;
+`;
+
+const Td = styled.td`
+  cursor: pointer;
+  &:hover {
+    background-color: lightgrey;
+  }
+`;
 
 class ArrayLine extends Component {
+  increaseHandler = e => {
+    const { onIncrease } = this.props;
+    onIncrease(e.target.id);
+  };
   render() {
     const { line, onRemove } = this.props;
     return (
       <tr>
         {line.map(element => (
-          <td key={element.id} id={element.id}>
+          <Td onClick={this.increaseHandler} key={element.id} id={element.id}>
             {element.amount}
-          </td>
+          </Td>
         ))}
-        <td>{line.reduce((sum, element) => (sum += element.amount), 0)}</td>
+        <TdSum>
+          {line.reduce((sum, element) => (sum += element.amount), 0)}
+        </TdSum>
         <td>
           <button onClick={onRemove}>Remove</button>
         </td>
@@ -23,7 +41,8 @@ class ArrayLine extends Component {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onRemove: () => dispatch(actions.removeLine(ownProps.line))
+    onRemove: () => dispatch(actions.removeLine(ownProps.line)),
+    onIncrease: id => dispatch(actions.increase(id))
   };
 };
 

@@ -13,6 +13,17 @@ const reducer = (state = { array: [] }, { type, payload }) => {
       };
     case types.SAVE_ARRAY:
       return { array: payload.array };
+    case types.INCREASE:
+      return {
+        array: array.map(line =>
+          line.map(element => {
+            if (element.id === payload.id) {
+              element.amount++;
+            }
+            return element;
+          })
+        )
+      };
     default:
       return state;
   }

@@ -6,7 +6,7 @@ const getAvarageRow = array => {
     for (let i = 0; i < array.length; i++) {
       columnTotal += array[i][j].amount;
     }
-    avarageRow.push(columnTotal / columnQty);
+    avarageRow.push((columnTotal / columnQty).toFixed(2));
   }
   return avarageRow;
 };

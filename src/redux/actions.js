@@ -8,7 +8,6 @@ export const removeLine = line => {
 };
 
 export const addLine = newLine => {
-  console.log(newLine);
   return {
     type: types.ADD_LINE,
     payload: { newLine }
@@ -19,5 +18,12 @@ export const saveArray = array => {
   return {
     type: types.SAVE_ARRAY,
     payload: { array }
+  };
+};
+
+export const increase = id => {
+  return {
+    type: types.INCREASE,
+    payload: { id }
   };
 };

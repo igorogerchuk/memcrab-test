@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import * as selectors from "../redux/selectors";
-import ArrayLine from "./ArrayLine";
-import AvarageRow from "./AvarageRow";
+import * as selectors from "../../redux/selectors";
+import ArrayLine from "../ArrayLine";
+import AvarageRow from "../AvarageRow";
+import styles from "./Array.module.css";
+
 const uuidv4 = require("uuid/v4");
 
 class Array extends Component {
@@ -10,7 +12,7 @@ class Array extends Component {
     const { array } = this.props;
     return (
       <div>
-        <table>
+        <table className={styles.matrix}>
           <tbody>
             {array.map(line => {
               let id = uuidv4();
