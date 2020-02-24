@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/memcrab-test/static/css/main.0b8517a3.chunk.css",
+    "main.js": "/memcrab-test/static/js/main.2ef5fd5a.chunk.js",
+    "main.js.map": "/memcrab-test/static/js/main.2ef5fd5a.chunk.js.map",
+    "runtime-main.js": "/memcrab-test/static/js/runtime-main.026b6c67.js",
+    "runtime-main.js.map": "/memcrab-test/static/js/runtime-main.026b6c67.js.map",
+    "static/js/2.54a63ec2.chunk.js": "/memcrab-test/static/js/2.54a63ec2.chunk.js",
+    "static/js/2.54a63ec2.chunk.js.map": "/memcrab-test/static/js/2.54a63ec2.chunk.js.map",
+    "index.html": "/memcrab-test/index.html",
+    "precache-manifest.95f080861048bca4e6a6cfc1cd7533c5.js": "/memcrab-test/precache-manifest.95f080861048bca4e6a6cfc1cd7533c5.js",
+    "service-worker.js": "/memcrab-test/service-worker.js",
+    "static/css/main.0b8517a3.chunk.css.map": "/memcrab-test/static/css/main.0b8517a3.chunk.css.map",
+    "static/js/2.54a63ec2.chunk.js.LICENSE.txt": "/memcrab-test/static/js/2.54a63ec2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.026b6c67.js",
+    "static/js/2.54a63ec2.chunk.js",
+    "static/css/main.0b8517a3.chunk.css",
+    "static/js/main.2ef5fd5a.chunk.js"
+  ]
+}
