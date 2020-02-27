@@ -11,6 +11,7 @@ const TdSum = styled.td`
 const Td = styled.td`
   cursor: pointer;
   background-color: ${props => props.bgColor};
+  background: ${props => props.bgPercents};
 `;
 
 class ArrayLine extends Component {
@@ -47,6 +48,12 @@ class ArrayLine extends Component {
             id={element.id}
             onClick={this.increaseHandler}
             bgColor={closestNumbers.includes(element) ? "green" : "white"}
+            bgPercents={
+              hover
+                ? `linear-gradient(to top, red ${(element.amount / sum) *
+                    100}%, transparent ${(element.amount / sum) * 100}%)`
+                : "white"
+            }
           >
             {hover
               ? ((element.amount / sum) * 100).toFixed(1) + "%"
