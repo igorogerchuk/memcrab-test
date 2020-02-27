@@ -33,6 +33,7 @@ class ArrayLine extends Component {
           <Td
             onClick={this.increaseHandler}
             onMouseEnter={this.illuminateHandler}
+            onMouseOut={this.illuminateHandler}
             key={element.id}
             id={element.id}
             bgColor={element.illuminated ? "green" : "white"}
