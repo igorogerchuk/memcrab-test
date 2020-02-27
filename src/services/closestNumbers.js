@@ -2,7 +2,7 @@ const getClosestNumbers = (array, id, numbersQty) => {
   let origin;
   const inlineArray = [];
   array.forEach(line =>
-    line.forEach(element => {
+    line.cells.forEach(element => {
       if (element.id === id) {
         origin = element;
       } else {

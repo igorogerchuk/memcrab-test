@@ -32,7 +32,7 @@ class Inputs extends Component {
       return;
     }
     onSaveArray(createRandomArray(m, n));
-    onSaveParams({ m, n, x });
+    onSaveParams({ n, x });
 
     this.setState({ m: "", n: "", x: "" });
   };

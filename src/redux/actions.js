@@ -1,9 +1,9 @@
 import types from "./types";
 
-export const removeLine = line => {
+export const removeLine = id => {
   return {
     type: types.REMOVE_LINE,
-    payload: { line }
+    payload: { id }
   };
 };
 

@@ -4,15 +4,13 @@ import getAvarageRow from "../../services/avarageRow";
 import styles from "./AvarageRow.module.css";
 import * as selectors from "../../redux/selectors";
 
-const uuidv4 = require("uuid/v4");
-
 class AvarageRow extends Component {
   render() {
     const { array } = this.props;
     return (
       <tr className={styles.avarage}>
         {getAvarageRow(array).map(element => {
-          return <td key={uuidv4()}>{element}</td>;
+          return <td key={element}>{element}</td>;
         })}
       </tr>
     );

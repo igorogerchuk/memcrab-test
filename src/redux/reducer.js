@@ -24,7 +24,7 @@ const line = (state, action) => {
     case types.ADD_LINE:
       return action.payload.newLine;
     case types.REMOVE_LINE:
-      return state !== action.payload.line;
+      return state.id !== action.payload.id;
     case types.INCREASE:
       return state.map(el => element(el, action));
     case types.ILLUMINATE:
@@ -43,9 +43,13 @@ const arrayReducer = (state = [], action) => {
     case types.SAVE_ARRAY:
       return action.payload.array;
     case types.INCREASE:
-      return state.map(l => line(l, action));
+      return state.map(l => {
+        return { ...l, cells: line(l.cells, action) };
+      });
     case types.ILLUMINATE:
-      return state.map(l => line(l, action));
+      return state.map(l => {
+        return { ...l, cells: line(l.cells, action) };
+      });
     default:
       return state;
   }
@@ -53,10 +57,6 @@ const arrayReducer = (state = [], action) => {
 
 const paramsReducer = (state = {}, action) => {
   switch (action.type) {
-    case types.ADD_LINE:
-      return { ...state, m: (state.m += 1) };
-    case types.REMOVE_LINE:
-      return { ...state, m: (state.m -= 1) };
     case types.SAVE_PARAMS:
       return action.payload.params;
     default:

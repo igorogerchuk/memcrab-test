@@ -5,8 +5,6 @@ import AvarageRow from "../AvarageRow";
 import styles from "./Array.module.css";
 import * as selectors from "../../redux/selectors";
 
-const uuidv4 = require("uuid/v4");
-
 class Array extends Component {
   render() {
     const { array } = this.props;
@@ -15,8 +13,7 @@ class Array extends Component {
         <table className={styles.matrix}>
           <tbody>
             {array.map(line => {
-              let id = uuidv4();
-              return <ArrayLine key={id} id={id} line={line} />;
+              return <ArrayLine key={line.id} id={line.id} line={line.cells} />;
             })}
             <AvarageRow />
           </tbody>

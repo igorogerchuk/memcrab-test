@@ -32,7 +32,7 @@ class ArrayLine extends Component {
         {line.map(element => (
           <Td
             onClick={this.increaseHandler}
-            onMouseEnter={this.illuminateHandler}
+            onMouseOver={this.illuminateHandler}
             onMouseOut={this.illuminateHandler}
             key={element.id}
             id={element.id}
@@ -61,7 +61,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onRemove: () => dispatch(actions.removeLine(ownProps.line)),
+    onRemove: () => dispatch(actions.removeLine(ownProps.id)),
     onIncrease: id => dispatch(actions.increase(id)),
     onIlluminate: elements => dispatch(actions.illuminateElements(elements))
   };
