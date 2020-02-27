@@ -1,3 +1,5 @@
+const uuidv4 = require("uuid/v4");
+
 const getAvarageRow = array => {
   const avarageRow = [];
   const columnQty = array[0].cells.length;
@@ -6,7 +8,10 @@ const getAvarageRow = array => {
     for (let i = 0; i < array.length; i++) {
       columnTotal += array[i].cells[j].amount;
     }
-    avarageRow.push((columnTotal / columnQty).toFixed(2));
+    avarageRow.push({
+      id: uuidv4(),
+      amount: (columnTotal / columnQty).toFixed(2)
+    });
   }
   return avarageRow;
 };

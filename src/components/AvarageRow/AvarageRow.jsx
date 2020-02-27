@@ -10,7 +10,11 @@ class AvarageRow extends Component {
     return (
       <tr className={styles.avarage}>
         {getAvarageRow(array).map(element => {
-          return <td key={element}>{element}</td>;
+          return (
+            <td key={element.id} id={element.id}>
+              {element.amount}
+            </td>
+          );
         })}
       </tr>
     );

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as actions from "../redux/actions";
 import styled from "styled-components";
-import getClosestNumbers from "../services/closestNumbers";
 import * as selectors from "../redux/selectors";
 
 const TdSum = styled.td`
@@ -15,33 +14,46 @@ const Td = styled.td`
 `;
 
 class ArrayLine extends Component {
+  state = { hover: false, sum: 0 };
+
   increaseHandler = e => {
+    const { id } = e.target;
+    if (id.slice(0, 6) !== "number") {
+      return;
+    }
     const { onIncrease } = this.props;
     onIncrease(e.target.id);
   };
 
-  illuminateHandler = e => {
-    const { array, numberQty, onIlluminate } = this.props;
-    onIlluminate(getClosestNumbers(array, e.target.id, numberQty));
+  hoverHandler = e => {
+    const value = Number(e.target.innerText);
+    this.setState(state => {
+      return {
+        hover: !state.hover,
+        sum: value
+      };
+    });
   };
 
   render() {
     const { line, onRemove } = this.props;
+    const { hover, sum } = this.state;
+
     return (
       <tr>
         {line.map(element => (
           <Td
-            onClick={this.increaseHandler}
-            onMouseOver={this.illuminateHandler}
-            onMouseOut={this.illuminateHandler}
             key={element.id}
             id={element.id}
+            onClick={this.increaseHandler}
             bgColor={element.illuminated ? "green" : "white"}
           >
-            {element.amount}
+            {hover
+              ? ((element.amount / sum) * 100).toFixed(1) + "%"
+              : element.amount}
           </Td>
         ))}
-        <TdSum>
+        <TdSum onMouseOver={this.hoverHandler} onMouseOut={this.hoverHandler}>
           {line.reduce((sum, element) => (sum += element.amount), 0)}
         </TdSum>
         <td>
@@ -54,16 +66,14 @@ class ArrayLine extends Component {
 
 const mapStateToProps = state => {
   return {
-    array: selectors.getArray(state),
-    numberQty: selectors.getNumbersQty(state)
+    array: selectors.getArray(state)
   };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onRemove: () => dispatch(actions.removeLine(ownProps.id)),
-    onIncrease: id => dispatch(actions.increase(id)),
-    onIlluminate: elements => dispatch(actions.illuminateElements(elements))
+    onIncrease: id => dispatch(actions.increase(id))
   };
 };
 
