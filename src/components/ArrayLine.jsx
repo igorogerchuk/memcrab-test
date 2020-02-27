@@ -53,7 +53,10 @@ class ArrayLine extends Component {
               : element.amount}
           </Td>
         ))}
-        <TdSum onMouseOver={this.hoverHandler} onMouseOut={this.hoverHandler}>
+        <TdSum
+          onMouseEnter={this.hoverHandler}
+          onMouseLeave={this.hoverHandler}
+        >
           {line.reduce((sum, element) => (sum += element.amount), 0)}
         </TdSum>
         <td>
