@@ -7,8 +7,7 @@ const createRandomArray = (lines, columns) => {
     for (let j = 0; j < columns; j++) {
       array[i].cells[j] = {
         id: "number" + uuidv4(),
-        amount: Math.floor(Math.random() * 1000),
-        illuminated: false
+        amount: Math.floor(Math.random() * 1000)
       };
     }
   }

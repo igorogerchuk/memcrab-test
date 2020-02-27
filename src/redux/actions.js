@@ -34,10 +34,3 @@ export const saveParams = params => {
     payload: { params }
   };
 };
-
-export const illuminateElements = elements => {
-  return {
-    type: types.ILLUMINATE,
-    payload: { elements }
-  };
-};

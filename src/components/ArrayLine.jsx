@@ -36,7 +36,7 @@ class ArrayLine extends Component {
   };
 
   render() {
-    const { line, onRemove } = this.props;
+    const { closestNumbers, line, onRemove } = this.props;
     const { hover, sum } = this.state;
 
     return (
@@ -46,7 +46,7 @@ class ArrayLine extends Component {
             key={element.id}
             id={element.id}
             onClick={this.increaseHandler}
-            bgColor={element.illuminated ? "green" : "white"}
+            bgColor={closestNumbers.includes(element) ? "green" : "white"}
           >
             {hover
               ? ((element.amount / sum) * 100).toFixed(1) + "%"

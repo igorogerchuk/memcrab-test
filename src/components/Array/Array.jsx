@@ -5,20 +5,30 @@ import AvarageRow from "../AvarageRow";
 import styles from "./Array.module.css";
 import * as selectors from "../../redux/selectors";
 import getClosestNumbers from "../../services/closestNumbers";
-import * as actions from "../../redux/actions";
 
 class Array extends Component {
+  state = { hover: false, closestNumbers: [] };
+
   illuminateHandler = e => {
     const { id } = e.target;
     if (id.slice(0, 6) !== "number") {
       return;
     }
-    const { array, numberQty, onIlluminate } = this.props;
-    onIlluminate(getClosestNumbers(array, id, numberQty));
+    const { array, numberQty } = this.props;
+    this.setState(state => {
+      return {
+        hover: !state.hover,
+        closestNumbers: !state.hover
+          ? getClosestNumbers(array, id, numberQty)
+          : []
+      };
+    });
   };
 
   render() {
     const { array } = this.props;
+    const { closestNumbers } = this.state;
+
     return (
       <div>
         <table
@@ -28,7 +38,14 @@ class Array extends Component {
         >
           <tbody>
             {array.map(line => {
-              return <ArrayLine key={line.id} id={line.id} line={line.cells} />;
+              return (
+                <ArrayLine
+                  key={line.id}
+                  id={line.id}
+                  line={line.cells}
+                  closestNumbers={closestNumbers}
+                />
+              );
             })}
             <AvarageRow />
           </tbody>
@@ -45,10 +62,4 @@ const mapStateToProps = state => {
   };
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    onIlluminate: elements => dispatch(actions.illuminateElements(elements))
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Array);
+export default connect(mapStateToProps)(Array);
