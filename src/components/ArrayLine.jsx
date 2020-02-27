@@ -35,7 +35,7 @@ class ArrayLine extends Component {
             onMouseEnter={this.illuminateHandler}
             key={element.id}
             id={element.id}
-            bgcolor={element.illuminated ? "green" : "white"}
+            bgColor={element.illuminated ? "green" : "white"}
           >
             {element.amount}
           </Td>
