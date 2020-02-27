@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import * as selectors from "../../redux/selectors";
 import ArrayLine from "../ArrayLine";
 import AvarageRow from "../AvarageRow";
 import styles from "./Array.module.css";
+import * as selectors from "../../redux/selectors";
 
 const uuidv4 = require("uuid/v4");
 

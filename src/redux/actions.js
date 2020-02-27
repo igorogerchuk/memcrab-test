@@ -27,3 +27,17 @@ export const increase = id => {
     payload: { id }
   };
 };
+
+export const saveParams = params => {
+  return {
+    type: types.SAVE_PARAMS,
+    payload: { params }
+  };
+};
+
+export const illuminateElements = elements => {
+  return {
+    type: types.ILLUMINATE,
+    payload: { elements }
+  };
+};

@@ -26,12 +26,13 @@ class Inputs extends Component {
   submitHandler = e => {
     e.preventDefault();
     const { m, n, x } = this.state;
-    const { onSave } = this.props;
+    const { onSaveArray, onSaveParams } = this.props;
     if (m <= 0 || n <= 0 || x < 0) {
       alert("array parameters must be more then 0");
       return;
     }
-    onSave(createRandomArray(m, n));
+    onSaveArray(createRandomArray(m, n));
+    onSaveParams({ m, n, x });
 
     this.setState({ m: "", n: "", x: "" });
   };
@@ -84,7 +85,8 @@ class Inputs extends Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onSave: array => dispatch(actions.saveArray(array))
+    onSaveArray: array => dispatch(actions.saveArray(array)),
+    onSaveParams: params => dispatch(actions.saveParams(params))
   };
 };
 

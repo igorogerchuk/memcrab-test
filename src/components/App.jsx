@@ -19,9 +19,7 @@ class App extends Component {
 }
 
 const mapStateToProps = state => {
-  return {
-    array: selectors.getArray(state)
-  };
+  return { array: selectors.getArray(state) };
 };
 
 export default connect(mapStateToProps)(App);

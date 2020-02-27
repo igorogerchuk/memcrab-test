@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as actions from "../redux/actions";
 import styled from "styled-components";
+import getClosestNumbers from "../services/closestNumbers";
+import * as selectors from "../redux/selectors";
 
 const TdSum = styled.td`
   background-color: cadetblue;
@@ -9,9 +11,7 @@ const TdSum = styled.td`
 
 const Td = styled.td`
   cursor: pointer;
-  &:hover {
-    background-color: lightgrey;
-  }
+  background-color: ${props => props.bgColor};
 `;
 
 class ArrayLine extends Component {
@@ -19,12 +19,24 @@ class ArrayLine extends Component {
     const { onIncrease } = this.props;
     onIncrease(e.target.id);
   };
+
+  illuminateHandler = e => {
+    const { array, numberQty, onIlluminate } = this.props;
+    onIlluminate(getClosestNumbers(array, e.target.id, numberQty));
+  };
+
   render() {
     const { line, onRemove } = this.props;
     return (
       <tr>
         {line.map(element => (
-          <Td onClick={this.increaseHandler} key={element.id} id={element.id}>
+          <Td
+            onClick={this.increaseHandler}
+            onMouseEnter={this.illuminateHandler}
+            key={element.id}
+            id={element.id}
+            bgcolor={element.illuminated ? "green" : "white"}
+          >
             {element.amount}
           </Td>
         ))}
@@ -39,11 +51,19 @@ class ArrayLine extends Component {
   }
 }
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapStateToProps = state => {
   return {
-    onRemove: () => dispatch(actions.removeLine(ownProps.line)),
-    onIncrease: id => dispatch(actions.increase(id))
+    array: selectors.getArray(state),
+    numberQty: selectors.getNumbersQty(state)
   };
 };
 
-export default connect(null, mapDispatchToProps)(ArrayLine);
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    onRemove: () => dispatch(actions.removeLine(ownProps.line)),
+    onIncrease: id => dispatch(actions.increase(id)),
+    onIlluminate: elements => dispatch(actions.illuminateElements(elements))
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ArrayLine);

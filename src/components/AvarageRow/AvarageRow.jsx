@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import * as selectors from "../../redux/selectors";
 import getAvarageRow from "../../services/avarageRow";
 import styles from "./AvarageRow.module.css";
+import * as selectors from "../../redux/selectors";
 
 const uuidv4 = require("uuid/v4");
 
