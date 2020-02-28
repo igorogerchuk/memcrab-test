@@ -28,9 +28,9 @@ export const increase = id => {
   };
 };
 
-// export const saveParams = params => {
-//   return {
-//     type: types.SAVE_PARAMS,
-//     payload: { params }
-//   };
-// };
+export const saveParams = params => {
+  return {
+    type: types.SAVE_PARAMS,
+    payload: { params }
+  };
+};

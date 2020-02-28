@@ -59,7 +59,7 @@ class ArrayLine extends Component {
               // background={bg}
             >
               {/* {hover ? percents.toFixed(1) + "%" : element.amount} */}
-              element.amount
+              {element.amount}
             </Td>
           );
         })}
