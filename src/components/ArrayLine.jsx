@@ -18,10 +18,10 @@ class ArrayLine extends Component {
   // state = { hover: false, sum: 0 };
 
   increaseHandler = e => {
-    const { id } = e.target;
-    if (id.slice(0, 6) !== "number") {
-      return;
-    }
+    // const { id } = e.target;
+    // if (id.slice(0, 6) !== "number") {
+    //   return;
+    // }
     const { onIncrease } = this.props;
     onIncrease(e.target.id);
   };
@@ -37,7 +37,7 @@ class ArrayLine extends Component {
   // };
 
   render() {
-    const { closestNumbers, line, onRemove } = this.props;
+    const { line, onRemove } = this.props; // closestNumbers,
     // const { hover, sum } = this.state;
 
     return (

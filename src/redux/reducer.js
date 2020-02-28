@@ -1,5 +1,5 @@
 import types from "./types";
-import { combineReducers } from "redux";
+// import { combineReducers } from "redux";
 
 const element = (state, { type, payload }) => {
   switch (type) {
@@ -25,7 +25,7 @@ const line = (state, action) => {
   }
 };
 
-const arrayReducer = (state = [], action) => {
+const reducer = (state = [], action) => {
   switch (action.type) {
     case types.ADD_LINE:
       return [...state, ...line(undefined, action)];
@@ -42,18 +42,18 @@ const arrayReducer = (state = [], action) => {
   }
 };
 
-const paramsReducer = (state = {}, action) => {
-  switch (action.type) {
-    case types.SAVE_PARAMS:
-      return action.payload.params;
-    default:
-      return state;
-  }
-};
+// const paramsReducer = (state = {}, action) => {
+//   switch (action.type) {
+//     case types.SAVE_PARAMS:
+//       return action.payload.params;
+//     default:
+//       return state;
+//   }
+// };
 
-const reducer = combineReducers({
-  array: arrayReducer,
-  params: paramsReducer
-});
+// const reducer = combineReducers({
+//   array: arrayReducer,
+//   params: paramsReducer
+// });
 
 export default reducer;
