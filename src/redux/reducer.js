@@ -51,9 +51,19 @@ const paramsReducer = (state = {}, action) => {
   }
 };
 
+const illuminatedReducer = (state = [], action) => {
+  switch (action.type) {
+    case types.ILLUMINATE:
+      return action.payload.illuminated;
+    default:
+      return state;
+  }
+};
+
 const reducer = combineReducers({
   array: arrayReducer,
-  params: paramsReducer
+  params: paramsReducer,
+  illuminated: illuminatedReducer
 });
 
 export default reducer;

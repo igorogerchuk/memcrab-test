@@ -15,7 +15,7 @@ const Td = styled.td`
 `;
 
 class ArrayLine extends Component {
-  state = { hover: false, sum: 0 };
+  state = { sumHover: false, sum: 0 };
 
   increaseHandler = e => {
     const { onIncrease } = this.props;
@@ -26,25 +26,25 @@ class ArrayLine extends Component {
     const value = Number(e.target.innerText);
     this.setState(state => {
       return {
-        hover: !state.hover,
+        sumHover: !state.sumHover,
         sum: value
       };
     });
   };
 
   render() {
-    const { line, onRemove } = this.props; // closestNumbers,
-    const { hover, sum } = this.state;
+    const { closestNumbers, line, onRemove } = this.props;
+    const { sumHover, sum } = this.state;
 
     return (
       <tr>
         {line.map(element => {
           let bg = "white";
           const percents = (element.amount / sum) * 100;
-          // if (closestNumbers.includes(element)) {
-          //   bg = "green";
-          // }
-          if (hover) {
+          if (closestNumbers.includes(element)) {
+            bg = "green";
+          }
+          if (sumHover) {
             bg = `linear-gradient(to top, #fff200, #1e9600 ${percents}%, transparent ${percents}%)`;
           }
           return (
@@ -54,7 +54,7 @@ class ArrayLine extends Component {
               onClick={this.increaseHandler}
               background={bg}
             >
-              {hover ? percents.toFixed(1) + "%" : element.amount}
+              {sumHover ? percents.toFixed(1) + "%" : element.amount}
             </Td>
           );
         })}
@@ -72,6 +72,12 @@ class ArrayLine extends Component {
   }
 }
 
+const mapStateToProps = state => {
+  return {
+    closestNumbers: selectors.getIlluminated(state)
+  };
+};
+
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     onRemove: () => dispatch(actions.removeLine(ownProps.id)),
@@ -79,4 +85,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   };
 };
 
-export default connect(null, mapDispatchToProps)(ArrayLine);
+export default connect(mapStateToProps, mapDispatchToProps)(ArrayLine);
