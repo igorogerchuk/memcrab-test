@@ -10,11 +10,12 @@ const TdSum = styled.td`
 
 const Td = styled.td`
   cursor: pointer;
-  background: ${props => props.background};
 `;
 
+//background: ${props => props.background};
+
 class ArrayLine extends Component {
-  state = { hover: false, sum: 0 };
+  // state = { hover: false, sum: 0 };
 
   increaseHandler = e => {
     const { id } = e.target;
@@ -25,25 +26,25 @@ class ArrayLine extends Component {
     onIncrease(e.target.id);
   };
 
-  hoverHandler = e => {
-    // const value = Number(e.target.innerText);
-    // this.setState(state => {
-    //   return {
-    //     hover: !state.hover,
-    //     sum: value
-    //   };
-    // });
-  };
+  // hoverHandler = e => {
+  // const value = Number(e.target.innerText);
+  // this.setState(state => {
+  //   return {
+  //     hover: !state.hover,
+  //     sum: value
+  //   };
+  // });
+  // };
 
   render() {
     const { closestNumbers, line, onRemove } = this.props;
-    const { hover, sum } = this.state;
+    // const { hover, sum } = this.state;
 
     return (
       <tr>
         {line.map(element => {
-          let bg = "white";
-          const percents = (element.amount / sum) * 100;
+          // let bg = "white";
+          // const percents = (element.amount / sum) * 100;
           // if (closestNumbers.includes(element)) {
           //   bg = "green";
           // }
@@ -55,15 +56,16 @@ class ArrayLine extends Component {
               key={element.id}
               id={element.id}
               onClick={this.increaseHandler}
-              background={bg}
+              // background={bg}
             >
-              {hover ? percents.toFixed(1) + "%" : element.amount}
+              {/* {hover ? percents.toFixed(1) + "%" : element.amount} */}
+              element.amount
             </Td>
           );
         })}
         <TdSum
-          onMouseEnter={this.hoverHandler}
-          onMouseLeave={this.hoverHandler}
+        // onMouseEnter={this.hoverHandler}
+        // onMouseLeave={this.hoverHandler}
         >
           {line.reduce((sum, element) => (sum += element.amount), 0)}
         </TdSum>
@@ -75,11 +77,11 @@ class ArrayLine extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    array: selectors.getArray(state)
-  };
-};
+// const mapStateToProps = state => {
+//   return {
+//     array: selectors.getArray(state)
+//   };
+// };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
@@ -88,4 +90,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ArrayLine);
+export default connect(null, mapDispatchToProps)(ArrayLine);

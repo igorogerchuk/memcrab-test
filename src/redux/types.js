@@ -3,8 +3,7 @@ const types = {
   ADD_LINE: "ADD_LINE",
   SAVE_ARRAY: "SAVE_ARRAY",
   INCREASE: "INCREASE",
-  SAVE_PARAMS: "SAVE_PARAMS",
-  ILLUMINATE: "ILLUMINATE"
+  SAVE_PARAMS: "SAVE_PARAMS"
 };
 
 export default types;
