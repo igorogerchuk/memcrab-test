@@ -33,7 +33,7 @@ class ArrayLine extends Component {
   };
 
   render() {
-    const { closestNumbers, line, onRemove } = this.props;
+    const { illuminated, line, onRemove } = this.props;
     const { sumHover, sum } = this.state;
 
     return (
@@ -41,7 +41,7 @@ class ArrayLine extends Component {
         {line.map(element => {
           let bg = "white";
           const percents = (element.amount / sum) * 100;
-          if (closestNumbers.includes(element)) {
+          if (illuminated.includes(element)) {
             bg = "green";
           }
           if (sumHover) {
@@ -74,7 +74,7 @@ class ArrayLine extends Component {
 
 const mapStateToProps = state => {
   return {
-    closestNumbers: selectors.getIlluminated(state)
+    illuminated: selectors.getIlluminated(state)
   };
 };
 

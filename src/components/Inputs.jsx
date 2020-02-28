@@ -41,7 +41,7 @@ class Inputs extends Component {
     const { m, n, x } = this.state;
     return (
       <div>
-        <p>Enter table parameters</p>
+        <p>Enter table parameters3</p>
         <form onSubmit={this.submitHandler}>
           <label>
             Lines quantity:{" "}
