@@ -26,13 +26,13 @@ class ArrayLine extends Component {
   };
 
   hoverHandler = e => {
-    const value = Number(e.target.innerText);
-    this.setState(state => {
-      return {
-        hover: !state.hover,
-        sum: value
-      };
-    });
+    // const value = Number(e.target.innerText);
+    // this.setState(state => {
+    //   return {
+    //     hover: !state.hover,
+    //     sum: value
+    //   };
+    // });
   };
 
   render() {
@@ -44,12 +44,12 @@ class ArrayLine extends Component {
         {line.map(element => {
           let bg = "white";
           const percents = (element.amount / sum) * 100;
-          if (closestNumbers.includes(element)) {
-            bg = "green";
-          }
-          if (hover) {
-            bg = `linear-gradient(to top, #fff200, #1e9600 ${percents}%, transparent ${percents}%)`;
-          }
+          // if (closestNumbers.includes(element)) {
+          //   bg = "green";
+          // }
+          // if (hover) {
+          //   bg = `linear-gradient(to top, #fff200, #1e9600 ${percents}%, transparent ${percents}%)`;
+          // }
           return (
             <Td
               key={element.id}

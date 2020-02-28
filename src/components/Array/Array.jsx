@@ -10,24 +10,24 @@ class Array extends Component {
   state = { hover: false, closestNumbers: [] };
 
   illuminateHandler = e => {
-    const { id } = e.target;
-    if (id.slice(0, 6) !== "number") {
-      return;
-    }
-    const { array, numberQty } = this.props;
-    this.setState(state => {
-      return {
-        hover: !state.hover,
-        closestNumbers: !state.hover
-          ? getClosestNumbers(array, id, numberQty)
-          : []
-      };
-    });
+    // const { id } = e.target;
+    // if (id.slice(0, 6) !== "number") {
+    //   return;
+    // }
+    // const { array, numberQty } = this.props;
+    // this.setState(state => {
+    //   return {
+    //     hover: !state.hover,
+    //     closestNumbers: !state.hover
+    //       ? getClosestNumbers(array, id, numberQty)
+    //       : []
+    //   };
+    // });
   };
 
   render() {
     const { array } = this.props;
-    const { closestNumbers } = this.state;
+    // const { closestNumbers } = this.state;
 
     return (
       <div>
@@ -43,7 +43,7 @@ class Array extends Component {
                   key={line.id}
                   id={line.id}
                   line={line.cells}
-                  closestNumbers={closestNumbers}
+                  // closestNumbers={closestNumbers}
                 />
               );
             })}
