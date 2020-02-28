@@ -10,8 +10,7 @@ const TdSum = styled.td`
 
 const Td = styled.td`
   cursor: pointer;
-  background-color: ${props => props.bgColor};
-  background: ${props => props.bgPercents};
+  background: ${props => props.background};
 `;
 
 class ArrayLine extends Component {
@@ -42,24 +41,26 @@ class ArrayLine extends Component {
 
     return (
       <tr>
-        {line.map(element => (
-          <Td
-            key={element.id}
-            id={element.id}
-            onClick={this.increaseHandler}
-            bgColor={closestNumbers.includes(element) ? "green" : "white"}
-            bgPercents={
-              hover
-                ? `linear-gradient(to top, red ${(element.amount / sum) *
-                    100}%, transparent ${(element.amount / sum) * 100}%)`
-                : "white"
-            }
-          >
-            {hover
-              ? ((element.amount / sum) * 100).toFixed(1) + "%"
-              : element.amount}
-          </Td>
-        ))}
+        {line.map(element => {
+          let bg = "white";
+          const percents = (element.amount / sum) * 100;
+          if (closestNumbers.includes(element)) {
+            bg = "green";
+          }
+          if (hover) {
+            bg = `linear-gradient(to top, #fff200, #1e9600 ${percents}%, transparent ${percents}%)`;
+          }
+          return (
+            <Td
+              key={element.id}
+              id={element.id}
+              onClick={this.increaseHandler}
+              background={bg}
+            >
+              {hover ? percents.toFixed(1) + "%" : element.amount}
+            </Td>
+          );
+        })}
         <TdSum
           onMouseEnter={this.hoverHandler}
           onMouseLeave={this.hoverHandler}
