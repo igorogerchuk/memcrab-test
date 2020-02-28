@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/memcrab-test/precache-manifest.8fdb3dc496b4baba512e5fb49487f059.js"
+  "/memcrab-test/precache-manifest.fbdb3a7b4bbc1160335753853cd820fe.js"
 );
 
 self.addEventListener('message', (event) => {
