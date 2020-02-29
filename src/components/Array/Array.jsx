@@ -25,10 +25,6 @@ class Array extends Component {
             onHover(closestNumbers);
           }}
           onMouseOut={e => {
-            const { id } = e.target;
-            if (id.slice(0, 6) !== "number") {
-              return;
-            }
             onHover([]);
           }}
         >
