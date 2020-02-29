@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0abe1dbaeb3ca7b475de5d7b41d239e4",
+    "revision": "deee87151932ba254ac5105408129922",
     "url": "/memcrab-test/index.html"
   },
   {
-    "revision": "a4a6a7610f21ba77e76d",
+    "revision": "67d15022458fd41d1f0f",
     "url": "/memcrab-test/static/css/main.0b8517a3.chunk.css"
   },
   {
-    "revision": "905b22b6daaac04b19e3",
-    "url": "/memcrab-test/static/js/2.3645d16f.chunk.js"
+    "revision": "66d3b74a6e93584f38be",
+    "url": "/memcrab-test/static/js/2.a24b1719.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/memcrab-test/static/js/2.3645d16f.chunk.js.LICENSE.txt"
+    "url": "/memcrab-test/static/js/2.a24b1719.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a4a6a7610f21ba77e76d",
-    "url": "/memcrab-test/static/js/main.eb234242.chunk.js"
+    "revision": "67d15022458fd41d1f0f",
+    "url": "/memcrab-test/static/js/main.a1d3329a.chunk.js"
   },
   {
     "revision": "7b6cb94a2f89a3631690",
