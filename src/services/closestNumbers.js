@@ -1,20 +1,15 @@
-const getClosestNumbers = (array, id, numbersQty) => {
-  let origin;
-  const inlineArray = [];
-  array.forEach(line =>
-    line.cells.forEach(element => {
-      if (element.id === id) {
-        origin = element;
-      } else {
-        inlineArray.push(element);
-      }
-    })
-  );
+const getClosestNumbers = (array, value, numbersQty) => {
+  let inlineArray = array.reduce((acc, line) => [...acc, ...line.cells], []);
+
+  if (numbersQty >= inlineArray.length) {
+    return inlineArray;
+  }
+
   inlineArray.sort(
-    (a, b) =>
-      Math.abs(a.amount - origin.amount) - Math.abs(b.amount - origin.amount)
+    (a, b) => Math.abs(a.amount - value) - Math.abs(b.amount - value)
   );
-  return [origin, ...inlineArray.slice(0, numbersQty)];
+
+  return inlineArray.slice(0, numbersQty + 1);
 };
 
 export default getClosestNumbers;

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import ArrayLine from "../ArrayLine";
+import ArrayRow from "../ArrayRow";
 import AvarageRow from "../AvarageRow";
 import styles from "./Array.module.css";
 import * as selectors from "../../redux/selectors";
@@ -8,21 +8,23 @@ import * as actions from "../../redux/actions";
 import getClosestNumbers from "../../services/closestNumbers";
 
 class Array extends Component {
-  state = { hover: false };
+  illuminateOnHandler = e => {
+    const { id, innerText } = e.target;
+    if (id.slice(0, 6) !== "number") {
+      return;
+    }
+    const value = Number(innerText);
+    const { array, numberQty, onHover } = this.props;
+    const closestNumbers = getClosestNumbers(array, value, numberQty);
+    onHover(closestNumbers);
+  };
 
-  illuminateHandler = e => {
+  illuminateOffHandler = e => {
     const { id } = e.target;
     if (id.slice(0, 6) !== "number") {
       return;
     }
-    const { array, numberQty, onHover } = this.props;
-    const closestNumbers = this.state.hover
-      ? []
-      : getClosestNumbers(array, id, numberQty);
-    this.setState(state => {
-      return { hover: !state.hover };
-    });
-    onHover(closestNumbers);
+    this.props.onHover([]);
   };
 
   render() {
@@ -32,12 +34,12 @@ class Array extends Component {
       <div>
         <table
           className={styles.matrix}
-          onMouseOver={this.illuminateHandler}
-          onMouseOut={this.illuminateHandler}
+          onMouseOver={this.illuminateOnHandler}
+          onMouseOut={this.illuminateOffHandler}
         >
           <tbody>
             {array.map(line => (
-              <ArrayLine key={line.id} id={line.id} line={line.cells} />
+              <ArrayRow key={line.id} id={line.id} />
             ))}
             <AvarageRow />
           </tbody>
