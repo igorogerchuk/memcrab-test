@@ -15,7 +15,7 @@ class ArrayCell extends Component {
 
     let bg = "white";
     const percents = (element.amount / sum) * 100;
-    if (illuminated.includes(element)) {
+    if (illuminated.length > 0 && illuminated.includes(element)) {
       bg = "green";
     }
     if (sumHover) {
