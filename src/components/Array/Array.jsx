@@ -24,7 +24,7 @@ class Array extends Component {
             const closestNumbers = getClosestNumbers(array, value, numberQty);
             onHover(closestNumbers);
           }}
-          onMouseOut={e => {
+          onMouseOut={() => {
             onHover([]);
           }}
         >
