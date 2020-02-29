@@ -8,34 +8,29 @@ import * as actions from "../../redux/actions";
 import getClosestNumbers from "../../services/closestNumbers";
 
 class Array extends Component {
-  illuminateOnHandler = e => {
-    const { id, innerText } = e.target;
-    if (id.slice(0, 6) !== "number") {
-      return;
-    }
-    const value = Number(innerText);
-    const { array, numberQty, onHover } = this.props;
-    const closestNumbers = getClosestNumbers(array, value, numberQty);
-    onHover(closestNumbers);
-  };
-
-  illuminateOffHandler = e => {
-    const { id } = e.target;
-    if (id.slice(0, 6) !== "number") {
-      return;
-    }
-    this.props.onHover([]);
-  };
-
   render() {
-    const { array } = this.props;
+    const { array, numberQty, onHover } = this.props;
 
     return (
       <div>
         <table
           className={styles.matrix}
-          onMouseOver={this.illuminateOnHandler}
-          onMouseOut={this.illuminateOffHandler}
+          onMouseOver={e => {
+            const { id, innerText } = e.target;
+            if (id.slice(0, 6) !== "number") {
+              return;
+            }
+            const value = Number(innerText);
+            const closestNumbers = getClosestNumbers(array, value, numberQty);
+            onHover(closestNumbers);
+          }}
+          onMouseOut={e => {
+            const { id } = e.target;
+            if (id.slice(0, 6) !== "number") {
+              return;
+            }
+            onHover([]);
+          }}
         >
           <tbody>
             {array.map(line => (

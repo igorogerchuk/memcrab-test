@@ -11,7 +11,7 @@ const Td = styled.td`
 
 class ArrayCell extends Component {
   render() {
-    const { element, sum, sumHover, illuminated, onIncrease, id } = this.props;
+    const { element, sum, sumHover, onIncrease, id, illuminated } = this.props;
 
     let bg = "white";
     const percents = (element.amount / sum) * 100;
