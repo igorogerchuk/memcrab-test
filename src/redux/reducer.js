@@ -20,7 +20,7 @@ const line = (state, action) => {
       return state.id !== action.payload.id;
     case types.INCREASE:
       if (state.id === action.payload.lineId) {
-        return { ...state, cells: cells.map(el => element(el, action)) };
+        return { ...state, cells: state.cells.map(el => element(el, action)) };
       }
       return state;
     default:

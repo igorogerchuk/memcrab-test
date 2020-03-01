@@ -11,18 +11,19 @@ const Td = styled.td`
 `;
 
 class ArrayCell extends Component {
+  hoverOnHandler = () => {
+    const { array, numberQty, element, onHover } = this.props;
+    const closestNumbers = getClosestNumbers(array, element, numberQty);
+    onHover(closestNumbers);
+  };
+
+  hoverOffHandler = () => {
+    const { onHover } = this.props;
+    onHover([]);
+  };
+
   render() {
-    const {
-      element,
-      sum,
-      sumHover,
-      onIncrease,
-      id,
-      illuminated,
-      array,
-      numberQty,
-      onHover
-    } = this.props;
+    const { element, sum, sumHover, onIncrease, id, illuminated } = this.props;
 
     let bg = "white";
     const percents = (element.amount / sum) * 100;
@@ -37,13 +38,8 @@ class ArrayCell extends Component {
         onClick={onIncrease}
         background={bg}
         id={id}
-        onMouseEnter={e => {
-          const closestNumbers = getClosestNumbers(array, element, numberQty);
-          onHover(closestNumbers);
-        }}
-        onMouseLeave={() => {
-          onHover([]);
-        }}
+        onMouseEnter={this.hoverOnHandler}
+        onMouseLeave={this.hoverOffHandler}
       >
         {sumHover ? percents.toFixed(1) + "%" : element.amount}
       </Td>
