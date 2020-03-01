@@ -1,14 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import * as actions from "../redux/actions";
-import * as selectors from "../redux/selectors";
-import styled from "styled-components";
-import getClosestNumbers from "../services/closestNumbers";
-
-const Td = styled.td`
-  background: ${props => props.background};
-  cursor: pointer;
-`;
+import * as actions from "../../redux/actions";
+import * as selectors from "../../redux/selectors";
+import getClosestNumbers from "../../services/closestNumbers";
+// import styles from "./ArrayCell.module.css";
 
 class ArrayCell extends Component {
   hoverOnHandler = () => {
@@ -25,24 +20,24 @@ class ArrayCell extends Component {
   render() {
     const { element, sum, sumHover, onIncrease, id, illuminated } = this.props;
 
-    let bg = "white";
+    let bg = { background: "white" };
     const percents = (element.amount / sum) * 100;
     if (illuminated.length > 0 && illuminated.includes(element)) {
-      bg = "green";
+      bg.background = "green";
     }
     if (sumHover) {
-      bg = `linear-gradient(to top, #fff200, #1e9600 ${percents}%, transparent ${percents}%)`;
+      bg.background = `linear-gradient(to top, #fff200, #1e9600 ${percents}%, transparent ${percents}%)`;
     }
     return (
-      <Td
+      <td
         onClick={onIncrease}
-        background={bg}
         id={id}
         onMouseEnter={this.hoverOnHandler}
         onMouseLeave={this.hoverOffHandler}
+        style={bg}
       >
         {sumHover ? percents.toFixed(1) + "%" : element.amount}
-      </Td>
+      </td>
     );
   }
 }

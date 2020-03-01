@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import ArrayRow from "../ArrayRow";
+import ArrayRow from "../ArrayRow/ArrayRow";
 import AvarageRow from "../AvarageRow";
 import styles from "./Array.module.css";
 import * as selectors from "../../redux/selectors";

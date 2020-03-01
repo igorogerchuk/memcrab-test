@@ -1,20 +1,19 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import * as actions from "../redux/actions";
-import styled from "styled-components";
-import * as selectors from "../redux/selectors";
-import ArrayCell from "./ArrayCell";
-
-const TdSum = styled.td`
-  background-color: cadetblue;
-  cursor: pointer;
-`;
+import * as actions from "../../redux/actions";
+import * as selectors from "../../redux/selectors";
+import ArrayCell from "../ArrayCell/ArrayCell";
+import styles from "./ArrayRow.module.css";
 
 class ArrayRow extends Component {
   state = { sumHover: false, sum: 0 };
 
-  hoverHandler = e => {
-    const value = Number(e.target.innerText);
+  hoverHandler = () => {
+    const { line } = this.props;
+    const value = line.cells.reduce(
+      (sum, element) => (sum += element.amount),
+      0
+    );
     this.setState(state => {
       return {
         sumHover: !state.sumHover,
@@ -38,12 +37,13 @@ class ArrayRow extends Component {
             lineId={id}
           />
         ))}
-        <TdSum
+        <td
           onMouseEnter={this.hoverHandler}
           onMouseLeave={this.hoverHandler}
+          className={styles.sumCell}
         >
           {line.cells.reduce((sum, element) => (sum += element.amount), 0)}
-        </TdSum>
+        </td>
         <td>
           <button onClick={onRemove}>Remove</button>
         </td>
