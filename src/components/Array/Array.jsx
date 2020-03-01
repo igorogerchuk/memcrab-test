@@ -4,30 +4,14 @@ import ArrayRow from "../ArrayRow";
 import AvarageRow from "../AvarageRow";
 import styles from "./Array.module.css";
 import * as selectors from "../../redux/selectors";
-import * as actions from "../../redux/actions";
-import getClosestNumbers from "../../services/closestNumbers";
 
 class Array extends Component {
   render() {
-    const { array, numberQty, onHover } = this.props;
+    const { array } = this.props;
 
     return (
       <div>
-        <table
-          className={styles.matrix}
-          onMouseOver={e => {
-            const { id, innerText } = e.target;
-            if (id.slice(0, 6) !== "number") {
-              return;
-            }
-            const value = Number(innerText);
-            const closestNumbers = getClosestNumbers(array, value, numberQty);
-            onHover(closestNumbers);
-          }}
-          onMouseOut={() => {
-            onHover([]);
-          }}
-        >
+        <table className={styles.matrix}>
           <tbody>
             {array.map(line => (
               <ArrayRow key={line.id} id={line.id} />
@@ -42,15 +26,8 @@ class Array extends Component {
 
 const mapStateToProps = state => {
   return {
-    array: selectors.getArray(state),
-    numberQty: selectors.getNumbersQty(state)
+    array: selectors.getArray(state)
   };
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    onHover: closestNumbers => dispatch(actions.illuminate(closestNumbers))
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Array);
+export default connect(mapStateToProps)(Array);
