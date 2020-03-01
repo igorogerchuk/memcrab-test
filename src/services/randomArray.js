@@ -2,6 +2,7 @@ const uuidv4 = require("uuid/v4");
 
 const createRandomArray = (lines, columns) => {
   const array = [];
+
   for (let i = 0; i < lines; i++) {
     array[i] = { id: uuidv4(), cells: [] };
     for (let j = 0; j < columns; j++) {

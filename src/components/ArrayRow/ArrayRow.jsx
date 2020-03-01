@@ -6,26 +6,21 @@ import ArrayCell from "../ArrayCell/ArrayCell";
 import styles from "./ArrayRow.module.css";
 
 class ArrayRow extends Component {
-  state = { sumHover: false, sum: 0 };
+  state = { sumHover: false };
 
   hoverHandler = () => {
-    const { line } = this.props;
-    const value = line.cells.reduce(
-      (sum, element) => (sum += element.amount),
-      0
-    );
     this.setState(state => {
       return {
-        sumHover: !state.sumHover,
-        sum: value
+        sumHover: !state.sumHover
       };
     });
   };
 
   render() {
     const { line, onRemove, id } = this.props;
-    const { sumHover, sum } = this.state;
+    const { sumHover } = this.state;
 
+    const sum = line.cells.reduce((sum, element) => (sum += element.amount), 0);
     return (
       <tr id={id}>
         {line.cells.map(element => (
@@ -42,7 +37,7 @@ class ArrayRow extends Component {
           onMouseLeave={this.hoverHandler}
           className={styles.sumCell}
         >
-          {line.cells.reduce((sum, element) => (sum += element.amount), 0)}
+          {sum}
         </td>
         <td>
           <button onClick={onRemove}>Remove</button>
