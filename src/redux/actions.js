@@ -21,10 +21,10 @@ export const saveArray = array => {
   };
 };
 
-export const increase = id => {
+export const increase = (id, lineId) => {
   return {
     type: types.INCREASE,
-    payload: { id }
+    payload: { id, lineId }
   };
 };
 

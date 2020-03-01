@@ -19,7 +19,10 @@ const line = (state, action) => {
     case types.REMOVE_LINE:
       return state.id !== action.payload.id;
     case types.INCREASE:
-      return state.map(el => element(el, action));
+      if (state.id === action.payload.lineId) {
+        return { ...state, cells: cells.map(el => element(el, action)) };
+      }
+      return state;
     default:
       break;
   }
@@ -34,9 +37,7 @@ const arrayReducer = (state = [], action) => {
     case types.SAVE_ARRAY:
       return action.payload.array;
     case types.INCREASE:
-      return state.map(l => {
-        return { ...l, cells: line(l.cells, action) };
-      });
+      return state.map(l => line(l, action));
     default:
       return state;
   }

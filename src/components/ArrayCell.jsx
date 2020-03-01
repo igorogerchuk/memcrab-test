@@ -60,9 +60,9 @@ const mapStateToProps = (state, { id, lineId }) => {
   };
 };
 
-const mapDispatchToProps = (dispatch, { id }) => {
+const mapDispatchToProps = (dispatch, { id, lineId }) => {
   return {
-    onIncrease: () => dispatch(actions.increase(id)),
+    onIncrease: () => dispatch(actions.increase(id, lineId)),
     onHover: closestNumbers => dispatch(actions.illuminate(closestNumbers))
   };
 };
