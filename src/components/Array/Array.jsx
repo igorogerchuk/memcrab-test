@@ -6,7 +6,7 @@ import AddLineButton from "../AddLineButton";
 import styles from "./Array.module.css";
 import * as selectors from "../../redux/selectors";
 
-const Array = ({ array }) => {
+const Array = ({ array, columnQty }) => {
   return (
     array.length > 0 && (
       <table className={styles.matrix}>
@@ -16,7 +16,7 @@ const Array = ({ array }) => {
           ))}
           <AvarageRow />
           <tr>
-            <td>
+            <td colspan={columnQty}>
               <AddLineButton />
             </td>
           </tr>
@@ -28,7 +28,8 @@ const Array = ({ array }) => {
 
 const mapStateToProps = state => {
   return {
-    array: selectors.getArray(state)
+    array: selectors.getArray(state),
+    columnQty: selectors.getColumnsQty(state)
   };
 };
 
