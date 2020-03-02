@@ -29,7 +29,7 @@ export const getAvarageRow = createSelector(
       }
       avarageRow.push({
         id: uuidv4(),
-        amount: (columnTotal / columnQty).toFixed(2)
+        amount: (columnTotal / array.length).toFixed(2)
       });
     }
     return avarageRow;

@@ -11,10 +11,12 @@ const getClosestNumbers = (array, element, numbersQty) => {
   );
   const closestNumbers = inlineArray.slice(0, numbersQty + 1);
 
-  if (closestNumbers.includes(element)) {
-    return closestNumbers;
+  const closestNumbersIds = closestNumbers.map(element => element.id);
+
+  if (closestNumbersIds.includes(element.id)) {
+    return closestNumbersIds;
   }
-  return [element, ...closestNumbers.slice(1, numbersQty + 1)];
+  return [element.id, ...closestNumbersIds.slice(1, numbersQty + 1)];
 };
 
 export default getClosestNumbers;
