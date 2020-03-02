@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import * as actions from "../../redux/actions";
 import * as selectors from "../../redux/selectors";
 import getClosestNumbers from "../../services/closestNumbers";
-// import styles from "./ArrayCell.module.css";
+import styles from "./ArrayCell.module.css";
 
 class ArrayCell extends Component {
   hoverOnHandler = () => {
@@ -20,16 +20,25 @@ class ArrayCell extends Component {
   render() {
     const { element, sum, sumHover, onIncrease, id, illuminated } = this.props;
 
-    let bg = { background: "white" };
+    let bg = {
+      background:
+        "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)"
+    };
+
     const percents = (element.amount / sum) * 100;
+
     if (illuminated.length > 0 && illuminated.includes(element.id)) {
-      bg.background = "green";
+      bg.background =
+        "linear-gradient(110deg, #f90c04 0%, #ed413b 10%, #fff 20%, #fff 25%, #f0f0f0 26%, #fff 28%, #f53d37 55%, #f90c04 100%)";
     }
+
     if (sumHover) {
       bg.background = `linear-gradient(to top, #fff200, #1e9600 ${percents}%, transparent ${percents}%)`;
     }
+
     return (
       <td
+        className={styles.simpleTd}
         onClick={onIncrease}
         id={id}
         onMouseEnter={this.hoverOnHandler}

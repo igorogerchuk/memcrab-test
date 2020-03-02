@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import * as actions from "../redux/actions";
-import createRandomArray from "../services/randomArray";
+import * as actions from "../../redux/actions";
+import createRandomArray from "../../services/randomArray";
+import styles from "./Inputs.module.css";
 
 class Inputs extends Component {
   state = { m: "", n: "", x: "" };
@@ -40,12 +41,13 @@ class Inputs extends Component {
   render() {
     const { m, n, x } = this.state;
     return (
-      <div>
-        <p>Enter table parameters</p>
+      <div className={styles.formWrapper}>
+        <h1>Enter table parameters</h1>
         <form onSubmit={this.submitHandler}>
-          <label>
+          <label className={styles.label}>
             Lines quantity:{" "}
             <input
+              className={styles.input}
               type="number"
               name="lines"
               id="m"
@@ -54,9 +56,10 @@ class Inputs extends Component {
               placeholder="0"
             />
           </label>
-          <label>
+          <label className={styles.label}>
             Columns quantity:
             <input
+              className={styles.input}
               type="number"
               name="columns"
               id="n"
@@ -65,9 +68,10 @@ class Inputs extends Component {
               placeholder="0"
             />
           </label>
-          <label>
+          <label className={styles.label}>
             Illuminated cells quantity:
             <input
+              className={styles.input}
               type="number"
               name="illuminate"
               id="x"
@@ -76,7 +80,11 @@ class Inputs extends Component {
               placeholder="0"
             />
           </label>
-          <input type="submit" value="Generate" />
+          <input
+            className={styles.submitButton}
+            type="submit"
+            value="Generate"
+          />
         </form>
       </div>
     );

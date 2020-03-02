@@ -9,19 +9,21 @@ import * as selectors from "../../redux/selectors";
 const Array = ({ array, columnQty }) => {
   return (
     array.length > 0 && (
-      <table className={styles.matrix}>
-        <tbody>
-          {array.map(line => (
-            <ArrayRow key={line.id} id={line.id} />
-          ))}
-          <AvarageRow />
-          <tr>
-            <td colspan={columnQty}>
-              <AddLineButton />
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div className={styles.tableWrapper}>
+        <table className={styles.table}>
+          <tbody>
+            {array.map(line => (
+              <ArrayRow key={line.id} id={line.id} />
+            ))}
+            <AvarageRow />
+            <tr>
+              <td className={styles.addCell} colspan={columnQty}>
+                <AddLineButton />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     )
   );
 };

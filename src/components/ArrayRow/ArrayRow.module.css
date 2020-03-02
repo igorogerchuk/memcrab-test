@@ -1,4 +1,20 @@
 .sumCell {
-  background-color: cadetblue;
+  background: linear-gradient(to top, #fff200, #1e9600);
   cursor: pointer;
+}
+
+.removeButton {
+  composes: button from "../AddLineButton/AddLineButton.module.css";
+  color: red;
+  font-size: 24px;
+  width: 45px;
+}
+
+.removeButtonTd {
+  composes: addCell from "../Array/Array.module.css";
+}
+
+.removeButtonTd:active {
+  position: relative;
+  top: 2px;
 }

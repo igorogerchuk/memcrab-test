@@ -39,8 +39,10 @@ class ArrayRow extends Component {
         >
           {sum}
         </td>
-        <td>
-          <button onClick={onRemove}>Remove</button>
+        <td class={styles.removeButtonTd}>
+          <button class={styles.removeButton} onClick={onRemove}>
+            &times;
+          </button>
         </td>
       </tr>
     );

@@ -1,0 +1,8 @@
+.simpleTd {
+  cursor: pointer;
+}
+
+.simpleTd:active {
+  position: relative;
+  top: 2px;
+}
