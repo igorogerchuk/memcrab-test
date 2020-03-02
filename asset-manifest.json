@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/memcrab-test/static/css/main.bce9da0e.chunk.css",
-    "main.js": "/memcrab-test/static/js/main.c59e0e54.chunk.js",
-    "main.js.map": "/memcrab-test/static/js/main.c59e0e54.chunk.js.map",
+    "main.css": "/memcrab-test/static/css/main.58b0cb2b.chunk.css",
+    "main.js": "/memcrab-test/static/js/main.c86fa9a0.chunk.js",
+    "main.js.map": "/memcrab-test/static/js/main.c86fa9a0.chunk.js.map",
     "runtime-main.js": "/memcrab-test/static/js/runtime-main.026b6c67.js",
     "runtime-main.js.map": "/memcrab-test/static/js/runtime-main.026b6c67.js.map",
     "static/js/2.a5313059.chunk.js": "/memcrab-test/static/js/2.a5313059.chunk.js",
     "static/js/2.a5313059.chunk.js.map": "/memcrab-test/static/js/2.a5313059.chunk.js.map",
     "index.html": "/memcrab-test/index.html",
-    "precache-manifest.9de8a5e89782f1360690ec0e47328efa.js": "/memcrab-test/precache-manifest.9de8a5e89782f1360690ec0e47328efa.js",
+    "precache-manifest.868d0a810394bee6ed31ba2fc155a270.js": "/memcrab-test/precache-manifest.868d0a810394bee6ed31ba2fc155a270.js",
     "service-worker.js": "/memcrab-test/service-worker.js",
-    "static/css/main.bce9da0e.chunk.css.map": "/memcrab-test/static/css/main.bce9da0e.chunk.css.map",
+    "static/css/main.58b0cb2b.chunk.css.map": "/memcrab-test/static/css/main.58b0cb2b.chunk.css.map",
     "static/js/2.a5313059.chunk.js.LICENSE.txt": "/memcrab-test/static/js/2.a5313059.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.026b6c67.js",
     "static/js/2.a5313059.chunk.js",
-    "static/css/main.bce9da0e.chunk.css",
-    "static/js/main.c59e0e54.chunk.js"
+    "static/css/main.58b0cb2b.chunk.css",
+    "static/js/main.c86fa9a0.chunk.js"
   ]
 }
