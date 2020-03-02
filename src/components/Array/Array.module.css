@@ -4,6 +4,10 @@
   height: 100vh;
 }
 
+.table {
+  margin: 0 auto;
+}
+
 .addCell {
   background: linear-gradient(110deg, #eee 0%, #e3e3e3 10%, #fff 20%, #fff 25%, #f0f0f0 26%, #fff 28%, #ddd 55%, #eee 100%)
 }
