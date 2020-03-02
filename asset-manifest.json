@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/memcrab-test/static/css/main.27849797.chunk.css",
-    "main.js": "/memcrab-test/static/js/main.d71ee2ad.chunk.js",
-    "main.js.map": "/memcrab-test/static/js/main.d71ee2ad.chunk.js.map",
+    "main.js": "/memcrab-test/static/js/main.21fb4e36.chunk.js",
+    "main.js.map": "/memcrab-test/static/js/main.21fb4e36.chunk.js.map",
     "runtime-main.js": "/memcrab-test/static/js/runtime-main.026b6c67.js",
     "runtime-main.js.map": "/memcrab-test/static/js/runtime-main.026b6c67.js.map",
     "static/js/2.e5000b6a.chunk.js": "/memcrab-test/static/js/2.e5000b6a.chunk.js",
     "static/js/2.e5000b6a.chunk.js.map": "/memcrab-test/static/js/2.e5000b6a.chunk.js.map",
     "index.html": "/memcrab-test/index.html",
-    "precache-manifest.70f279244af6044de88763359d1ff7de.js": "/memcrab-test/precache-manifest.70f279244af6044de88763359d1ff7de.js",
+    "precache-manifest.2d64c52200461c6d9319d3fda4ad237f.js": "/memcrab-test/precache-manifest.2d64c52200461c6d9319d3fda4ad237f.js",
     "service-worker.js": "/memcrab-test/service-worker.js",
     "static/css/main.27849797.chunk.css.map": "/memcrab-test/static/css/main.27849797.chunk.css.map",
     "static/js/2.e5000b6a.chunk.js.LICENSE.txt": "/memcrab-test/static/js/2.e5000b6a.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.026b6c67.js",
     "static/js/2.e5000b6a.chunk.js",
     "static/css/main.27849797.chunk.css",
-    "static/js/main.d71ee2ad.chunk.js"
+    "static/js/main.21fb4e36.chunk.js"
   ]
 }
