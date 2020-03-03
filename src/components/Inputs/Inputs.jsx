@@ -42,10 +42,12 @@ class Inputs extends Component {
     const { m, n, x } = this.state;
     return (
       <div className={styles.formWrapper}>
-        <h1>Enter table parameters</h1>
-        <form onSubmit={this.submitHandler}>
-          <label className={styles.label}>
-            Lines quantity:{" "}
+        <h1 className={styles.formTitle}>Enter table parameters</h1>
+        <form className={styles.form} onSubmit={this.submitHandler}>
+          <div className={styles.inputWrapper}>
+            <label for="m" className={styles.label}>
+              Lines quantity:
+            </label>
             <input
               className={styles.input}
               type="number"
@@ -55,9 +57,11 @@ class Inputs extends Component {
               value={m}
               placeholder="0"
             />
-          </label>
-          <label className={styles.label}>
-            Columns quantity:
+          </div>
+          <div className={styles.inputWrapper}>
+            <label for="n" className={styles.label}>
+              Columns quantity:
+            </label>
             <input
               className={styles.input}
               type="number"
@@ -67,9 +71,11 @@ class Inputs extends Component {
               value={n}
               placeholder="0"
             />
-          </label>
-          <label className={styles.label}>
-            Illuminated cells quantity:
+          </div>
+          <div className={styles.inputWrapper}>
+            <label for="m" className={styles.label}>
+              Illuminated cells quantity:
+            </label>
             <input
               className={styles.input}
               type="number"
@@ -79,12 +85,14 @@ class Inputs extends Component {
               value={x}
               placeholder="0"
             />
-          </label>
-          <input
-            className={styles.submitButton}
-            type="submit"
-            value="Generate"
-          />
+          </div>
+          <div>
+            <input
+              className={styles.submitButton}
+              type="submit"
+              value="Generate"
+            />
+          </div>
         </form>
       </div>
     );
