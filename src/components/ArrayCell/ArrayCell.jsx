@@ -14,11 +14,27 @@ class ArrayCell extends Component {
 
   hoverOffHandler = () => {
     const { onHover } = this.props;
-    onHover([]);
+    onHover({});
   };
 
+  shouldComponentUpdate(nextProps, nextState) {
+    const { element, illuminated, sumHover, id } = this.props;
+    if (nextProps.sumHover !== sumHover) {
+      return true;
+    }
+    if (nextProps.element.amount !== element.amount) {
+      return true;
+    }
+    if (nextProps.illuminated[id] !== illuminated[id]) {
+      return true;
+    }
+
+    return false;
+  }
+
   render() {
-    const { element, sum, sumHover, onIncrease, id, illuminated } = this.props;
+    console.log("td");
+    const { element, sum, sumHover, onIncrease, illuminated, id } = this.props;
 
     let bg = {
       background:
@@ -27,7 +43,7 @@ class ArrayCell extends Component {
 
     const percents = (element.amount / sum) * 100;
 
-    if (illuminated.length > 0 && illuminated.includes(element.id)) {
+    if (illuminated[id]) {
       bg.background =
         "linear-gradient(110deg, #f90c04 0%, #ed413b 10%, #fff 20%, #fff 25%, #f0f0f0 26%, #fff 28%, #f53d37 55%, #f90c04 100%)";
     }
@@ -56,7 +72,8 @@ const mapStateToProps = (state, { id, lineId }) => {
     array: selectors.getArray(state),
     numberQty: selectors.getNumbersQty(state),
     illuminated: selectors.getIlluminated(state),
-    element: selectors.getCell(state, id, lineId)
+    element: selectors.getCell(state, id, lineId),
+    sum: selectors.getSum(state, lineId)
   };
 };
 

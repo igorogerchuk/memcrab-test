@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as actions from "../../redux/actions";
 import * as selectors from "../../redux/selectors";
-import ArrayCell from "../ArrayCell/ArrayCell";
+import ArrayCell from "../ArrayCell";
+import SumCell from "../SumCell";
 import styles from "./ArrayRow.module.css";
 
 class ArrayRow extends Component {
@@ -16,31 +17,33 @@ class ArrayRow extends Component {
     });
   };
 
+  shouldComponentUpdate(nextProps, nextState) {
+    const { sumHover } = this.state;
+
+    if (nextState.sumHover !== sumHover) {
+      return true;
+    }
+    return false;
+  }
+
   render() {
+    console.log("row");
     const { line, onRemove, id } = this.props;
     const { sumHover } = this.state;
 
-    const sum = line.cells.reduce((sum, element) => (sum += element.amount), 0);
     return (
       <tr id={id}>
         {line.cells.map(element => (
           <ArrayCell
             sumHover={sumHover}
-            sum={sum}
             key={element.id}
             id={element.id}
             lineId={id}
           />
         ))}
-        <td
-          onMouseEnter={this.hoverHandler}
-          onMouseLeave={this.hoverHandler}
-          className={styles.sumCell}
-        >
-          {sum}
-        </td>
-        <td class={styles.removeButtonTd}>
-          <button class={styles.removeButton} onClick={onRemove}>
+        <SumCell onHover={this.hoverHandler} id={id} />
+        <td className={styles.removeButtonTd}>
+          <button className={styles.removeButton} onClick={onRemove}>
             &times;
           </button>
         </td>

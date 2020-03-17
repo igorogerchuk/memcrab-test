@@ -5,7 +5,7 @@ const element = (state, { type, payload }) => {
   switch (type) {
     case types.INCREASE:
       return state.id === payload.id
-        ? { ...state, amount: (state.amount += 1) }
+        ? { ...state, amount: state.amount + 1 }
         : state;
     default:
       break;
@@ -52,7 +52,7 @@ const paramsReducer = (state = {}, action) => {
   }
 };
 
-const illuminatedReducer = (state = [], action) => {
+const illuminatedReducer = (state = {}, action) => {
   switch (action.type) {
     case types.ILLUMINATE:
       return action.payload.illuminated;

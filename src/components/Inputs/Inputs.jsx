@@ -45,7 +45,7 @@ class Inputs extends Component {
         <h1 className={styles.formTitle}>Enter table parameters</h1>
         <form className={styles.form} onSubmit={this.submitHandler}>
           <div className={styles.inputWrapper}>
-            <label for="m" className={styles.label}>
+            <label htmlFor="m" className={styles.label}>
               Lines quantity:
             </label>
             <input
@@ -59,7 +59,7 @@ class Inputs extends Component {
             />
           </div>
           <div className={styles.inputWrapper}>
-            <label for="n" className={styles.label}>
+            <label htmlFor="n" className={styles.label}>
               Columns quantity:
             </label>
             <input
@@ -73,7 +73,7 @@ class Inputs extends Component {
             />
           </div>
           <div className={styles.inputWrapper}>
-            <label for="m" className={styles.label}>
+            <label htmlFor="m" className={styles.label}>
               Illuminated cells quantity:
             </label>
             <input

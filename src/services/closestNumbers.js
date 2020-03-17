@@ -1,22 +1,22 @@
 const getClosestNumbers = (array, element, numbersQty) => {
   let inlineArray = array.reduce((acc, line) => [...acc, ...line.cells], []);
 
-  if (numbersQty >= inlineArray.length - 1) {
-    return inlineArray;
+  if (numbersQty < inlineArray.length - 1) {
+    inlineArray.sort(
+      (a, b) =>
+        Math.abs(a.amount - element.amount) -
+        Math.abs(b.amount - element.amount)
+    );
   }
 
-  inlineArray.sort(
-    (a, b) =>
-      Math.abs(a.amount - element.amount) - Math.abs(b.amount - element.amount)
-  );
   const closestNumbers = inlineArray.slice(0, numbersQty + 1);
 
-  const closestNumbersIds = closestNumbers.map(element => element.id);
+  const closestNumbersIds = closestNumbers.reduce(
+    (acc, element) => ({ ...acc, [element.id]: true }),
+    {}
+  );
 
-  if (closestNumbersIds.includes(element.id)) {
-    return closestNumbersIds;
-  }
-  return [element.id, ...closestNumbersIds.slice(1, numbersQty + 1)];
+  return { [element.id]: true, ...closestNumbersIds };
 };
 
 export default getClosestNumbers;
