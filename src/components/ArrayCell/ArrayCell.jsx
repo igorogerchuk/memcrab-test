@@ -69,7 +69,7 @@ class ArrayCell extends Component {
 
 const mapStateToProps = (state, { id, lineId }) => {
   return {
-    // array: selectors.getArray(state),
+    array: selectors.getArray(state),
     numberQty: selectors.getNumbersQty(state),
     illuminated: selectors.getIlluminated(state),
     element: selectors.getCell(state, id, lineId),
