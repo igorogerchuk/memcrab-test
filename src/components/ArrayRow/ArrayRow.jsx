@@ -19,16 +19,34 @@ class ArrayRow extends Component {
 
   shouldComponentUpdate(nextProps, nextState) {
     const { sumHover } = this.state;
+    const { illuminated, line } = this.props;
 
     if (nextState.sumHover !== sumHover) {
       return true;
+    }
+    for (let i = 0; i < line.cells.length; i++) {
+      if (
+        illuminated[line.cells[i].id] !==
+        nextProps.illuminated[line.cells[i].id]
+      ) {
+        return true;
+      }
     }
     return false;
   }
 
   render() {
     console.log("row");
-    const { line, onRemove, id } = this.props;
+    const {
+      line,
+      onRemove,
+      id,
+      array,
+      numberQty,
+      illuminated,
+      sum,
+      onHover
+    } = this.props;
     const { sumHover } = this.state;
 
     return (
@@ -37,8 +55,14 @@ class ArrayRow extends Component {
           <ArrayCell
             sumHover={sumHover}
             key={element.id}
-            id={element.id}
-            lineId={id}
+            element={element}
+            array={array}
+            numberQty={numberQty}
+            illuminated={illuminated}
+            sum={sum}
+            onHover={onHover}
+            // id={element.id}
+            // lineId={id}
           />
         ))}
         <SumCell onHover={this.hoverHandler} id={id} />
@@ -54,13 +78,20 @@ class ArrayRow extends Component {
 
 const mapStateToProps = (state, { id }) => {
   return {
-    line: selectors.getLine(state, id)
+    line: selectors.getLine(state, id),
+
+    array: selectors.getArray(state),
+    numberQty: selectors.getNumbersQty(state),
+    illuminated: selectors.getIlluminated(state),
+    sum: selectors.getSum(state, id)
   };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onRemove: () => dispatch(actions.removeLine(ownProps.id))
+    onRemove: () => dispatch(actions.removeLine(ownProps.id)),
+
+    onHover: closestNumbers => dispatch(actions.illuminate(closestNumbers))
   };
 };
 

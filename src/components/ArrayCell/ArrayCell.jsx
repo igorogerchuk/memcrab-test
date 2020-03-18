@@ -18,14 +18,14 @@ class ArrayCell extends Component {
   };
 
   shouldComponentUpdate(nextProps, nextState) {
-    const { element, illuminated, sumHover, id } = this.props;
+    const { element, illuminated, sumHover } = this.props;
     if (nextProps.sumHover !== sumHover) {
       return true;
     }
     if (nextProps.element.amount !== element.amount) {
       return true;
     }
-    if (nextProps.illuminated[id] !== illuminated[id]) {
+    if (nextProps.illuminated[element.id] !== illuminated[element.id]) {
       return true;
     }
 
@@ -34,7 +34,7 @@ class ArrayCell extends Component {
 
   render() {
     console.log("td");
-    const { element, sum, sumHover, onIncrease, illuminated, id } = this.props;
+    const { element, sum, sumHover, onIncrease, illuminated } = this.props;
 
     let bg = {
       background:
@@ -43,7 +43,7 @@ class ArrayCell extends Component {
 
     const percents = (element.amount / sum) * 100;
 
-    if (illuminated[id]) {
+    if (illuminated[element.id]) {
       bg.background =
         "linear-gradient(110deg, #f90c04 0%, #ed413b 10%, #fff 20%, #fff 25%, #f0f0f0 26%, #fff 28%, #f53d37 55%, #f90c04 100%)";
     }
@@ -56,7 +56,7 @@ class ArrayCell extends Component {
       <td
         className={styles.simpleTd}
         onClick={onIncrease}
-        id={id}
+        id={element.id}
         onMouseEnter={this.hoverOnHandler}
         onMouseLeave={this.hoverOffHandler}
         style={bg}
@@ -66,22 +66,23 @@ class ArrayCell extends Component {
     );
   }
 }
+export default ArrayCell;
 
-const mapStateToProps = (state, { id, lineId }) => {
-  return {
-    array: selectors.getArray(state),
-    numberQty: selectors.getNumbersQty(state),
-    illuminated: selectors.getIlluminated(state),
-    element: selectors.getCell(state, id, lineId),
-    sum: selectors.getSum(state, lineId)
-  };
-};
+// const mapStateToProps = (state, { id, lineId }) => {
+//   return {
+//     array: selectors.getArray(state),
+//     numberQty: selectors.getNumbersQty(state),
+//     illuminated: selectors.getIlluminated(state),
+//     element: selectors.getCell(state, id, lineId),
+//     sum: selectors.getSum(state, lineId)
+//   };
+// };
 
-const mapDispatchToProps = (dispatch, { id, lineId }) => {
-  return {
-    onIncrease: () => dispatch(actions.increase(id, lineId)),
-    onHover: closestNumbers => dispatch(actions.illuminate(closestNumbers))
-  };
-};
+// const mapDispatchToProps = (dispatch, { id, lineId }) => {
+//   return {
+//     onIncrease: () => dispatch(actions.increase(id, lineId)),
+//     onHover: closestNumbers => dispatch(actions.illuminate(closestNumbers))
+//   };
+// };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ArrayCell);
+// export default connect(mapStateToProps, mapDispatchToProps)(ArrayCell);
