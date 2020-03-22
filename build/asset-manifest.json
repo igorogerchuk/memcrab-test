@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/memcrab-test/static/css/main.afc6a8b8.chunk.css",
-    "main.js": "/memcrab-test/static/js/main.1c93acf7.chunk.js",
-    "main.js.map": "/memcrab-test/static/js/main.1c93acf7.chunk.js.map",
+    "main.css": "/memcrab-test/static/css/main.78e748e3.chunk.css",
+    "main.js": "/memcrab-test/static/js/main.53614a15.chunk.js",
+    "main.js.map": "/memcrab-test/static/js/main.53614a15.chunk.js.map",
     "runtime-main.js": "/memcrab-test/static/js/runtime-main.026b6c67.js",
     "runtime-main.js.map": "/memcrab-test/static/js/runtime-main.026b6c67.js.map",
-    "static/js/2.a5313059.chunk.js": "/memcrab-test/static/js/2.a5313059.chunk.js",
-    "static/js/2.a5313059.chunk.js.map": "/memcrab-test/static/js/2.a5313059.chunk.js.map",
+    "static/js/2.6c317339.chunk.js": "/memcrab-test/static/js/2.6c317339.chunk.js",
+    "static/js/2.6c317339.chunk.js.map": "/memcrab-test/static/js/2.6c317339.chunk.js.map",
     "index.html": "/memcrab-test/index.html",
-    "precache-manifest.d349f45b29da850c90621bbc836cacdd.js": "/memcrab-test/precache-manifest.d349f45b29da850c90621bbc836cacdd.js",
+    "precache-manifest.99127d48ba4aaa202e11f64e1d13191d.js": "/memcrab-test/precache-manifest.99127d48ba4aaa202e11f64e1d13191d.js",
     "service-worker.js": "/memcrab-test/service-worker.js",
-    "static/css/main.afc6a8b8.chunk.css.map": "/memcrab-test/static/css/main.afc6a8b8.chunk.css.map",
-    "static/js/2.a5313059.chunk.js.LICENSE.txt": "/memcrab-test/static/js/2.a5313059.chunk.js.LICENSE.txt"
+    "static/css/main.78e748e3.chunk.css.map": "/memcrab-test/static/css/main.78e748e3.chunk.css.map",
+    "static/js/2.6c317339.chunk.js.LICENSE.txt": "/memcrab-test/static/js/2.6c317339.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.026b6c67.js",
-    "static/js/2.a5313059.chunk.js",
-    "static/css/main.afc6a8b8.chunk.css",
-    "static/js/main.1c93acf7.chunk.js"
+    "static/js/2.6c317339.chunk.js",
+    "static/css/main.78e748e3.chunk.css",
+    "static/js/main.53614a15.chunk.js"
   ]
 }
