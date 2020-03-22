@@ -2,22 +2,20 @@ import { createSelector } from "reselect";
 
 export const getArray = state => state.array;
 
-export const getColumnsQty = state => Number(state.params.n);
+// export const getColumnsQty = state => Number(state.params.n);
 
-export const getNumbersQty = state => Number(state.params.x);
+export const getIlluminatedQty = state => Number(state.params.x);
 
-export const getIlluminated = state => state.illuminated;
+// export const getIlluminated = state => state.illuminated;
 
-export const getLine = (state, id) => {
-  return getArray(state).find(line => line.id === id);
-};
+export const getRow = (state, id) => state.rows[id];
 
-export const getCell = (state, id, lineId) => {
-  return getLine(state, lineId).cells.find(cell => cell.id === id);
-};
+export const getCell = (state, id) => state.cells[id];
+
+export const getCells = state => state.cells;
 
 export const getSum = (state, id) => {
-  return getLine(state, id).cells.reduce(
+  return getRow(state, id).cells.reduce(
     (sum, element) => (sum += element.amount),
     0
   );
@@ -25,20 +23,17 @@ export const getSum = (state, id) => {
 
 const uuidv4 = require("uuid/v4");
 
-export const getAvarageRow = createSelector(
-  [getArray, getColumnsQty],
-  (array, columnQty) => {
-    const avarageRow = [];
-    for (let j = 0; j < columnQty; j++) {
-      let columnTotal = 0;
-      for (let i = 0; i < array.length; i++) {
-        columnTotal += array[i].cells[j].amount;
-      }
-      avarageRow.push({
-        id: uuidv4(),
-        amount: (columnTotal / array.length).toFixed(2)
-      });
+export const getAvarageRow = createSelector([getArray], array => {
+  const avarageRow = [];
+  for (let j = 0; j < array[j].length; j++) {
+    let columnTotal = 0;
+    for (let i = 0; i < array.length; i++) {
+      columnTotal += array[i].cells[j].amount;
     }
-    return avarageRow;
+    avarageRow.push({
+      id: uuidv4(),
+      amount: (columnTotal / array.length).toFixed(2)
+    });
   }
-);
+  return avarageRow;
+});

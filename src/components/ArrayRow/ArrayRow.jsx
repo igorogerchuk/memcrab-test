@@ -7,46 +7,63 @@ import SumCell from "../SumCell";
 import styles from "./ArrayRow.module.css";
 
 class ArrayRow extends Component {
-  state = { sumHover: false };
+  // state = { sumHover: false };
 
-  hoverHandler = () => {
-    this.setState(state => {
-      return {
-        sumHover: !state.sumHover
-      };
-    });
-  };
+  // hoverHandler = () => {
+  //   this.setState(state => {
+  //     return {
+  //       sumHover: !state.sumHover
+  //     };
+  //   });
+  // };
 
   shouldComponentUpdate(nextProps, nextState) {
-    const { sumHover } = this.state;
+    // const { sumHover } = this.state;
 
-    if (nextState.sumHover !== sumHover) {
-      return true;
+    // if (nextState.sumHover !== sumHover) {
+    //   return true;
+    // }
+    const { illuminated, row } = this.props;
+    for (let cellId of row) {
+      if (nextProps.illuminated[cellId] !== illuminated[cellId]) {
+        return true;
+      }
     }
     return false;
   }
 
   render() {
-    console.log("row");
-    const { line, onRemove, id } = this.props;
-    const { sumHover } = this.state;
+    // console.log("row");
+    const {
+      row,
+      onRemove,
+      id,
+      onHover,
+      offHover,
+      illuminated,
+      cells
+    } = this.props;
+    // const { sumHover } = this.state;
 
     return (
       <tr id={id}>
-        {line.cells.map(element => (
+        {row.map(cellId => (
           <ArrayCell
-            sumHover={sumHover}
-            key={element.id}
-            id={element.id}
-            lineId={id}
+            // sumHover={sumHover}
+            key={cellId}
+            id={cellId}
+            onHover={onHover}
+            offHover={offHover}
+            illuminated={illuminated}
+            cell={cells[cellId]}
           />
         ))}
-        <SumCell onHover={this.hoverHandler} id={id} />
-        <td className={styles.removeButtonTd}>
+        {/* <SumCell onHover={this.hoverHandler} id={id} /> */}
+        {/* <td className={styles.removeButtonTd}>
           <button className={styles.removeButton} onClick={onRemove}>
             &times;
           </button>
-        </td>
+        </td> */}
       </tr>
     );
   }
@@ -54,14 +71,17 @@ class ArrayRow extends Component {
 
 const mapStateToProps = (state, { id }) => {
   return {
-    line: selectors.getLine(state, id)
+    row: selectors.getRow(state, id),
+    cells: selectors.getCells(state)
   };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    onRemove: () => dispatch(actions.removeLine(ownProps.id))
+    // onRemove: () => dispatch(actions.removeRow(ownProps.id))
   };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ArrayRow);
+
+// export default ArrayRow;

@@ -1,16 +1,16 @@
 import types from "./types";
 
-export const removeLine = id => {
+export const removeRow = id => {
   return {
-    type: types.REMOVE_LINE,
+    type: types.REMOVE_ROW,
     payload: { id }
   };
 };
 
-export const addLine = newLine => {
+export const addRow = newRow => {
   return {
-    type: types.ADD_LINE,
-    payload: { newLine }
+    type: types.ADD_ROW,
+    payload: { newRow }
   };
 };
 
@@ -21,10 +21,24 @@ export const saveArray = array => {
   };
 };
 
-export const increase = (id, lineId) => {
+export const saveRows = rows => {
+  return {
+    type: types.SAVE_ROWS,
+    payload: { rows }
+  };
+};
+
+export const saveCells = cells => {
+  return {
+    type: types.SAVE_CELLS,
+    payload: { cells }
+  };
+};
+
+export const increase = (id, rowId) => {
   return {
     type: types.INCREASE,
-    payload: { id, lineId }
+    payload: { id, rowId }
   };
 };
 
@@ -35,9 +49,9 @@ export const saveParams = params => {
   };
 };
 
-export const illuminate = illuminated => {
-  return {
-    type: types.ILLUMINATE,
-    payload: { illuminated }
-  };
-};
+// export const illuminate = illuminated => {
+//   return {
+//     type: types.ILLUMINATE,
+//     payload: { illuminated }
+//   };
+// };

@@ -3,12 +3,12 @@ import { connect } from "react-redux";
 import * as actions from "../../redux/actions";
 import * as selectors from "../../redux/selectors";
 import createRandomArray from "../../services/randomArray";
-import styles from "./AddLineButton.module.css";
+import styles from "./AddRowButton.module.css";
 
-class AddLineButton extends Component {
+class AddRowButton extends Component {
   addHandler = () => {
-    const { lineLength, onAdd } = this.props;
-    onAdd(createRandomArray(1, lineLength));
+    const { onAdd } = this.props;
+    onAdd(createRandomArray(1));
   };
 
   render() {
@@ -22,14 +22,14 @@ class AddLineButton extends Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onAdd: newLine => dispatch(actions.addLine(newLine))
+    onAdd: newRow => dispatch(actions.addRow(newRow))
   };
 };
 
 const mapStateToProps = state => {
   return {
-    lineLength: selectors.getColumnsQty(state)
+    // rowLength: selectors.getColumnsQty(state)
   };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(AddLineButton);
+export default connect(mapStateToProps, mapDispatchToProps)(AddRowButton);
