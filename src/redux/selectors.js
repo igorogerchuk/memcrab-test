@@ -10,6 +10,8 @@ export const getIlluminatedQty = state => Number(state.params.x);
 
 export const getRow = (state, id) => state.rows[id];
 
+export const getRows = state => state.rows;
+
 export const getCell = (state, id) => state.cells[id];
 
 export const getCells = state => state.cells;

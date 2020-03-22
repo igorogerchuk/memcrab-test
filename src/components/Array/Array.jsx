@@ -23,7 +23,7 @@ class Array extends PureComponent {
 
   render() {
     console.log("array");
-    const { array } = this.props;
+    const { array, rows, cells } = this.props;
     return (
       array.length > 0 && (
         <div className={styles.tableWrapper}>
@@ -33,6 +33,8 @@ class Array extends PureComponent {
                 <ArrayRow
                   key={rowId}
                   id={rowId}
+                  row={rows[rowId]}
+                  cells={cells}
                   onHover={this.hoverOnHandler}
                   offHover={this.hoverOffHandler}
                   illuminated={this.state.illuminated}
@@ -54,6 +56,7 @@ class Array extends PureComponent {
 
 const mapStateToProps = state => ({
   array: selectors.getArray(state),
+  rows: selectors.getRows(state),
   cells: selectors.getCells(state),
   illuminatedQty: selectors.getIlluminatedQty(state)
   // columnQty: selectors.getColumnsQty(state)
