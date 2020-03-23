@@ -1,8 +1,5 @@
 const getClosestNumbers = (cells, pointId, illuminatedQty) => {
-  const {
-    [pointId]: {},
-    ...cellsWithoutPoint
-  } = cells;
+  const { [pointId]: deleted, ...cellsWithoutPoint } = cells;
   const cellsArray = Object.values(cellsWithoutPoint);
 
   if (illuminatedQty < cellsArray.length) {

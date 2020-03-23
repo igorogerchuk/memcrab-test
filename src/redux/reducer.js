@@ -1,73 +1,53 @@
 import types from "./types";
 import { combineReducers } from "redux";
 
-// const element = (state, { type, payload }) => {
-//   switch (type) {
-//     case types.INCREASE:
-//       return state.id === payload.id
-//         ? { ...state, amount: state.amount + 1 }
-//         : state;
-//     default:
-//       break;
-//   }
-// };
-
-// const row = (state, action) => {
-//   switch (action.type) {
-//      case types.ADD_ROW:
-//        return action.payload.newRow;
-//     case types.REMOVE_ROW:
-//       return state.id !== action.payload.id;
-//     case types.INCREASE:
-//       if (state.id === action.payload.rowId) {
-//         return { ...state, cells: state.cells.map(el => element(el, action)) };
-//       }
-//       return state;
-//     default:
-//       break;
-//   }
-// };
-
-const arrayReducer = (state = [], action) => {
-  switch (action.type) {
-    // case types.ADD_ROW:
-    //   return [...state, ...row(undefined, action)];
-    // case types.REMOVE_ROW:
-    //   return state.filter(l => row(l, action));
+const arrayReducer = (state = [], { type, payload }) => {
+  switch (type) {
+    case types.ADD_ROW:
+      return [...state, ...payload.rowId];
+    case types.REMOVE_ROW:
+      return state.filter(rowId => rowId !== payload.id);
     case types.SAVE_ARRAY:
-      return action.payload.array;
-    // case types.INCREASE:
-    //   return state.map(l => row(l, action));
+      return payload.array;
     default:
       return state;
   }
 };
 
-const rowsReducer = (state = {}, action) => {
-  switch (action.type) {
-    // case types.ADD_ROW:
-    //   return [...state, ...row(undefined, action)];
-    // case types.REMOVE_ROW:
-    //   return state.filter(l => row(l, action));
+const rowsReducer = (state = {}, { type, payload }) => {
+  switch (type) {
+    case types.ADD_ROW:
+      return { ...state, ...payload.row };
+    case types.REMOVE_ROW:
+      const { [payload.id]: deleted, ...withoutDeleted } = state;
+      return withoutDeleted;
     case types.SAVE_ROWS:
-      return action.payload.rows;
-    // case types.INCREASE:
-    //   return state.map(l => row(l, action));
+      return payload.rows;
     default:
       return state;
   }
 };
 
-const cellsReducer = (state = {}, action) => {
-  switch (action.type) {
-    // case types.ADD_ROW:
-    //   return [...state, ...row(undefined, action)];
-    // case types.REMOVE_ROW:
-    //   return state.filter(l => row(l, action));
+const cellsReducer = (state = {}, { type, payload }) => {
+  switch (type) {
+    case types.ADD_ROW:
+      return { ...state, ...payload.cells };
+    case types.REMOVE_ROW:
+      const withoutDeleted = payload.cellsIds.reduce((acc, cellId) => {
+        const { [cellId]: deleted, ...withoutDeleted } = acc;
+        return withoutDeleted;
+      }, state);
+      return withoutDeleted;
     case types.SAVE_CELLS:
-      return action.payload.cells;
-    // case types.INCREASE:
-    //   return state.map(l => row(l, action));
+      return payload.cells;
+    case types.INCREASE:
+      return {
+        ...state,
+        [payload.id]: {
+          ...state[payload.id],
+          amount: state[payload.id].amount + 1
+        }
+      };
     default:
       return state;
   }
@@ -82,21 +62,11 @@ const paramsReducer = (state = {}, action) => {
   }
 };
 
-// const illuminatedReducer = (state = {}, action) => {
-//   switch (action.type) {
-//     case types.ILLUMINATE:
-//       return action.payload.illuminated;
-//     default:
-//       return state;
-//   }
-// };
-
 const reducer = combineReducers({
   array: arrayReducer,
   rows: rowsReducer,
   cells: cellsReducer,
   params: paramsReducer
-  // illuminated: illuminatedReducer
 });
 
 export default reducer;

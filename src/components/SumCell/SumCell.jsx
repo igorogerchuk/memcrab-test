@@ -1,7 +1,12 @@
 import React from "react";
-import { connect } from "react-redux";
-import * as selectors from "../../redux/selectors";
 import styles from "./SumCell.module.css";
+
+const areEqual = ({ sum }, nextProps) => {
+  if (nextProps.sum !== sum) {
+    return false;
+  }
+  return true;
+};
 
 const SumCell = ({ sum, onHover }) => (
   <td onMouseEnter={onHover} onMouseLeave={onHover} className={styles.sumCell}>
@@ -9,10 +14,4 @@ const SumCell = ({ sum, onHover }) => (
   </td>
 );
 
-const mapStateToProps = (state, { id }) => {
-  return {
-    sum: selectors.getSum(state, id)
-  };
-};
-
-export default connect(mapStateToProps)(React.memo(SumCell));
+export default React.memo(SumCell, areEqual);

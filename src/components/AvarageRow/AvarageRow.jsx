@@ -1,17 +1,13 @@
 import React from "react";
 import { connect } from "react-redux";
-import styles from "./AvarageRow.module.css";
 import * as selectors from "../../redux/selectors";
+import AverageCell from "../AverageCell";
 
 const AvarageRow = ({ averageRow }) => (
   <tr>
-    {averageRow.map(element => {
-      return (
-        <td className={styles.avarageTd} key={element.id} id={element.id}>
-          {element.amount}
-        </td>
-      );
-    })}
+    {averageRow.map((cell, index) => (
+      <AverageCell key={index} averageCell={cell} />
+    ))}
   </tr>
 );
 
