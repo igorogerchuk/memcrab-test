@@ -2,42 +2,41 @@ import { createSelector } from "reselect";
 
 export const getArray = state => state.array;
 
+export const getRows = state => state.rows;
+
+export const getCells = state => state.cells;
+
 export const getColumnsQty = state => Number(state.params.n);
 
-export const getNumbersQty = state => Number(state.params.x);
+export const getIlluminatedQty = state => Number(state.params.x);
 
-export const getIlluminated = state => state.illuminated;
-
-export const getLine = (state, id) => {
-  return getArray(state).find(line => line.id === id);
-};
-
-export const getCell = (state, id, lineId) => {
-  return getLine(state, lineId).cells.find(cell => cell.id === id);
-};
-
-export const getSum = (state, id) => {
-  return getLine(state, id).cells.reduce(
-    (sum, element) => (sum += element.amount),
-    0
-  );
-};
-
-const uuidv4 = require("uuid/v4");
+export const getSumColumn = createSelector(
+  [getRows, getCells],
+  (rows, cells) => {
+    const sumColumn = [];
+    const cellsIds = Object.values(rows);
+    for (let i = 0; i < cellsIds.length; i++) {
+      let rowTotal = 0;
+      for (let j = 0; j < cellsIds[i].length; j++) {
+        rowTotal += cells[cellsIds[i][j]].amount;
+      }
+      sumColumn.push(rowTotal);
+    }
+    return sumColumn;
+  }
+);
 
 export const getAvarageRow = createSelector(
-  [getArray, getColumnsQty],
-  (array, columnQty) => {
+  [getRows, getCells],
+  (rows, cells) => {
     const avarageRow = [];
-    for (let j = 0; j < columnQty; j++) {
+    const cellsIds = Object.values(rows);
+    for (let j = 0; j < cellsIds[0].length; j++) {
       let columnTotal = 0;
-      for (let i = 0; i < array.length; i++) {
-        columnTotal += array[i].cells[j].amount;
+      for (let i = 0; i < cellsIds.length; i++) {
+        columnTotal += cells[cellsIds[i][j]].amount;
       }
-      avarageRow.push({
-        id: uuidv4(),
-        amount: (columnTotal / array.length).toFixed(2)
-      });
+      avarageRow.push((columnTotal / cellsIds.length).toFixed(2));
     }
     return avarageRow;
   }

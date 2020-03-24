@@ -9,31 +9,22 @@ class Inputs extends Component {
 
   inputHandler = e => {
     const { id, value } = e.target;
-    switch (id) {
-      case "m":
-        this.setState(state => ({ ...state, m: value }));
-        break;
-      case "n":
-        this.setState(state => ({ ...state, n: value }));
-        break;
-      case "x":
-        this.setState(state => ({ ...state, x: value }));
-        break;
-      default:
-        break;
-    }
+    this.setState(state => ({ ...state, [id]: value }));
   };
 
   submitHandler = e => {
     e.preventDefault();
     const { m, n, x } = this.state;
-    const { onSaveParams, onSaveArray } = this.props;
+    const { onSaveParams, onSaveArray, onSaveRows, onSaveCells } = this.props;
     if (m <= 0 || n <= 0 || x < 0) {
       alert("array parameters must be more then 0");
       return;
     }
-    onSaveArray(createRandomArray(m, n));
     onSaveParams({ n, x });
+    const { array, rows, cells } = createRandomArray(m, n);
+    onSaveArray(array);
+    onSaveRows(rows);
+    onSaveCells(cells);
 
     this.setState({ m: "", n: "", x: "" });
   };
@@ -46,12 +37,12 @@ class Inputs extends Component {
         <form className={styles.form} onSubmit={this.submitHandler}>
           <div className={styles.inputWrapper}>
             <label htmlFor="m" className={styles.label}>
-              Lines quantity:
+              Rows quantity:
             </label>
             <input
               className={styles.input}
               type="number"
-              name="lines"
+              name="rows"
               id="m"
               onChange={this.inputHandler}
               value={m}
@@ -101,8 +92,10 @@ class Inputs extends Component {
 
 const mapDispatchToProps = dispatch => {
   return {
+    onSaveParams: params => dispatch(actions.saveParams(params)),
     onSaveArray: array => dispatch(actions.saveArray(array)),
-    onSaveParams: params => dispatch(actions.saveParams(params))
+    onSaveRows: rows => dispatch(actions.saveRows(rows)),
+    onSaveCells: cells => dispatch(actions.saveCells(cells))
   };
 };
 

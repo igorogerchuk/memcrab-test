@@ -1,43 +1,53 @@
 import types from "./types";
 import { combineReducers } from "redux";
 
-const element = (state, { type, payload }) => {
+const arrayReducer = (state = [], { type, payload }) => {
   switch (type) {
-    case types.INCREASE:
-      return state.id === payload.id
-        ? { ...state, amount: state.amount + 1 }
-        : state;
-    default:
-      break;
-  }
-};
-
-const line = (state, action) => {
-  switch (action.type) {
-    case types.ADD_LINE:
-      return action.payload.newLine;
-    case types.REMOVE_LINE:
-      return state.id !== action.payload.id;
-    case types.INCREASE:
-      if (state.id === action.payload.lineId) {
-        return { ...state, cells: state.cells.map(el => element(el, action)) };
-      }
-      return state;
-    default:
-      break;
-  }
-};
-
-const arrayReducer = (state = [], action) => {
-  switch (action.type) {
-    case types.ADD_LINE:
-      return [...state, ...line(undefined, action)];
-    case types.REMOVE_LINE:
-      return state.filter(l => line(l, action));
+    case types.ADD_ROW:
+      return [...state, ...payload.rowId];
+    case types.REMOVE_ROW:
+      return state.filter(rowId => rowId !== payload.id);
     case types.SAVE_ARRAY:
-      return action.payload.array;
+      return payload.array;
+    default:
+      return state;
+  }
+};
+
+const rowsReducer = (state = {}, { type, payload }) => {
+  switch (type) {
+    case types.ADD_ROW:
+      return { ...state, ...payload.row };
+    case types.REMOVE_ROW:
+      const { [payload.id]: deleted, ...withoutDeleted } = state;
+      return withoutDeleted;
+    case types.SAVE_ROWS:
+      return payload.rows;
+    default:
+      return state;
+  }
+};
+
+const cellsReducer = (state = {}, { type, payload }) => {
+  switch (type) {
+    case types.ADD_ROW:
+      return { ...state, ...payload.cells };
+    case types.REMOVE_ROW:
+      const withoutDeleted = payload.cellsIds.reduce((acc, cellId) => {
+        const { [cellId]: deleted, ...withoutDeleted } = acc;
+        return withoutDeleted;
+      }, state);
+      return withoutDeleted;
+    case types.SAVE_CELLS:
+      return payload.cells;
     case types.INCREASE:
-      return state.map(l => line(l, action));
+      return {
+        ...state,
+        [payload.id]: {
+          ...state[payload.id],
+          amount: state[payload.id].amount + 1
+        }
+      };
     default:
       return state;
   }
@@ -52,19 +62,11 @@ const paramsReducer = (state = {}, action) => {
   }
 };
 
-const illuminatedReducer = (state = {}, action) => {
-  switch (action.type) {
-    case types.ILLUMINATE:
-      return action.payload.illuminated;
-    default:
-      return state;
-  }
-};
-
 const reducer = combineReducers({
   array: arrayReducer,
-  params: paramsReducer,
-  illuminated: illuminatedReducer
+  rows: rowsReducer,
+  cells: cellsReducer,
+  params: paramsReducer
 });
 
 export default reducer;

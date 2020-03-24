@@ -1,88 +1,61 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import * as actions from "../../redux/actions";
-import * as selectors from "../../redux/selectors";
-import getClosestNumbers from "../../services/closestNumbers";
+import React from "react";
 import styles from "./ArrayCell.module.css";
 
-class ArrayCell extends Component {
-  hoverOnHandler = () => {
-    const { array, numberQty, element, onHover } = this.props;
-    const closestNumbers = getClosestNumbers(array, element, numberQty);
-    onHover(closestNumbers);
-  };
-
-  hoverOffHandler = () => {
-    const { onHover } = this.props;
-    onHover({});
-  };
-
-  shouldComponentUpdate(nextProps, nextState) {
-    const { element, illuminated, sumHover } = this.props;
-    if (nextProps.sumHover !== sumHover) {
-      return true;
-    }
-    if (nextProps.element.amount !== element.amount) {
-      return true;
-    }
-    if (nextProps.illuminated[element.id] !== illuminated[element.id]) {
-      return true;
-    }
-
+const areEqual = ({ illuminated, id, cell, sumHover }, nextProps) => {
+  if (nextProps.illuminated[id] !== illuminated[id]) {
     return false;
   }
 
-  render() {
-    console.log("td");
-    const { element, sum, sumHover, onIncrease, illuminated } = this.props;
-
-    let bg = {
-      background:
-        "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)"
-    };
-
-    const percents = (element.amount / sum) * 100;
-
-    if (illuminated[element.id]) {
-      bg.background =
-        "linear-gradient(110deg, #f90c04 0%, #ed413b 10%, #fff 20%, #fff 25%, #f0f0f0 26%, #fff 28%, #f53d37 55%, #f90c04 100%)";
-    }
-
-    if (sumHover) {
-      bg.background = `linear-gradient(to top, #fff200, #1e9600 ${percents}%, transparent ${percents}%)`;
-    }
-
-    return (
-      <td
-        className={styles.simpleTd}
-        onClick={onIncrease}
-        id={element.id}
-        onMouseEnter={this.hoverOnHandler}
-        onMouseLeave={this.hoverOffHandler}
-        style={bg}
-      >
-        {sumHover ? percents.toFixed(1) + "%" : element.amount}
-      </td>
-    );
+  if (nextProps.cell.amount !== cell.amount) {
+    return false;
   }
-}
-export default ArrayCell;
 
-// const mapStateToProps = (state, { id, lineId }) => {
-//   return {
-//     array: selectors.getArray(state),
-//     numberQty: selectors.getNumbersQty(state),
-//     illuminated: selectors.getIlluminated(state),
-//     element: selectors.getCell(state, id, lineId),
-//     sum: selectors.getSum(state, lineId)
-//   };
-// };
+  if (nextProps.sumHover !== sumHover) {
+    return false;
+  }
 
-// const mapDispatchToProps = (dispatch, { id, lineId }) => {
-//   return {
-//     onIncrease: () => dispatch(actions.increase(id, lineId)),
-//     onHover: closestNumbers => dispatch(actions.illuminate(closestNumbers))
-//   };
-// };
+  return true;
+};
 
-// export default connect(mapStateToProps, mapDispatchToProps)(ArrayCell);
+const ArrayCell = ({
+  cell,
+  id,
+  onHover,
+  offHover,
+  illuminated,
+  onIncrease,
+  sumHover,
+  sum
+}) => {
+  let style = {
+    background:
+      "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)"
+  };
+  let value = cell.amount;
+
+  if (illuminated[id]) {
+    style.background =
+      "linear-gradient(110deg, #f90c04 0%, #ed413b 10%, #fff 20%, #fff 25%, #f0f0f0 26%, #fff 28%, #f53d37 55%, #f90c04 100%)";
+  }
+
+  if (sumHover) {
+    const percents = (cell.amount / sum) * 100;
+    style.background = `linear-gradient(to top, #fff200, #1e9600 ${percents}%, transparent ${percents}%)`;
+    value = percents.toFixed(1) + "%";
+  }
+
+  return (
+    <td
+      className={styles.simpleTd}
+      onClick={onIncrease}
+      id={id}
+      onMouseEnter={onHover}
+      onMouseLeave={offHover}
+      style={style}
+    >
+      {value}
+    </td>
+  );
+};
+
+export default React.memo(ArrayCell, areEqual);

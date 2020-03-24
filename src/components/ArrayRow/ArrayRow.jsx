@@ -1,98 +1,58 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import * as actions from "../../redux/actions";
-import * as selectors from "../../redux/selectors";
+import React, { useState } from "react";
 import ArrayCell from "../ArrayCell";
 import SumCell from "../SumCell";
 import styles from "./ArrayRow.module.css";
 
-class ArrayRow extends Component {
-  state = { sumHover: false };
-
-  hoverHandler = () => {
-    this.setState(state => {
-      return {
-        sumHover: !state.sumHover
-      };
-    });
-  };
-
-  shouldComponentUpdate(nextProps, nextState) {
-    const { sumHover } = this.state;
-    const { illuminated, line } = this.props;
-
-    if (nextState.sumHover !== sumHover) {
-      return true;
+const areEqual = ({ illuminated, row, cells }, nextProps) => {
+  for (let cellId of row) {
+    if (nextProps.illuminated[cellId] !== illuminated[cellId]) {
+      return false;
     }
-    for (let i = 0; i < line.cells.length; i++) {
-      if (
-        illuminated[line.cells[i].id] !==
-        nextProps.illuminated[line.cells[i].id]
-      ) {
-        return true;
-      }
+    if (nextProps.cells[cellId].amount !== cells[cellId].amount) {
+      return false;
     }
-    return false;
   }
-
-  render() {
-    console.log("row");
-    const {
-      line,
-      onRemove,
-      id,
-      array,
-      numberQty,
-      illuminated,
-      sum,
-      onHover
-    } = this.props;
-    const { sumHover } = this.state;
-
-    return (
-      <tr id={id}>
-        {line.cells.map(element => (
-          <ArrayCell
-            sumHover={sumHover}
-            key={element.id}
-            element={element}
-            array={array}
-            numberQty={numberQty}
-            illuminated={illuminated}
-            sum={sum}
-            onHover={onHover}
-            // id={element.id}
-            // lineId={id}
-          />
-        ))}
-        <SumCell onHover={this.hoverHandler} id={id} />
-        <td className={styles.removeButtonTd}>
-          <button className={styles.removeButton} onClick={onRemove}>
-            &times;
-          </button>
-        </td>
-      </tr>
-    );
-  }
-}
-
-const mapStateToProps = (state, { id }) => {
-  return {
-    line: selectors.getLine(state, id),
-
-    array: selectors.getArray(state),
-    numberQty: selectors.getNumbersQty(state),
-    illuminated: selectors.getIlluminated(state),
-    sum: selectors.getSum(state, id)
-  };
+  return true;
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => {
-  return {
-    onRemove: () => dispatch(actions.removeLine(ownProps.id)),
+const ArrayRow = ({
+  row,
+  id,
+  onHover,
+  offHover,
+  illuminated,
+  cells,
+  onIncrease,
+  sumCell,
+  onRemove
+}) => {
+  const [sumHover, setSumHover] = useState(false);
 
-    onHover: closestNumbers => dispatch(actions.illuminate(closestNumbers))
-  };
+  const hoverHandler = () => setSumHover(sumHover => !sumHover);
+
+  return (
+    <tr id={id}>
+      {row.map(cellId => (
+        <ArrayCell
+          sumHover={sumHover}
+          sum={sumCell}
+          key={cellId}
+          id={cellId}
+          onHover={onHover}
+          offHover={offHover}
+          illuminated={illuminated}
+          cell={cells[cellId]}
+          onIncrease={onIncrease}
+        />
+      ))}
+      <SumCell onHover={hoverHandler} sum={sumCell} />
+      <td className={styles.removeButtonTd}>
+        <button className={styles.removeButton} onClick={onRemove}>
+          &times;
+        </button>
+      </td>
+    </tr>
+  );
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(ArrayRow);
+export default React.memo(ArrayRow, areEqual);

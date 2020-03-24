@@ -1,22 +1,24 @@
-const getClosestNumbers = (array, element, numbersQty) => {
-  let inlineArray = array.reduce((acc, line) => [...acc, ...line.cells], []);
+const getClosestNumbers = (cells, pointId, illuminatedQty) => {
+  const { [pointId]: deleted, ...cellsWithoutPoint } = cells;
+  const cellsArray = Object.values(cellsWithoutPoint);
 
-  if (numbersQty < inlineArray.length - 1) {
-    inlineArray.sort(
+  if (illuminatedQty < cellsArray.length) {
+    const pointCell = cells[pointId];
+    cellsArray.sort(
       (a, b) =>
-        Math.abs(a.amount - element.amount) -
-        Math.abs(b.amount - element.amount)
+        Math.abs(a.amount - pointCell.amount) -
+        Math.abs(b.amount - pointCell.amount)
     );
   }
 
-  const closestNumbers = inlineArray.slice(0, numbersQty + 1);
+  const closestNumbers = cellsArray.slice(0, illuminatedQty);
 
   const closestNumbersIds = closestNumbers.reduce(
-    (acc, element) => ({ ...acc, [element.id]: true }),
+    (acc, cell) => ({ ...acc, [cell.id]: true }),
     {}
   );
 
-  return { [element.id]: true, ...closestNumbersIds };
+  return { [pointId]: true, ...closestNumbersIds };
 };
 
 export default getClosestNumbers;
