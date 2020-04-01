@@ -1,50 +1,89 @@
+// @flow
 import types from "./types";
+import type { ArrayState, RowsState, CellsState, ParamsState } from "./reducer";
 
-export const removeRow = (id, cellsIds) => {
-  return {
-    type: types.REMOVE_ROW,
-    payload: { id, cellsIds }
-  };
+type RemoveRowAction = {
+  type: typeof types.REMOVE_ROW,
+  payload: { id: string, cellsIds: Array<string> }
 };
 
-export const addRow = (rowId, row, cells) => {
-  return {
-    type: types.ADD_ROW,
-    payload: { rowId, row, cells }
-  };
+export const removeRow = (
+  id: string,
+  cellsIds: Array<string>
+): RemoveRowAction => ({
+  type: types.REMOVE_ROW,
+  payload: { id, cellsIds }
+});
+
+type AddRowAction = {
+  type: typeof types.ADD_ROW,
+  payload: { rowId: string, row: RowsState, cells: CellsState }
 };
 
-export const saveArray = array => {
-  return {
-    type: types.SAVE_ARRAY,
-    payload: { array }
-  };
+export const addRow = (
+  rowId: string,
+  row: RowsState,
+  cells: CellsState
+): AddRowAction => ({
+  type: types.ADD_ROW,
+  payload: { rowId, row, cells }
+});
+
+type SaveArrayAction = {
+  type: typeof types.SAVE_ARRAY,
+  payload: { array: ArrayState }
 };
 
-export const saveRows = rows => {
-  return {
-    type: types.SAVE_ROWS,
-    payload: { rows }
-  };
+export const saveArray = (array: ArrayState): SaveArrayAction => ({
+  type: types.SAVE_ARRAY,
+  payload: { array }
+});
+
+type SaveRowsAction = {
+  type: typeof types.SAVE_ROWS,
+  payload: { rows: RowsState }
 };
 
-export const saveCells = cells => {
-  return {
-    type: types.SAVE_CELLS,
-    payload: { cells }
-  };
+export const saveRows = (rows: RowsState): SaveRowsAction => ({
+  type: types.SAVE_ROWS,
+  payload: { rows }
+});
+
+type SaveCellsAction = {
+  type: typeof types.SAVE_CELLS,
+  payload: { cells: CellsState }
 };
 
-export const increase = id => {
-  return {
-    type: types.INCREASE,
-    payload: { id }
-  };
+export const saveCells = (cells: CellsState): SaveCellsAction => ({
+  type: types.SAVE_CELLS,
+  payload: { cells }
+});
+
+type IncreaseAction = {
+  type: typeof types.INCREASE,
+  payload: { id: string }
 };
 
-export const saveParams = params => {
-  return {
-    type: types.SAVE_PARAMS,
-    payload: { params }
-  };
+export const increase = (id: string): IncreaseAction => ({
+  type: types.INCREASE,
+  payload: { id }
+});
+
+type SaveParamsAction = {
+  type: typeof types.SAVE_PARAMS,
+  payload: { params: ParamsState }
 };
+
+export const saveParams = (params: ParamsState): SaveParamsAction => ({
+  type: types.SAVE_PARAMS,
+  payload: { params }
+});
+
+export type Action =
+  | RemoveRowAction
+  | AddRowAction
+  | SaveArrayAction
+  | SaveRowsAction
+  | SaveCellsAction
+  | IncreaseAction
+  | SaveParamsAction;

@@ -6,9 +6,9 @@ export const getRows = state => state.rows;
 
 export const getCells = state => state.cells;
 
-export const getColumnsQty = state => Number(state.params.n);
+export const getColumnsQty = state => state.params.n;
 
-export const getIlluminatedQty = state => Number(state.params.x);
+export const getIlluminatedQty = state => state.params.x;
 
 export const getSumColumn = createSelector(
   [getRows, getCells],

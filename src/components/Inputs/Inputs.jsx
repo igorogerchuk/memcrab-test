@@ -1,26 +1,47 @@
+// @flow
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as actions from "../../redux/actions";
 import createRandomArray from "../../services/randomArray";
 import styles from "./Inputs.module.css";
+import type {
+  ArrayState,
+  RowsState,
+  CellsState,
+  ParamsState
+} from "../../redux/reducer";
 
-class Inputs extends Component {
+type State = {
+  m: string,
+  n: string,
+  x: string
+};
+
+type Props = {|
+  onSaveParams: (params: ParamsState) => void,
+  onSaveArray: (array: ArrayState) => void,
+  onSaveRows: (rows: RowsState) => void,
+  onSaveCells: (cells: CellsState) => void
+|};
+
+class Inputs extends Component<Props, State> {
   state = { m: "", n: "", x: "" };
 
-  inputHandler = e => {
+  inputHandler = (e: SyntheticInputEvent<HTMLInputElement>) => {
+    (e.target: HTMLInputElement);
     const { id, value } = e.target;
     this.setState(state => ({ ...state, [id]: value }));
   };
 
-  submitHandler = e => {
+  submitHandler = (e: SyntheticInputEvent<HTMLInputElement>) => {
     e.preventDefault();
     const { m, n, x } = this.state;
     const { onSaveParams, onSaveArray, onSaveRows, onSaveCells } = this.props;
-    if (m <= 0 || n <= 0 || x < 0) {
+    if (Number(m) <= 0 || Number(n) <= 0 || Number(x) < 0) {
       alert("array parameters must be more then 0");
       return;
     }
-    onSaveParams({ n, x });
+    onSaveParams({ n: Number(n), x: Number(x) });
     const { array, rows, cells } = createRandomArray(m, n);
     onSaveArray(array);
     onSaveRows(rows);
@@ -90,13 +111,14 @@ class Inputs extends Component {
   }
 }
 
-const mapDispatchToProps = dispatch => {
-  return {
-    onSaveParams: params => dispatch(actions.saveParams(params)),
-    onSaveArray: array => dispatch(actions.saveArray(array)),
-    onSaveRows: rows => dispatch(actions.saveRows(rows)),
-    onSaveCells: cells => dispatch(actions.saveCells(cells))
-  };
-};
+const mapDispatchToProps = (dispatch: *): Props => ({
+  onSaveParams: params => dispatch(actions.saveParams(params)),
+  onSaveArray: array => dispatch(actions.saveArray(array)),
+  onSaveRows: rows => dispatch(actions.saveRows(rows)),
+  onSaveCells: cells => dispatch(actions.saveCells(cells))
+});
 
-export default connect(null, mapDispatchToProps)(Inputs);
+export default connect<Props, {||}, _, _, _, _>(
+  null,
+  mapDispatchToProps
+)(Inputs);
