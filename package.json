@@ -29,7 +29,11 @@
       "src/**/*.jsx",
       "src/**/*.js"
     ],
-    "reportTypes": "json"
+    "reportTypes": [
+      "json",
+      "text",
+      "html"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"

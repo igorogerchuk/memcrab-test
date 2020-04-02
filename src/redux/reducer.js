@@ -1,10 +1,10 @@
 // @flow
-import types from "./types";
-import { combineReducers } from "redux";
-import type { Action } from "./actions";
-import type { Reducer } from "redux";
 
-export type ArrayState = $ReadOnlyArray<string>;
+import { combineReducers } from "redux";
+import type { Reducer } from "redux";
+import * as types from "./types";
+import type { ArrayState, RowsState, CellsState, ParamsState } from "./types";
+import type { Action } from "./actions";
 
 const arrayReducer = (state: ArrayState = [], action: Action): ArrayState => {
   switch (action.type) {
@@ -18,10 +18,6 @@ const arrayReducer = (state: ArrayState = [], action: Action): ArrayState => {
       return state;
   }
 };
-
-export type RowsState = $ReadOnly<{
-  [key: string]: $ReadOnlyArray<string>
-}>;
 
 const rowsReducer = (state: RowsState = {}, action: Action): RowsState => {
   switch (action.type) {
@@ -37,19 +33,13 @@ const rowsReducer = (state: RowsState = {}, action: Action): RowsState => {
   }
 };
 
-export type CellsState = $ReadOnly<{
-  [key: string]: $ReadOnly<{ id: string, amount: number }>
-}>;
-
 const cellsReducer = (state: CellsState = {}, action: Action): CellsState => {
   switch (action.type) {
     case types.ADD_ROW:
       return { ...state, ...action.payload.cells };
     case types.REMOVE_ROW:
-      const withoutDeleted = action.payload.cellsIds.reduce((acc, cellId) => {
-        const { [cellId]: deleted, ...withoutDeleted } = acc;
-        return withoutDeleted;
-      }, state);
+      const withoutDeleted = { ...state };
+      action.payload.cellsIds.forEach(cellId => delete withoutDeleted[cellId]);
       return withoutDeleted;
     case types.SAVE_CELLS:
       return action.payload.cells;
@@ -65,8 +55,6 @@ const cellsReducer = (state: CellsState = {}, action: Action): CellsState => {
       return state;
   }
 };
-
-export type ParamsState = $ReadOnly<{ n: number, x: number }>;
 
 const paramsReducer = (
   state: ParamsState = {},

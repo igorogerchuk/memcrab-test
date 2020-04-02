@@ -9,7 +9,7 @@ import type {
   RowsState,
   CellsState,
   ParamsState
-} from "../../redux/reducer";
+} from "../../redux/types";
 
 type State = {
   m: string,
@@ -28,7 +28,6 @@ class Inputs extends Component<Props, State> {
   state = { m: "", n: "", x: "" };
 
   inputHandler = (e: SyntheticInputEvent<HTMLInputElement>) => {
-    (e.target: HTMLInputElement);
     const { id, value } = e.target;
     this.setState(state => ({ ...state, [id]: value }));
   };
