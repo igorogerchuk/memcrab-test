@@ -2,6 +2,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import * as actions from "../../redux/actions";
+import type { Action } from "../../redux/actions";
+import type { Dispatch } from "redux";
 import createRandomArray from "../../services/randomArray";
 import styles from "./Inputs.module.css";
 import type {
@@ -17,12 +19,19 @@ type State = {
   x: string
 };
 
-type Props = {|
-  onSaveParams: (params: ParamsState) => void,
-  onSaveArray: (array: ArrayState) => void,
-  onSaveRows: (rows: RowsState) => void,
-  onSaveCells: (cells: CellsState) => void
+type ownProps = {||};
+
+type DispatchProps = {|
+  onSaveParams: (params: ParamsState) => {},
+  onSaveArray: (array: ArrayState) => {},
+  onSaveRows: (rows: RowsState) => {},
+  onSaveCells: (cells: CellsState) => {}
 |};
+
+type Props = {
+  ...ownProps,
+  ...DispatchProps
+};
 
 class Inputs extends Component<Props, State> {
   state = { m: "", n: "", x: "" };
@@ -41,7 +50,7 @@ class Inputs extends Component<Props, State> {
       return;
     }
     onSaveParams({ n: Number(n), x: Number(x) });
-    const { array, rows, cells } = createRandomArray(m, n);
+    const { array, rows, cells } = createRandomArray(Number(m), Number(n));
     onSaveArray(array);
     onSaveRows(rows);
     onSaveCells(cells);
@@ -110,14 +119,14 @@ class Inputs extends Component<Props, State> {
   }
 }
 
-const mapDispatchToProps = (dispatch: *): Props => ({
+const mapDispatchToProps = (dispatch: Dispatch<Action>): DispatchProps => ({
   onSaveParams: params => dispatch(actions.saveParams(params)),
   onSaveArray: array => dispatch(actions.saveArray(array)),
   onSaveRows: rows => dispatch(actions.saveRows(rows)),
   onSaveCells: cells => dispatch(actions.saveCells(cells))
 });
 
-export default connect<Props, {||}, _, _, _, _>(
+export default connect<Props, ownProps, _, _, _, _>(
   null,
   mapDispatchToProps
 )(Inputs);

@@ -1,9 +1,10 @@
+// @flow
 const uuidv4 = require("uuid/v4");
 
-const createRandomArray = (rowsQty, columnsQty) => {
-  const array = [];
-  const rows = {};
-  const cells = {};
+const createRandomArray = (rowsQty: number, columnsQty: number) => {
+  const array: Array<string> = [];
+  const rows: { [key: string]: Array<string> } = {};
+  const cells: { [key: string]: { id: string, amount: number } } = {};
 
   for (let i = 0; i < rowsQty; i++) {
     let rowId = uuidv4();

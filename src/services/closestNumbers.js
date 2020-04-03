@@ -1,6 +1,14 @@
-const getClosestNumbers = (cells, pointId, illuminatedQty) => {
-  const { [pointId]: deleted, ...cellsWithoutPoint } = cells;
-  const cellsArray = Object.values(cellsWithoutPoint);
+// @flow
+const getClosestNumbers = (
+  cells: { [id: string]: { id: string, amount: number } },
+  pointId: string,
+  illuminatedQty: number
+) => {
+  const cellsWithoutPoint = { ...cells };
+  delete cellsWithoutPoint[pointId];
+  const cellsArray: Array<{ id: string, amount: number }> = Object.keys(
+    cellsWithoutPoint
+  ).map((cell: string) => cellsWithoutPoint[cell]);
 
   if (illuminatedQty < cellsArray.length) {
     const pointCell = cells[pointId];
@@ -13,7 +21,7 @@ const getClosestNumbers = (cells, pointId, illuminatedQty) => {
 
   const closestNumbers = cellsArray.slice(0, illuminatedQty);
 
-  const closestNumbersIds = closestNumbers.reduce(
+  const closestNumbersIds: { [id: string]: boolean } = closestNumbers.reduce(
     (acc, cell) => ({ ...acc, [cell.id]: true }),
     {}
   );
