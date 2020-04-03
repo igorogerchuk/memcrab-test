@@ -1,20 +1,28 @@
+// @flow
 import { createSelector } from "reselect";
+import type {
+  ArrayState,
+  RowsState,
+  CellsState,
+  ParamsState,
+  State
+} from "./types";
 
-export const getArray = state => state.array;
+export const getArray = (state: State) => state.array;
 
-export const getRows = state => state.rows;
+export const getRows = (state: State) => state.rows;
 
-export const getCells = state => state.cells;
+export const getCells = (state: State) => state.cells;
 
-export const getColumnsQty = state => state.params.n;
+export const getColumnsQty = (state: State) => state.params.n;
 
-export const getIlluminatedQty = state => state.params.x;
+export const getIlluminatedQty = (state: State) => state.params.x;
 
-export const getSumColumn = createSelector(
+export const getSumColumn = createSelector<State, *, *, *, *>(
   [getRows, getCells],
   (rows, cells) => {
     const sumColumn = [];
-    const cellsIds = Object.values(rows);
+    const cellsIds = Object.keys(rows).map((rowId: string) => rows[rowId]);
     for (let i = 0; i < cellsIds.length; i++) {
       let rowTotal = 0;
       for (let j = 0; j < cellsIds[i].length; j++) {
@@ -26,17 +34,17 @@ export const getSumColumn = createSelector(
   }
 );
 
-export const getAvarageRow = createSelector(
+export const getAvarageRow = createSelector<State, *, *, *, *>(
   [getRows, getCells],
   (rows, cells) => {
     const avarageRow = [];
-    const cellsIds = Object.values(rows);
+    const cellsIds = Object.keys(rows).map((rowId: string) => rows[rowId]);
     for (let j = 0; j < cellsIds[0].length; j++) {
       let columnTotal = 0;
       for (let i = 0; i < cellsIds.length; i++) {
         columnTotal += cells[cellsIds[i][j]].amount;
       }
-      avarageRow.push((columnTotal / cellsIds.length).toFixed(2));
+      avarageRow.push(columnTotal / cellsIds.length);
     }
     return avarageRow;
   }

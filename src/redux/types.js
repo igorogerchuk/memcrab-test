@@ -15,3 +15,9 @@ export type CellsState = $ReadOnly<{
   [key: string]: $ReadOnly<{ id: string, amount: number }>
 }>;
 export type ParamsState = $ReadOnly<{ n: number, x: number }>;
+export type State = {
+  array: ArrayState,
+  rows: RowsState,
+  cells: CellsState,
+  params: ParamsState
+};

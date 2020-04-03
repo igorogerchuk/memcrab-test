@@ -1,3 +1,4 @@
+// @flow
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import ArrayRow from "../ArrayRow";
@@ -6,7 +7,38 @@ import * as selectors from "../../redux/selectors";
 import * as actions from "../../redux/actions";
 import getClosestNumbers from "../../services/closestNumbers";
 import createRandomArray from "../../services/randomArray";
-import styles from "./Array.module.css";
+import "./Array.module.css";
+import type { Action } from "../../redux/actions";
+import type { Dispatch } from "redux";
+import type {
+  ArrayState,
+  RowsState,
+  CellsState,
+  State
+} from "../../redux/types";
+
+type ownProps = {||};
+
+type StateProps = {|
+  array: ArrayState,
+  rows: RowsState,
+  cells: CellsState,
+  illuminatedQty: number,
+  sumColumn: Array<number>,
+  columnQty: number
+|};
+
+type DispatchProps = {|
+  onIncrease: (id: string) => {},
+  onRemove: (id: string, cellsIds: $ReadOnlyArray<string>) => {},
+  onAdd: (array: ArrayState, row: RowsState, cells: CellsState) => {}
+|};
+
+type Props = {
+  ...ownProps,
+  ...StateProps,
+  ...DispatchProps
+};
 
 const Array = ({
   array,
@@ -18,11 +50,11 @@ const Array = ({
   onRemove,
   onAdd,
   columnQty
-}) => {
+}: Props) => {
   const [illuminated, setIlluminated] = useState({});
 
-  const hoverOnHandler = e => {
-    const { id } = e.target;
+  const hoverOnHandler = (e: SyntheticEvent<HTMLTableCellElement>) => {
+    const { id } = e.currentTarget;
     const closestNumbers = getClosestNumbers(cells, id, illuminatedQty);
     setIlluminated(closestNumbers);
   };
@@ -31,13 +63,13 @@ const Array = ({
     setIlluminated({});
   };
 
-  const increaseHandler = e => {
-    const { id } = e.target;
+  const increaseHandler = (e: SyntheticEvent<HTMLTableCellElement>) => {
+    const { id } = e.currentTarget;
     onIncrease(id);
   };
 
-  const removeHandler = e => {
-    const { id } = e.target.parentNode.parentNode;
+  const removeHandler = (e: SyntheticEvent<HTMLButtonElement>) => {
+    const { id } = e.currentTarget;
     onRemove(id, rows[id]);
   };
 
@@ -48,8 +80,8 @@ const Array = ({
 
   return (
     array.length > 0 && (
-      <div className={styles.tableWrapper}>
-        <table className={styles.table}>
+      <div styleName="tableWrapper">
+        <table styleName="table">
           <tbody>
             {array.map((rowId, index) => (
               <ArrayRow
@@ -67,8 +99,8 @@ const Array = ({
             ))}
             <AvarageRow />
             <tr>
-              <td className={styles.addCell} colSpan={columnQty}>
-                <button className={styles.addButton} onClick={addHandler}>
+              <td styleName="addCell" colSpan={columnQty}>
+                <button styleName="addButton" onClick={addHandler}>
                   +
                 </button>
               </td>
@@ -80,7 +112,7 @@ const Array = ({
   );
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state: State): StateProps => ({
   array: selectors.getArray(state),
   rows: selectors.getRows(state),
   cells: selectors.getCells(state),
@@ -89,12 +121,20 @@ const mapStateToProps = state => ({
   columnQty: selectors.getColumnsQty(state)
 });
 
-const mapDispatchToProps = dispatch => {
-  return {
-    onIncrease: id => dispatch(actions.increase(id)),
-    onRemove: (id, cellsIds) => dispatch(actions.removeRow(id, cellsIds)),
-    onAdd: (rowId, row, cells) => dispatch(actions.addRow(rowId, row, cells))
-  };
-};
+const mapDispatchToProps = (dispatch: Dispatch<Action>): DispatchProps => ({
+  onIncrease: id => dispatch(actions.increase(id)),
+  onRemove: (id, cellsIds) => dispatch(actions.removeRow(id, cellsIds)),
+  onAdd: (array, row, cells) => dispatch(actions.addRow(array, row, cells))
+});
 
-export default connect(mapStateToProps, mapDispatchToProps)(React.memo(Array));
+export default connect<
+  Props,
+  ownProps,
+  StateProps,
+  DispatchProps,
+  State,
+  Dispatch<Action>
+>(
+  mapStateToProps,
+  mapDispatchToProps
+)(React.memo<Props>(Array));

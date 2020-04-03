@@ -1,8 +1,13 @@
+// @flow
 import React from "react";
-import styles from "./AvarageCell.module.css";
+import "./AvarageCell.module.css";
 
-const AvarageCell = ({ averageCell }) => (
-  <td className={styles.avarageTd}>{averageCell}</td>
+type ownProps = {|
+  averageCell: number
+|};
+
+const AvarageCell = ({ averageCell }: ownProps) => (
+  <td styleName="avarageTd">{averageCell.toFixed(2)}</td>
 );
 
-export default React.memo(AvarageCell);
+export default React.memo<ownProps>(AvarageCell);

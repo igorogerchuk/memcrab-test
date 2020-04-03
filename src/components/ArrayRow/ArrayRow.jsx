@@ -1,7 +1,21 @@
+// @flow
 import React, { useState } from "react";
 import ArrayCell from "../ArrayCell";
 import SumCell from "../SumCell";
-import styles from "./ArrayRow.module.css";
+import "./ArrayRow.module.css";
+import type { CellsState } from "../../redux/types";
+
+type ownProps = {|
+  row: $ReadOnlyArray<string>,
+  id: string,
+  onHover: (e: SyntheticEvent<HTMLTableCellElement>) => void,
+  offHover: () => void,
+  illuminated: { [id: string]: boolean },
+  cells: CellsState,
+  onIncrease: (e: SyntheticEvent<HTMLTableCellElement>) => void,
+  sumCell: number,
+  onRemove: (e: SyntheticEvent<HTMLButtonElement>) => void
+|};
 
 const areEqual = ({ illuminated, row, cells }, nextProps) => {
   for (let cellId of row) {
@@ -25,7 +39,7 @@ const ArrayRow = ({
   onIncrease,
   sumCell,
   onRemove
-}) => {
+}: ownProps) => {
   const [sumHover, setSumHover] = useState(false);
 
   const hoverHandler = () => setSumHover(sumHover => !sumHover);
@@ -46,8 +60,8 @@ const ArrayRow = ({
         />
       ))}
       <SumCell onHover={hoverHandler} sum={sumCell} />
-      <td className={styles.removeButtonTd}>
-        <button className={styles.removeButton} onClick={onRemove}>
+      <td styleName="removeButtonTd">
+        <button styleName="removeButton" onClick={onRemove} id={id}>
           &times;
         </button>
       </td>
@@ -55,4 +69,4 @@ const ArrayRow = ({
   );
 };
 
-export default React.memo(ArrayRow, areEqual);
+export default React.memo<ownProps>(ArrayRow, areEqual);

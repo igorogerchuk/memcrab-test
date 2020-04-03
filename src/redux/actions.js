@@ -6,14 +6,18 @@ import type { ArrayState, RowsState, CellsState, ParamsState } from "./types";
 type _ExtractReturn<R, F: (...args: any[]) => R> = R;
 type ExtractReturn<F> = _ExtractReturn<*, F>;
 
-export const removeRow = (id: string, cellsIds: Array<string>) => ({
+export const removeRow = (id: string, cellsIds: $ReadOnlyArray<string>) => ({
   type: types.REMOVE_ROW,
   payload: { id, cellsIds }
 });
 
-export const addRow = (rowId: string, row: RowsState, cells: CellsState) => ({
+export const addRow = (
+  array: ArrayState,
+  row: RowsState,
+  cells: CellsState
+) => ({
   type: types.ADD_ROW,
-  payload: { rowId, row, cells }
+  payload: { array, row, cells }
 });
 
 export const saveArray = (array: ArrayState) => ({

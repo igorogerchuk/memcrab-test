@@ -5,7 +5,7 @@ import * as actions from "../../redux/actions";
 import type { Action } from "../../redux/actions";
 import type { Dispatch } from "redux";
 import createRandomArray from "../../services/randomArray";
-import styles from "./Inputs.module.css";
+import "./Inputs.module.css";
 import type {
   ArrayState,
   RowsState,
@@ -13,7 +13,7 @@ import type {
   ParamsState
 } from "../../redux/types";
 
-type State = {
+type ownState = {
   m: string,
   n: string,
   x: string
@@ -33,7 +33,7 @@ type Props = {
   ...DispatchProps
 };
 
-class Inputs extends Component<Props, State> {
+class Inputs extends Component<Props, ownState> {
   state = { m: "", n: "", x: "" };
 
   inputHandler = (e: SyntheticInputEvent<HTMLInputElement>) => {
@@ -61,15 +61,15 @@ class Inputs extends Component<Props, State> {
   render() {
     const { m, n, x } = this.state;
     return (
-      <div className={styles.formWrapper}>
-        <h1 className={styles.formTitle}>Enter table parameters</h1>
-        <form className={styles.form} onSubmit={this.submitHandler}>
-          <div className={styles.inputWrapper}>
-            <label htmlFor="m" className={styles.label}>
+      <div styleName="formWrapper">
+        <h1 styleName="formTitle">Enter table parameters</h1>
+        <form styleName="form" onSubmit={this.submitHandler}>
+          <div styleName="inputWrapper">
+            <label htmlFor="m" styleName="label">
               Rows quantity:
             </label>
             <input
-              className={styles.input}
+              styleName="input"
               type="number"
               name="rows"
               id="m"
@@ -78,12 +78,12 @@ class Inputs extends Component<Props, State> {
               placeholder="0"
             />
           </div>
-          <div className={styles.inputWrapper}>
-            <label htmlFor="n" className={styles.label}>
+          <div styleName="inputWrapper">
+            <label htmlFor="n" styleName="label">
               Columns quantity:
             </label>
             <input
-              className={styles.input}
+              styleName="input"
               type="number"
               name="columns"
               id="n"
@@ -92,12 +92,12 @@ class Inputs extends Component<Props, State> {
               placeholder="0"
             />
           </div>
-          <div className={styles.inputWrapper}>
-            <label htmlFor="m" className={styles.label}>
+          <div styleName="inputWrapper">
+            <label htmlFor="m" styleName="label">
               Illuminated cells quantity:
             </label>
             <input
-              className={styles.input}
+              styleName="input"
               type="number"
               name="illuminate"
               id="x"
@@ -107,11 +107,7 @@ class Inputs extends Component<Props, State> {
             />
           </div>
           <div>
-            <input
-              className={styles.submitButton}
-              type="submit"
-              value="Generate"
-            />
+            <input styleName="submitButton" type="submit" value="Generate" />
           </div>
         </form>
       </div>
@@ -126,7 +122,7 @@ const mapDispatchToProps = (dispatch: Dispatch<Action>): DispatchProps => ({
   onSaveCells: cells => dispatch(actions.saveCells(cells))
 });
 
-export default connect<Props, ownProps, _, _, _, _>(
+export default connect<Props, ownProps, _, DispatchProps, _, Dispatch<Action>>(
   null,
   mapDispatchToProps
 )(Inputs);

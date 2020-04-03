@@ -3,13 +3,19 @@
 import { combineReducers } from "redux";
 import type { Reducer } from "redux";
 import * as types from "./types";
-import type { ArrayState, RowsState, CellsState, ParamsState } from "./types";
+import type {
+  ArrayState,
+  RowsState,
+  CellsState,
+  ParamsState,
+  State
+} from "./types";
 import type { Action } from "./actions";
 
 const arrayReducer = (state: ArrayState = [], action: Action): ArrayState => {
   switch (action.type) {
     case types.ADD_ROW:
-      return [...state, ...action.payload.rowId];
+      return [...state, ...action.payload.array];
     case types.REMOVE_ROW:
       return state.filter(rowId => rowId !== action.payload.id);
     case types.SAVE_ARRAY:
@@ -66,13 +72,6 @@ const paramsReducer = (
     default:
       return state;
   }
-};
-
-type State = {
-  array: ArrayState,
-  rows: RowsState,
-  cells: CellsState,
-  params: ParamsState
 };
 
 const reducer: Reducer<State, Action> = combineReducers({
