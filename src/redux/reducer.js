@@ -8,7 +8,7 @@ import type {
   RowsState,
   CellsState,
   ParamsState,
-  State
+  State,
 } from "./types";
 import type { Action } from "./actions";
 
@@ -17,7 +17,7 @@ const arrayReducer = (state: ArrayState = [], action: Action): ArrayState => {
     case types.ADD_ROW:
       return [...state, ...action.payload.array];
     case types.REMOVE_ROW:
-      return state.filter(rowId => rowId !== action.payload.id);
+      return state.filter((rowId) => rowId !== action.payload.id);
     case types.SAVE_ARRAY:
       return action.payload.array;
     default:
@@ -45,7 +45,9 @@ const cellsReducer = (state: CellsState = {}, action: Action): CellsState => {
       return { ...state, ...action.payload.cells };
     case types.REMOVE_ROW:
       const withoutDeleted = { ...state };
-      action.payload.cellsIds.forEach(cellId => delete withoutDeleted[cellId]);
+      action.payload.cellsIds.forEach(
+        (cellId) => delete withoutDeleted[cellId]
+      );
       return withoutDeleted;
     case types.SAVE_CELLS:
       return action.payload.cells;
@@ -54,8 +56,8 @@ const cellsReducer = (state: CellsState = {}, action: Action): CellsState => {
         ...state,
         [action.payload.id]: {
           ...state[action.payload.id],
-          amount: state[action.payload.id].amount + 1
-        }
+          amount: state[action.payload.id].amount + 1,
+        },
       };
     default:
       return state;
@@ -78,7 +80,7 @@ const reducer: Reducer<State, Action> = combineReducers({
   array: arrayReducer,
   rows: rowsReducer,
   cells: cellsReducer,
-  params: paramsReducer
+  params: paramsReducer,
 });
 
 export default reducer;

@@ -14,7 +14,7 @@ import type {
   ArrayState,
   RowsState,
   CellsState,
-  State
+  State,
 } from "../../redux/types";
 
 type ownProps = {||};
@@ -25,19 +25,19 @@ type StateProps = {|
   cells: CellsState,
   illuminatedQty: number,
   sumColumn: Array<number>,
-  columnQty: number
+  columnQty: number,
 |};
 
 type DispatchProps = {|
   onIncrease: (id: string) => {},
   onRemove: (id: string, cellsIds: $ReadOnlyArray<string>) => {},
-  onAdd: (array: ArrayState, row: RowsState, cells: CellsState) => {}
+  onAdd: (array: ArrayState, row: RowsState, cells: CellsState) => {},
 |};
 
 type Props = {
   ...ownProps,
   ...StateProps,
-  ...DispatchProps
+  ...DispatchProps,
 };
 
 const Array = ({
@@ -49,7 +49,7 @@ const Array = ({
   sumColumn,
   onRemove,
   onAdd,
-  columnQty
+  columnQty,
 }: Props) => {
   const [illuminated, setIlluminated] = useState({});
 
@@ -100,7 +100,11 @@ const Array = ({
             <AvarageRow />
             <tr>
               <td styleName="addCell" colSpan={columnQty}>
-                <button styleName="addButton" onClick={addHandler}>
+                <button
+                  id="addButton"
+                  styleName="addButton"
+                  onClick={addHandler}
+                >
                   +
                 </button>
               </td>
@@ -118,13 +122,13 @@ const mapStateToProps = (state: State): StateProps => ({
   cells: selectors.getCells(state),
   illuminatedQty: selectors.getIlluminatedQty(state),
   sumColumn: selectors.getSumColumn(state),
-  columnQty: selectors.getColumnsQty(state)
+  columnQty: selectors.getColumnsQty(state),
 });
 
 const mapDispatchToProps = (dispatch: Dispatch<Action>): DispatchProps => ({
-  onIncrease: id => dispatch(actions.increase(id)),
+  onIncrease: (id) => dispatch(actions.increase(id)),
   onRemove: (id, cellsIds) => dispatch(actions.removeRow(id, cellsIds)),
-  onAdd: (array, row, cells) => dispatch(actions.addRow(array, row, cells))
+  onAdd: (array, row, cells) => dispatch(actions.addRow(array, row, cells)),
 });
 
 export default connect<

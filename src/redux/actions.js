@@ -1,5 +1,4 @@
 // @flow
-
 import * as types from "./types";
 import type { ArrayState, RowsState, CellsState, ParamsState } from "./types";
 
@@ -8,7 +7,7 @@ type ExtractReturn<F> = _ExtractReturn<*, F>;
 
 export const removeRow = (id: string, cellsIds: $ReadOnlyArray<string>) => ({
   type: types.REMOVE_ROW,
-  payload: { id, cellsIds }
+  payload: { id, cellsIds },
 });
 
 export const addRow = (
@@ -17,32 +16,32 @@ export const addRow = (
   cells: CellsState
 ) => ({
   type: types.ADD_ROW,
-  payload: { array, row, cells }
+  payload: { array, row, cells },
 });
 
 export const saveArray = (array: ArrayState) => ({
   type: types.SAVE_ARRAY,
-  payload: { array }
+  payload: { array },
 });
 
 export const saveRows = (rows: RowsState) => ({
   type: types.SAVE_ROWS,
-  payload: { rows }
+  payload: { rows },
 });
 
 export const saveCells = (cells: CellsState) => ({
   type: types.SAVE_CELLS,
-  payload: { cells }
+  payload: { cells },
 });
 
 export const increase = (id: string) => ({
   type: types.INCREASE,
-  payload: { id }
+  payload: { id },
 });
 
 export const saveParams = (params: ParamsState) => ({
   type: types.SAVE_PARAMS,
-  payload: { params }
+  payload: { params },
 });
 
 export type Action =

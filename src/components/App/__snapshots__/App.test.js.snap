@@ -1,0 +1,607 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly with given random array 5x4 1`] = `
+<div
+  styleName="container"
+>
+  <div
+    styleName="formWrapper"
+  >
+    <h1
+      styleName="formTitle"
+    >
+      Enter table parameters
+    </h1>
+    <form
+      onSubmit={[Function]}
+      styleName="form"
+    >
+      <div
+        styleName="inputWrapper"
+      >
+        <label
+          htmlFor="m"
+          styleName="label"
+        >
+          Rows quantity:
+        </label>
+        <input
+          id="m"
+          name="rows"
+          onChange={[Function]}
+          placeholder="0"
+          styleName="input"
+          type="number"
+          value=""
+        />
+      </div>
+      <div
+        styleName="inputWrapper"
+      >
+        <label
+          htmlFor="n"
+          styleName="label"
+        >
+          Columns quantity:
+        </label>
+        <input
+          id="n"
+          name="columns"
+          onChange={[Function]}
+          placeholder="0"
+          styleName="input"
+          type="number"
+          value=""
+        />
+      </div>
+      <div
+        styleName="inputWrapper"
+      >
+        <label
+          htmlFor="m"
+          styleName="label"
+        >
+          Illuminated cells quantity:
+        </label>
+        <input
+          id="x"
+          name="illuminate"
+          onChange={[Function]}
+          placeholder="0"
+          styleName="input"
+          type="number"
+          value=""
+        />
+      </div>
+      <div>
+        <input
+          styleName="submitButton"
+          type="submit"
+          value="Generate"
+        />
+      </div>
+    </form>
+  </div>
+  <div
+    styleName="tableWrapper"
+  >
+    <table
+      styleName="table"
+    >
+      <tbody>
+        <tr
+          id={1}
+        >
+          <td
+            id={2}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            id={3}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            id={4}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            id={5}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            styleName="sumCell"
+          >
+            2000
+          </td>
+          <td
+            styleName="removeButtonTd"
+          >
+            <button
+              id={1}
+              onClick={[Function]}
+              styleName="removeButton"
+            >
+              ×
+            </button>
+          </td>
+        </tr>
+        <tr
+          id={6}
+        >
+          <td
+            id={7}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            id={8}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            id={9}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            id={10}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            styleName="sumCell"
+          >
+            2000
+          </td>
+          <td
+            styleName="removeButtonTd"
+          >
+            <button
+              id={6}
+              onClick={[Function]}
+              styleName="removeButton"
+            >
+              ×
+            </button>
+          </td>
+        </tr>
+        <tr
+          id={11}
+        >
+          <td
+            id={12}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            id={13}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            id={14}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            id={15}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            styleName="sumCell"
+          >
+            2000
+          </td>
+          <td
+            styleName="removeButtonTd"
+          >
+            <button
+              id={11}
+              onClick={[Function]}
+              styleName="removeButton"
+            >
+              ×
+            </button>
+          </td>
+        </tr>
+        <tr
+          id={16}
+        >
+          <td
+            id={17}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            id={18}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            id={19}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            id={20}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            styleName="sumCell"
+          >
+            2000
+          </td>
+          <td
+            styleName="removeButtonTd"
+          >
+            <button
+              id={16}
+              onClick={[Function]}
+              styleName="removeButton"
+            >
+              ×
+            </button>
+          </td>
+        </tr>
+        <tr
+          id={21}
+        >
+          <td
+            id={22}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            id={23}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            id={24}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            id={25}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+            styleName="simpleTd"
+          >
+            500
+          </td>
+          <td
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            styleName="sumCell"
+          >
+            2000
+          </td>
+          <td
+            styleName="removeButtonTd"
+          >
+            <button
+              id={21}
+              onClick={[Function]}
+              styleName="removeButton"
+            >
+              ×
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td
+            styleName="avarageTd"
+          >
+            500.00
+          </td>
+          <td
+            styleName="avarageTd"
+          >
+            500.00
+          </td>
+          <td
+            styleName="avarageTd"
+          >
+            500.00
+          </td>
+          <td
+            styleName="avarageTd"
+          >
+            500.00
+          </td>
+        </tr>
+        <tr>
+          <td
+            colSpan={4}
+            styleName="addCell"
+          >
+            <button
+              id="addButton"
+              onClick={[Function]}
+              styleName="addButton"
+            >
+              +
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`should render correctly with initial state from Redux store 1`] = `
+<div
+  styleName="container"
+>
+  <div
+    styleName="formWrapper"
+  >
+    <h1
+      styleName="formTitle"
+    >
+      Enter table parameters
+    </h1>
+    <form
+      onSubmit={[Function]}
+      styleName="form"
+    >
+      <div
+        styleName="inputWrapper"
+      >
+        <label
+          htmlFor="m"
+          styleName="label"
+        >
+          Rows quantity:
+        </label>
+        <input
+          id="m"
+          name="rows"
+          onChange={[Function]}
+          placeholder="0"
+          styleName="input"
+          type="number"
+          value=""
+        />
+      </div>
+      <div
+        styleName="inputWrapper"
+      >
+        <label
+          htmlFor="n"
+          styleName="label"
+        >
+          Columns quantity:
+        </label>
+        <input
+          id="n"
+          name="columns"
+          onChange={[Function]}
+          placeholder="0"
+          styleName="input"
+          type="number"
+          value=""
+        />
+      </div>
+      <div
+        styleName="inputWrapper"
+      >
+        <label
+          htmlFor="m"
+          styleName="label"
+        >
+          Illuminated cells quantity:
+        </label>
+        <input
+          id="x"
+          name="illuminate"
+          onChange={[Function]}
+          placeholder="0"
+          styleName="input"
+          type="number"
+          value=""
+        />
+      </div>
+      <div>
+        <input
+          styleName="submitButton"
+          type="submit"
+          value="Generate"
+        />
+      </div>
+    </form>
+  </div>
+</div>
+`;

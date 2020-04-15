@@ -1,12 +1,6 @@
 // @flow
 import { createSelector } from "reselect";
-import type {
-  ArrayState,
-  RowsState,
-  CellsState,
-  ParamsState,
-  State
-} from "./types";
+import type { State } from "./types";
 
 export const getArray = (state: State) => state.array;
 

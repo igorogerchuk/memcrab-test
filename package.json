@@ -27,6 +27,20 @@
     "flow": "flow",
     "coverage": "flow-coverage-report"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!<rootDir>/node_modules/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    }
+  },
   "flow-coverage-report": {
     "globIncludePatterns": [
       "src/**/*.jsx",
@@ -56,7 +70,8 @@
   "devDependencies": {
     "flow-bin": "^0.121.0",
     "flow-coverage-report": "^0.6.1",
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^2.2.0",
+    "react-test-renderer": "^16.13.1"
   },
   "homepage": "http://igorogerchuk.github.io/memcrab-test"
 }
