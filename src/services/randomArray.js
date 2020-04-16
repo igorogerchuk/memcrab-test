@@ -19,7 +19,6 @@ const createRandomArray = (rowsQty: number, columnsQty: number) => {
 
   return { array, rows, cells };
 };
-
 export default createRandomArray;
 
 const randomThreeDigitNumber = () => Math.floor(Math.random() * 1000);

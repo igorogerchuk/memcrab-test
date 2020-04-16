@@ -8,12 +8,12 @@ import type { State } from "../../redux/types";
 type ownProps = {||};
 
 type StateProps = {|
-  averageRow: Array<number>
+  averageRow: Array<number>,
 |};
 
 type Props = {
   ...ownProps,
-  ...StateProps
+  ...StateProps,
 };
 const AvarageRow = ({ averageRow }: Props) => (
   <tr>
@@ -25,10 +25,9 @@ const AvarageRow = ({ averageRow }: Props) => (
 
 const mapStateToProps = (state: State): StateProps => {
   return {
-    averageRow: selectors.getAvarageRow(state)
+    averageRow: selectors.getAvarageRow(state),
   };
 };
-
 export default connect<Props, ownProps, StateProps, _, State, _>(
   mapStateToProps
 )(AvarageRow);

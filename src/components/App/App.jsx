@@ -10,5 +10,4 @@ const App = () => (
     <Array />
   </div>
 );
-
 export default App;

@@ -130,7 +130,6 @@ const mapDispatchToProps = (dispatch: Dispatch<Action>): DispatchProps => ({
   onRemove: (id, cellsIds) => dispatch(actions.removeRow(id, cellsIds)),
   onAdd: (array, row, cells) => dispatch(actions.addRow(array, row, cells)),
 });
-
 export default connect<
   Props,
   ownProps,

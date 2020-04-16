@@ -4,7 +4,8 @@ import "./SumCell.module.css";
 
 type ownProps = {|
   onHover: (e: SyntheticEvent<HTMLTableCellElement>) => void,
-  sum: number
+  sum: number,
+  id: string,
 |};
 
 const areEqual = ({ sum }, nextProps) => {
@@ -14,10 +15,9 @@ const areEqual = ({ sum }, nextProps) => {
   return true;
 };
 
-const SumCell = ({ sum, onHover }: ownProps) => (
-  <td onMouseEnter={onHover} onMouseLeave={onHover} styleName="sumCell">
+const SumCell = ({ sum, onHover, id }: ownProps) => (
+  <td id={id} onMouseEnter={onHover} onMouseLeave={onHover} styleName="sumCell">
     {sum}
   </td>
 );
-
 export default React.memo<ownProps>(SumCell, areEqual);

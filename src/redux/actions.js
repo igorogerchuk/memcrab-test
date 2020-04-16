@@ -43,7 +43,6 @@ export const saveParams = (params: ParamsState) => ({
   type: types.SAVE_PARAMS,
   payload: { params },
 });
-
 export type Action =
   | ExtractReturn<typeof removeRow>
   | ExtractReturn<typeof addRow>

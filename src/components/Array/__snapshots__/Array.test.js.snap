@@ -1,17 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render correctly after click on the addButton 1`] = `
+exports[`testing Array methods for ArrayCell should render correctly after click on ArrayCell td 1`] = `
 <div
-  styleName="tableWrapper"
+  className="tableWrapper___3mKZT"
 >
   <table
-    styleName="table"
+    className="table___3XwP7"
   >
     <tbody>
       <tr
         id={1}
       >
         <td
+          className="simpleTd___1ELya"
           id={2}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -21,11 +22,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
-          500
+          501
         </td>
         <td
+          className="simpleTd___1ELya"
           id={3}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -35,11 +36,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={4}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -49,11 +50,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={5}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -63,24 +64,24 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="sumCell___2yW_R"
+          id="sum1"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
-          styleName="sumCell"
         >
-          2000
+          2001
         </td>
         <td
-          styleName="removeButtonTd"
+          className="removeButtonTd___1OWGN addCell___a54He"
         >
           <button
+            className="removeButton___2Sb5_ addButton___2a67D"
             id={1}
             onClick={[Function]}
-            styleName="removeButton"
           >
             ×
           </button>
@@ -90,6 +91,7 @@ exports[`should render correctly after click on the addButton 1`] = `
         id={6}
       >
         <td
+          className="simpleTd___1ELya"
           id={7}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -99,11 +101,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={8}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -113,11 +115,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={9}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -127,11 +129,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={10}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -141,24 +143,24 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="sumCell___2yW_R"
+          id="sum6"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
-          styleName="sumCell"
         >
           2000
         </td>
         <td
-          styleName="removeButtonTd"
+          className="removeButtonTd___1OWGN addCell___a54He"
         >
           <button
+            className="removeButton___2Sb5_ addButton___2a67D"
             id={6}
             onClick={[Function]}
-            styleName="removeButton"
           >
             ×
           </button>
@@ -168,6 +170,7 @@ exports[`should render correctly after click on the addButton 1`] = `
         id={11}
       >
         <td
+          className="simpleTd___1ELya"
           id={12}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -177,11 +180,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={13}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -191,11 +194,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={14}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -205,11 +208,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={15}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -219,24 +222,24 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="sumCell___2yW_R"
+          id="sum11"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
-          styleName="sumCell"
         >
           2000
         </td>
         <td
-          styleName="removeButtonTd"
+          className="removeButtonTd___1OWGN addCell___a54He"
         >
           <button
+            className="removeButton___2Sb5_ addButton___2a67D"
             id={11}
             onClick={[Function]}
-            styleName="removeButton"
           >
             ×
           </button>
@@ -246,6 +249,7 @@ exports[`should render correctly after click on the addButton 1`] = `
         id={16}
       >
         <td
+          className="simpleTd___1ELya"
           id={17}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -255,11 +259,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={18}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -269,11 +273,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={19}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -283,11 +287,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={20}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -297,24 +301,24 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="sumCell___2yW_R"
+          id="sum16"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
-          styleName="sumCell"
         >
           2000
         </td>
         <td
-          styleName="removeButtonTd"
+          className="removeButtonTd___1OWGN addCell___a54He"
         >
           <button
+            className="removeButton___2Sb5_ addButton___2a67D"
             id={16}
             onClick={[Function]}
-            styleName="removeButton"
           >
             ×
           </button>
@@ -324,6 +328,7 @@ exports[`should render correctly after click on the addButton 1`] = `
         id={21}
       >
         <td
+          className="simpleTd___1ELya"
           id={22}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -333,11 +338,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={23}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -347,11 +352,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={24}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -361,11 +366,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={25}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -375,24 +380,24 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="sumCell___2yW_R"
+          id="sum21"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
-          styleName="sumCell"
         >
           2000
         </td>
         <td
-          styleName="removeButtonTd"
+          className="removeButtonTd___1OWGN addCell___a54He"
         >
           <button
+            className="removeButton___2Sb5_ addButton___2a67D"
             id={21}
             onClick={[Function]}
-            styleName="removeButton"
           >
             ×
           </button>
@@ -402,6 +407,7 @@ exports[`should render correctly after click on the addButton 1`] = `
         id={26}
       >
         <td
+          className="simpleTd___1ELya"
           id={27}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -411,11 +417,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={28}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -425,11 +431,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={29}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -439,11 +445,11 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={30}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -453,24 +459,24 @@ exports[`should render correctly after click on the addButton 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="sumCell___2yW_R"
+          id="sum26"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
-          styleName="sumCell"
         >
           2000
         </td>
         <td
-          styleName="removeButtonTd"
+          className="removeButtonTd___1OWGN addCell___a54He"
         >
           <button
+            className="removeButton___2Sb5_ addButton___2a67D"
             id={26}
             onClick={[Function]}
-            styleName="removeButton"
           >
             ×
           </button>
@@ -478,35 +484,35 @@ exports[`should render correctly after click on the addButton 1`] = `
       </tr>
       <tr>
         <td
-          styleName="avarageTd"
+          className="avarageTd___3oJ08"
+        >
+          500.17
+        </td>
+        <td
+          className="avarageTd___3oJ08"
         >
           500.00
         </td>
         <td
-          styleName="avarageTd"
+          className="avarageTd___3oJ08"
         >
           500.00
         </td>
         <td
-          styleName="avarageTd"
-        >
-          500.00
-        </td>
-        <td
-          styleName="avarageTd"
+          className="avarageTd___3oJ08"
         >
           500.00
         </td>
       </tr>
       <tr>
         <td
+          className="addCell___a54He"
           colSpan={4}
-          styleName="addCell"
         >
           <button
+            className="addButton___2a67D"
             id="addButton"
             onClick={[Function]}
-            styleName="addButton"
           >
             +
           </button>
@@ -517,87 +523,88 @@ exports[`should render correctly after click on the addButton 1`] = `
 </div>
 `;
 
-exports[`should render correctly with given random array 5x4 1`] = `
+exports[`testing Array methods for ArrayCell should render correctly after mouse enter ArrayCell td 1`] = `
 <div
-  styleName="tableWrapper"
+  className="tableWrapper___3mKZT"
 >
   <table
-    styleName="table"
+    className="table___3XwP7"
   >
     <tbody>
       <tr
         id={1}
       >
         <td
+          className="simpleTd___1ELya"
           id={2}
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           style={
             Object {
-              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              "background": "linear-gradient(110deg, #f90c04 0%, #ed413b 10%, #fff 20%, #fff 25%, #f0f0f0 26%, #fff 28%, #f53d37 55%, #f90c04 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={3}
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           style={
             Object {
-              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              "background": "linear-gradient(110deg, #f90c04 0%, #ed413b 10%, #fff 20%, #fff 25%, #f0f0f0 26%, #fff 28%, #f53d37 55%, #f90c04 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={4}
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           style={
             Object {
-              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              "background": "linear-gradient(110deg, #f90c04 0%, #ed413b 10%, #fff 20%, #fff 25%, #f0f0f0 26%, #fff 28%, #f53d37 55%, #f90c04 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={5}
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           style={
             Object {
-              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              "background": "linear-gradient(110deg, #f90c04 0%, #ed413b 10%, #fff 20%, #fff 25%, #f0f0f0 26%, #fff 28%, #f53d37 55%, #f90c04 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="sumCell___2yW_R"
+          id="sum1"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
-          styleName="sumCell"
         >
           2000
         </td>
         <td
-          styleName="removeButtonTd"
+          className="removeButtonTd___1OWGN addCell___a54He"
         >
           <button
+            className="removeButton___2Sb5_ addButton___2a67D"
             id={1}
             onClick={[Function]}
-            styleName="removeButton"
           >
             ×
           </button>
@@ -607,6 +614,7 @@ exports[`should render correctly with given random array 5x4 1`] = `
         id={6}
       >
         <td
+          className="simpleTd___1ELya"
           id={7}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -616,11 +624,11 @@ exports[`should render correctly with given random array 5x4 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={8}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -630,11 +638,11 @@ exports[`should render correctly with given random array 5x4 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={9}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -644,11 +652,11 @@ exports[`should render correctly with given random array 5x4 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={10}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -658,24 +666,24 @@ exports[`should render correctly with given random array 5x4 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="sumCell___2yW_R"
+          id="sum6"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
-          styleName="sumCell"
         >
           2000
         </td>
         <td
-          styleName="removeButtonTd"
+          className="removeButtonTd___1OWGN addCell___a54He"
         >
           <button
+            className="removeButton___2Sb5_ addButton___2a67D"
             id={6}
             onClick={[Function]}
-            styleName="removeButton"
           >
             ×
           </button>
@@ -685,6 +693,7 @@ exports[`should render correctly with given random array 5x4 1`] = `
         id={11}
       >
         <td
+          className="simpleTd___1ELya"
           id={12}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -694,11 +703,11 @@ exports[`should render correctly with given random array 5x4 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={13}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -708,11 +717,11 @@ exports[`should render correctly with given random array 5x4 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={14}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -722,11 +731,11 @@ exports[`should render correctly with given random array 5x4 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={15}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -736,24 +745,24 @@ exports[`should render correctly with given random array 5x4 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="sumCell___2yW_R"
+          id="sum11"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
-          styleName="sumCell"
         >
           2000
         </td>
         <td
-          styleName="removeButtonTd"
+          className="removeButtonTd___1OWGN addCell___a54He"
         >
           <button
+            className="removeButton___2Sb5_ addButton___2a67D"
             id={11}
             onClick={[Function]}
-            styleName="removeButton"
           >
             ×
           </button>
@@ -763,6 +772,7 @@ exports[`should render correctly with given random array 5x4 1`] = `
         id={16}
       >
         <td
+          className="simpleTd___1ELya"
           id={17}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -772,11 +782,11 @@ exports[`should render correctly with given random array 5x4 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={18}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -786,11 +796,11 @@ exports[`should render correctly with given random array 5x4 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={19}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -800,11 +810,11 @@ exports[`should render correctly with given random array 5x4 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={20}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -814,24 +824,24 @@ exports[`should render correctly with given random array 5x4 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="sumCell___2yW_R"
+          id="sum16"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
-          styleName="sumCell"
         >
           2000
         </td>
         <td
-          styleName="removeButtonTd"
+          className="removeButtonTd___1OWGN addCell___a54He"
         >
           <button
+            className="removeButton___2Sb5_ addButton___2a67D"
             id={16}
             onClick={[Function]}
-            styleName="removeButton"
           >
             ×
           </button>
@@ -841,6 +851,7 @@ exports[`should render correctly with given random array 5x4 1`] = `
         id={21}
       >
         <td
+          className="simpleTd___1ELya"
           id={22}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -850,11 +861,11 @@ exports[`should render correctly with given random array 5x4 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={23}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -864,11 +875,11 @@ exports[`should render correctly with given random array 5x4 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={24}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -878,11 +889,11 @@ exports[`should render correctly with given random array 5x4 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="simpleTd___1ELya"
           id={25}
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -892,24 +903,103 @@ exports[`should render correctly with given random array 5x4 1`] = `
               "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
             }
           }
-          styleName="simpleTd"
         >
           500
         </td>
         <td
+          className="sumCell___2yW_R"
+          id="sum21"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
-          styleName="sumCell"
         >
           2000
         </td>
         <td
-          styleName="removeButtonTd"
+          className="removeButtonTd___1OWGN addCell___a54He"
         >
           <button
+            className="removeButton___2Sb5_ addButton___2a67D"
             id={21}
             onClick={[Function]}
-            styleName="removeButton"
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={26}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={27}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={28}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={29}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={30}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum26"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={26}
+            onClick={[Function]}
           >
             ×
           </button>
@@ -917,35 +1007,35 @@ exports[`should render correctly with given random array 5x4 1`] = `
       </tr>
       <tr>
         <td
-          styleName="avarageTd"
+          className="avarageTd___3oJ08"
         >
           500.00
         </td>
         <td
-          styleName="avarageTd"
+          className="avarageTd___3oJ08"
         >
           500.00
         </td>
         <td
-          styleName="avarageTd"
+          className="avarageTd___3oJ08"
         >
           500.00
         </td>
         <td
-          styleName="avarageTd"
+          className="avarageTd___3oJ08"
         >
           500.00
         </td>
       </tr>
       <tr>
         <td
+          className="addCell___a54He"
           colSpan={4}
-          styleName="addCell"
         >
           <button
+            className="addButton___2a67D"
             id="addButton"
             onClick={[Function]}
-            styleName="addButton"
           >
             +
           </button>
@@ -956,4 +1046,2015 @@ exports[`should render correctly with given random array 5x4 1`] = `
 </div>
 `;
 
-exports[`should render correctly with initial state from Redux store 1`] = `null`;
+exports[`testing Array methods for ArrayCell should render correctly after mouse leave ArrayCell td 1`] = `
+<div
+  className="tableWrapper___3mKZT"
+>
+  <table
+    className="table___3XwP7"
+  >
+    <tbody>
+      <tr
+        id={1}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={2}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={3}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={4}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={5}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum1"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={1}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={6}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={7}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={8}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={9}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={10}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum6"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={6}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={11}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={12}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={13}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={14}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={15}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum11"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={11}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={16}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={17}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={18}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={19}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={20}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum16"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={16}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={21}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={22}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={23}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={24}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={25}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum21"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={21}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={26}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={27}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={28}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={29}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={30}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum26"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={26}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="avarageTd___3oJ08"
+        >
+          500.00
+        </td>
+        <td
+          className="avarageTd___3oJ08"
+        >
+          500.00
+        </td>
+        <td
+          className="avarageTd___3oJ08"
+        >
+          500.00
+        </td>
+        <td
+          className="avarageTd___3oJ08"
+        >
+          500.00
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="addCell___a54He"
+          colSpan={4}
+        >
+          <button
+            className="addButton___2a67D"
+            id="addButton"
+            onClick={[Function]}
+          >
+            +
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`testing Array methods for ArrayRow should render correctly after click on removeButton 1`] = `
+<div
+  className="tableWrapper___3mKZT"
+>
+  <table
+    className="table___3XwP7"
+  >
+    <tbody>
+      <tr
+        id={1}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={2}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          501
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={3}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={4}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={5}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum1"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2001
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={1}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={11}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={12}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={13}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={14}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={15}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum11"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={11}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={16}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={17}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={18}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={19}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={20}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum16"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={16}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={21}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={22}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={23}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={24}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={25}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum21"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={21}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={26}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={27}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={28}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={29}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={30}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum26"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={26}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="avarageTd___3oJ08"
+        >
+          500.20
+        </td>
+        <td
+          className="avarageTd___3oJ08"
+        >
+          500.00
+        </td>
+        <td
+          className="avarageTd___3oJ08"
+        >
+          500.00
+        </td>
+        <td
+          className="avarageTd___3oJ08"
+        >
+          500.00
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="addCell___a54He"
+          colSpan={4}
+        >
+          <button
+            className="addButton___2a67D"
+            id="addButton"
+            onClick={[Function]}
+          >
+            +
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`testing Array methods for ArrayRow should render correctly after mouse enter SumCell 1`] = `
+<div
+  className="tableWrapper___3mKZT"
+>
+  <table
+    className="table___3XwP7"
+  >
+    <tbody>
+      <tr
+        id={1}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={2}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          501
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={3}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={4}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={5}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum1"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2001
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={1}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={6}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={7}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(to top, #fff200, #1e9600 25%, transparent 25%)",
+            }
+          }
+        >
+          25.0%
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={8}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(to top, #fff200, #1e9600 25%, transparent 25%)",
+            }
+          }
+        >
+          25.0%
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={9}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(to top, #fff200, #1e9600 25%, transparent 25%)",
+            }
+          }
+        >
+          25.0%
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={10}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(to top, #fff200, #1e9600 25%, transparent 25%)",
+            }
+          }
+        >
+          25.0%
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum6"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={6}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={11}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={12}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={13}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={14}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={15}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum11"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={11}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={16}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={17}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={18}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={19}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={20}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum16"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={16}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={21}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={22}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={23}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={24}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={25}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum21"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={21}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={26}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={27}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={28}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={29}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={30}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum26"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={26}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="avarageTd___3oJ08"
+        >
+          500.17
+        </td>
+        <td
+          className="avarageTd___3oJ08"
+        >
+          500.00
+        </td>
+        <td
+          className="avarageTd___3oJ08"
+        >
+          500.00
+        </td>
+        <td
+          className="avarageTd___3oJ08"
+        >
+          500.00
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="addCell___a54He"
+          colSpan={4}
+        >
+          <button
+            className="addButton___2a67D"
+            id="addButton"
+            onClick={[Function]}
+          >
+            +
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`testing Array methods own should render correctly after click on the addButton 1`] = `
+<div
+  className="tableWrapper___3mKZT"
+>
+  <table
+    className="table___3XwP7"
+  >
+    <tbody>
+      <tr
+        id={1}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={2}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={3}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={4}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={5}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum1"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={1}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={6}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={7}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={8}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={9}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={10}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum6"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={6}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={11}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={12}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={13}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={14}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={15}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum11"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={11}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={16}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={17}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={18}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={19}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={20}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum16"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={16}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={21}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={22}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={23}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={24}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={25}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum21"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={21}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id={26}
+      >
+        <td
+          className="simpleTd___1ELya"
+          id={27}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={28}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={29}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id={30}
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          id="sum26"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id={26}
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="avarageTd___3oJ08"
+        >
+          500.00
+        </td>
+        <td
+          className="avarageTd___3oJ08"
+        >
+          500.00
+        </td>
+        <td
+          className="avarageTd___3oJ08"
+        >
+          500.00
+        </td>
+        <td
+          className="avarageTd___3oJ08"
+        >
+          500.00
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="addCell___a54He"
+          colSpan={4}
+        >
+          <button
+            className="addButton___2a67D"
+            id="addButton"
+            onClick={[Function]}
+          >
+            +
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

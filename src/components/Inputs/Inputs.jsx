@@ -10,13 +10,13 @@ import type {
   ArrayState,
   RowsState,
   CellsState,
-  ParamsState
+  ParamsState,
 } from "../../redux/types";
 
 type ownState = {
   m: string,
   n: string,
-  x: string
+  x: string,
 };
 
 type ownProps = {||};
@@ -25,12 +25,12 @@ type DispatchProps = {|
   onSaveParams: (params: ParamsState) => {},
   onSaveArray: (array: ArrayState) => {},
   onSaveRows: (rows: RowsState) => {},
-  onSaveCells: (cells: CellsState) => {}
+  onSaveCells: (cells: CellsState) => {},
 |};
 
 type Props = {
   ...ownProps,
-  ...DispatchProps
+  ...DispatchProps,
 };
 
 class Inputs extends Component<Props, ownState> {
@@ -38,7 +38,7 @@ class Inputs extends Component<Props, ownState> {
 
   inputHandler = (e: SyntheticInputEvent<HTMLInputElement>) => {
     const { id, value } = e.target;
-    this.setState(state => ({ ...state, [id]: value }));
+    this.setState((state) => ({ ...state, [id]: value }));
   };
 
   submitHandler = (e: SyntheticInputEvent<HTMLInputElement>) => {
@@ -63,7 +63,7 @@ class Inputs extends Component<Props, ownState> {
     return (
       <div styleName="formWrapper">
         <h1 styleName="formTitle">Enter table parameters</h1>
-        <form styleName="form" onSubmit={this.submitHandler}>
+        <form styleName="form" onSubmit={this.submitHandler} id="form">
           <div styleName="inputWrapper">
             <label htmlFor="m" styleName="label">
               Rows quantity:
@@ -116,12 +116,11 @@ class Inputs extends Component<Props, ownState> {
 }
 
 const mapDispatchToProps = (dispatch: Dispatch<Action>): DispatchProps => ({
-  onSaveParams: params => dispatch(actions.saveParams(params)),
-  onSaveArray: array => dispatch(actions.saveArray(array)),
-  onSaveRows: rows => dispatch(actions.saveRows(rows)),
-  onSaveCells: cells => dispatch(actions.saveCells(cells))
+  onSaveParams: (params) => dispatch(actions.saveParams(params)),
+  onSaveArray: (array) => dispatch(actions.saveArray(array)),
+  onSaveRows: (rows) => dispatch(actions.saveRows(rows)),
+  onSaveCells: (cells) => dispatch(actions.saveCells(cells)),
 });
-
 export default connect<Props, ownProps, _, DispatchProps, _, Dispatch<Action>>(
   null,
   mapDispatchToProps

@@ -31,5 +31,4 @@ const getClosestNumbers = (
 
   return { [pointId]: true, ...closestNumbersIds };
 };
-
 export default getClosestNumbers;

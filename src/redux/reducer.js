@@ -82,5 +82,4 @@ const reducer: Reducer<State, Action> = combineReducers({
   cells: cellsReducer,
   params: paramsReducer,
 });
-
 export default reducer;

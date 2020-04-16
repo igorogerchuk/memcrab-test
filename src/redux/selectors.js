@@ -27,7 +27,6 @@ export const getSumColumn = createSelector<State, *, *, *, *>(
     return sumColumn;
   }
 );
-
 export const getAvarageRow = createSelector<State, *, *, *, *>(
   [getRows, getCells],
   (rows, cells) => {

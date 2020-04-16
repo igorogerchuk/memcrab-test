@@ -14,7 +14,7 @@ type ownProps = {|
   cells: CellsState,
   onIncrease: (e: SyntheticEvent<HTMLTableCellElement>) => void,
   sumCell: number,
-  onRemove: (e: SyntheticEvent<HTMLButtonElement>) => void
+  onRemove: (e: SyntheticEvent<HTMLButtonElement>) => void,
 |};
 
 const areEqual = ({ illuminated, row, cells }, nextProps) => {
@@ -38,15 +38,15 @@ const ArrayRow = ({
   cells,
   onIncrease,
   sumCell,
-  onRemove
+  onRemove,
 }: ownProps) => {
   const [sumHover, setSumHover] = useState(false);
 
-  const hoverHandler = () => setSumHover(sumHover => !sumHover);
+  const hoverHandler = () => setSumHover((sumHover) => !sumHover);
 
   return (
     <tr id={id}>
-      {row.map(cellId => (
+      {row.map((cellId) => (
         <ArrayCell
           sumHover={sumHover}
           sum={sumCell}
@@ -59,7 +59,7 @@ const ArrayRow = ({
           onIncrease={onIncrease}
         />
       ))}
-      <SumCell onHover={hoverHandler} sum={sumCell} />
+      <SumCell id={"sum" + id} onHover={hoverHandler} sum={sumCell} />
       <td styleName="removeButtonTd">
         <button styleName="removeButton" onClick={onRemove} id={id}>
           &times;
@@ -68,5 +68,4 @@ const ArrayRow = ({
     </tr>
   );
 };
-
 export default React.memo<ownProps>(ArrayRow, areEqual);
