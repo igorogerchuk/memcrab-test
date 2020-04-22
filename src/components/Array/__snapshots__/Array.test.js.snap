@@ -9,11 +9,11 @@ exports[`testing Array methods for ArrayCell should render correctly after click
   >
     <tbody>
       <tr
-        id={1}
+        id="1"
       >
         <td
           className="simpleTd___1ELya"
-          id={2}
+          id="2"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -27,7 +27,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={3}
+          id="3"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -41,7 +41,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={4}
+          id="4"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -55,7 +55,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={5}
+          id="5"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -69,7 +69,6 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum1"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -80,7 +79,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={1}
+            id="1"
             onClick={[Function]}
           >
             ×
@@ -88,11 +87,11 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
       </tr>
       <tr
-        id={6}
+        id="6"
       >
         <td
           className="simpleTd___1ELya"
-          id={7}
+          id="7"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -106,7 +105,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={8}
+          id="8"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -120,7 +119,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={9}
+          id="9"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -134,7 +133,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={10}
+          id="10"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -148,7 +147,6 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum6"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -159,7 +157,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={6}
+            id="6"
             onClick={[Function]}
           >
             ×
@@ -167,11 +165,11 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
       </tr>
       <tr
-        id={11}
+        id="11"
       >
         <td
           className="simpleTd___1ELya"
-          id={12}
+          id="12"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -185,7 +183,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={13}
+          id="13"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -199,7 +197,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={14}
+          id="14"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -213,7 +211,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={15}
+          id="15"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -227,7 +225,6 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum11"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -238,7 +235,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={11}
+            id="11"
             onClick={[Function]}
           >
             ×
@@ -246,11 +243,11 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
       </tr>
       <tr
-        id={16}
+        id="16"
       >
         <td
           className="simpleTd___1ELya"
-          id={17}
+          id="17"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -264,7 +261,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={18}
+          id="18"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -278,7 +275,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={19}
+          id="19"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -292,7 +289,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={20}
+          id="20"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -306,7 +303,6 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum16"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -317,7 +313,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={16}
+            id="16"
             onClick={[Function]}
           >
             ×
@@ -325,11 +321,11 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
       </tr>
       <tr
-        id={21}
+        id="21"
       >
         <td
           className="simpleTd___1ELya"
-          id={22}
+          id="22"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -343,7 +339,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={23}
+          id="23"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -357,7 +353,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={24}
+          id="24"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -371,7 +367,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={25}
+          id="25"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -385,7 +381,6 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum21"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -396,7 +391,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={21}
+            id="21"
             onClick={[Function]}
           >
             ×
@@ -404,11 +399,11 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
       </tr>
       <tr
-        id={26}
+        id="26"
       >
         <td
           className="simpleTd___1ELya"
-          id={27}
+          id="27"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -422,7 +417,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={28}
+          id="28"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -436,7 +431,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={29}
+          id="29"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -450,7 +445,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="simpleTd___1ELya"
-          id={30}
+          id="30"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -464,7 +459,6 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum26"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -475,7 +469,7 @@ exports[`testing Array methods for ArrayCell should render correctly after click
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={26}
+            id="26"
             onClick={[Function]}
           >
             ×
@@ -532,11 +526,11 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
   >
     <tbody>
       <tr
-        id={1}
+        id="1"
       >
         <td
           className="simpleTd___1ELya"
-          id={2}
+          id="2"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -550,7 +544,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={3}
+          id="3"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -564,7 +558,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={4}
+          id="4"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -578,7 +572,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={5}
+          id="5"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -592,7 +586,6 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum1"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -603,7 +596,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={1}
+            id="1"
             onClick={[Function]}
           >
             ×
@@ -611,11 +604,11 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
       </tr>
       <tr
-        id={6}
+        id="6"
       >
         <td
           className="simpleTd___1ELya"
-          id={7}
+          id="7"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -629,7 +622,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={8}
+          id="8"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -643,7 +636,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={9}
+          id="9"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -657,7 +650,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={10}
+          id="10"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -671,7 +664,6 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum6"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -682,7 +674,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={6}
+            id="6"
             onClick={[Function]}
           >
             ×
@@ -690,11 +682,11 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
       </tr>
       <tr
-        id={11}
+        id="11"
       >
         <td
           className="simpleTd___1ELya"
-          id={12}
+          id="12"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -708,7 +700,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={13}
+          id="13"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -722,7 +714,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={14}
+          id="14"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -736,7 +728,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={15}
+          id="15"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -750,7 +742,6 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum11"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -761,7 +752,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={11}
+            id="11"
             onClick={[Function]}
           >
             ×
@@ -769,11 +760,11 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
       </tr>
       <tr
-        id={16}
+        id="16"
       >
         <td
           className="simpleTd___1ELya"
-          id={17}
+          id="17"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -787,7 +778,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={18}
+          id="18"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -801,7 +792,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={19}
+          id="19"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -815,7 +806,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={20}
+          id="20"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -829,7 +820,6 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum16"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -840,7 +830,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={16}
+            id="16"
             onClick={[Function]}
           >
             ×
@@ -848,11 +838,11 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
       </tr>
       <tr
-        id={21}
+        id="21"
       >
         <td
           className="simpleTd___1ELya"
-          id={22}
+          id="22"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -866,7 +856,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={23}
+          id="23"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -880,7 +870,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={24}
+          id="24"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -894,7 +884,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={25}
+          id="25"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -908,7 +898,6 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum21"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -919,7 +908,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={21}
+            id="21"
             onClick={[Function]}
           >
             ×
@@ -927,11 +916,11 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
       </tr>
       <tr
-        id={26}
+        id="26"
       >
         <td
           className="simpleTd___1ELya"
-          id={27}
+          id="27"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -945,7 +934,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={28}
+          id="28"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -959,7 +948,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={29}
+          id="29"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -973,7 +962,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={30}
+          id="30"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -987,7 +976,6 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum26"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -998,7 +986,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={26}
+            id="26"
             onClick={[Function]}
           >
             ×
@@ -1055,11 +1043,11 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
   >
     <tbody>
       <tr
-        id={1}
+        id="1"
       >
         <td
           className="simpleTd___1ELya"
-          id={2}
+          id="2"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1073,7 +1061,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={3}
+          id="3"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1087,7 +1075,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={4}
+          id="4"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1101,7 +1089,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={5}
+          id="5"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1115,7 +1103,6 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum1"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -1126,7 +1113,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={1}
+            id="1"
             onClick={[Function]}
           >
             ×
@@ -1134,11 +1121,11 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
       </tr>
       <tr
-        id={6}
+        id="6"
       >
         <td
           className="simpleTd___1ELya"
-          id={7}
+          id="7"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1152,7 +1139,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={8}
+          id="8"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1166,7 +1153,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={9}
+          id="9"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1180,7 +1167,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={10}
+          id="10"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1194,7 +1181,6 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum6"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -1205,7 +1191,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={6}
+            id="6"
             onClick={[Function]}
           >
             ×
@@ -1213,11 +1199,11 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
       </tr>
       <tr
-        id={11}
+        id="11"
       >
         <td
           className="simpleTd___1ELya"
-          id={12}
+          id="12"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1231,7 +1217,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={13}
+          id="13"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1245,7 +1231,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={14}
+          id="14"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1259,7 +1245,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={15}
+          id="15"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1273,7 +1259,6 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum11"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -1284,7 +1269,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={11}
+            id="11"
             onClick={[Function]}
           >
             ×
@@ -1292,11 +1277,11 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
       </tr>
       <tr
-        id={16}
+        id="16"
       >
         <td
           className="simpleTd___1ELya"
-          id={17}
+          id="17"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1310,7 +1295,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={18}
+          id="18"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1324,7 +1309,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={19}
+          id="19"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1338,7 +1323,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={20}
+          id="20"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1352,7 +1337,6 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum16"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -1363,7 +1347,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={16}
+            id="16"
             onClick={[Function]}
           >
             ×
@@ -1371,11 +1355,11 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
       </tr>
       <tr
-        id={21}
+        id="21"
       >
         <td
           className="simpleTd___1ELya"
-          id={22}
+          id="22"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1389,7 +1373,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={23}
+          id="23"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1403,7 +1387,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={24}
+          id="24"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1417,7 +1401,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={25}
+          id="25"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1431,7 +1415,6 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum21"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -1442,7 +1425,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={21}
+            id="21"
             onClick={[Function]}
           >
             ×
@@ -1450,11 +1433,11 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
       </tr>
       <tr
-        id={26}
+        id="26"
       >
         <td
           className="simpleTd___1ELya"
-          id={27}
+          id="27"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1468,7 +1451,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={28}
+          id="28"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1482,7 +1465,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={29}
+          id="29"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1496,7 +1479,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="simpleTd___1ELya"
-          id={30}
+          id="30"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1510,7 +1493,6 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum26"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -1521,7 +1503,7 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={26}
+            id="26"
             onClick={[Function]}
           >
             ×
@@ -1578,11 +1560,11 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
   >
     <tbody>
       <tr
-        id={1}
+        id="1"
       >
         <td
           className="simpleTd___1ELya"
-          id={2}
+          id="2"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1596,7 +1578,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={3}
+          id="3"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1610,7 +1592,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={4}
+          id="4"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1624,7 +1606,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={5}
+          id="5"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1638,7 +1620,6 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum1"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -1649,7 +1630,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={1}
+            id="1"
             onClick={[Function]}
           >
             ×
@@ -1657,11 +1638,11 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
       </tr>
       <tr
-        id={11}
+        id="11"
       >
         <td
           className="simpleTd___1ELya"
-          id={12}
+          id="12"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1675,7 +1656,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={13}
+          id="13"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1689,7 +1670,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={14}
+          id="14"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1703,7 +1684,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={15}
+          id="15"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1717,7 +1698,6 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum11"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -1728,7 +1708,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={11}
+            id="11"
             onClick={[Function]}
           >
             ×
@@ -1736,11 +1716,11 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
       </tr>
       <tr
-        id={16}
+        id="16"
       >
         <td
           className="simpleTd___1ELya"
-          id={17}
+          id="17"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1754,7 +1734,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={18}
+          id="18"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1768,7 +1748,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={19}
+          id="19"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1782,7 +1762,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={20}
+          id="20"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1796,7 +1776,6 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum16"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -1807,7 +1786,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={16}
+            id="16"
             onClick={[Function]}
           >
             ×
@@ -1815,11 +1794,11 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
       </tr>
       <tr
-        id={21}
+        id="21"
       >
         <td
           className="simpleTd___1ELya"
-          id={22}
+          id="22"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1833,7 +1812,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={23}
+          id="23"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1847,7 +1826,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={24}
+          id="24"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1861,7 +1840,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={25}
+          id="25"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1875,7 +1854,6 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum21"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -1886,7 +1864,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={21}
+            id="21"
             onClick={[Function]}
           >
             ×
@@ -1894,11 +1872,11 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
       </tr>
       <tr
-        id={26}
+        id="26"
       >
         <td
           className="simpleTd___1ELya"
-          id={27}
+          id="27"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1912,7 +1890,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={28}
+          id="28"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1926,7 +1904,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={29}
+          id="29"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1940,7 +1918,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={30}
+          id="30"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -1954,7 +1932,6 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum26"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -1965,7 +1942,7 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={26}
+            id="26"
             onClick={[Function]}
           >
             ×
@@ -2022,67 +1999,66 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
   >
     <tbody>
       <tr
-        id={1}
+        id="1"
       >
         <td
           className="simpleTd___1ELya"
-          id={2}
+          id="2"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           style={
             Object {
-              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              "background": "linear-gradient(to top, #fff200, #1e9600 25.037481259370313%, transparent 25.037481259370313%)",
             }
           }
         >
-          501
+          25.0%
         </td>
         <td
           className="simpleTd___1ELya"
-          id={3}
+          id="3"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           style={
             Object {
-              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              "background": "linear-gradient(to top, #fff200, #1e9600 24.987506246876563%, transparent 24.987506246876563%)",
             }
           }
         >
-          500
+          25.0%
         </td>
         <td
           className="simpleTd___1ELya"
-          id={4}
+          id="4"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           style={
             Object {
-              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              "background": "linear-gradient(to top, #fff200, #1e9600 24.987506246876563%, transparent 24.987506246876563%)",
             }
           }
         >
-          500
+          25.0%
         </td>
         <td
           className="simpleTd___1ELya"
-          id={5}
+          id="5"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           style={
             Object {
-              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              "background": "linear-gradient(to top, #fff200, #1e9600 24.987506246876563%, transparent 24.987506246876563%)",
             }
           }
         >
-          500
+          25.0%
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum1"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -2093,7 +2069,7 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={1}
+            id="1"
             onClick={[Function]}
           >
             ×
@@ -2101,90 +2077,11 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
       </tr>
       <tr
-        id={6}
+        id="6"
       >
         <td
           className="simpleTd___1ELya"
-          id={7}
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "background": "linear-gradient(to top, #fff200, #1e9600 25%, transparent 25%)",
-            }
-          }
-        >
-          25.0%
-        </td>
-        <td
-          className="simpleTd___1ELya"
-          id={8}
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "background": "linear-gradient(to top, #fff200, #1e9600 25%, transparent 25%)",
-            }
-          }
-        >
-          25.0%
-        </td>
-        <td
-          className="simpleTd___1ELya"
-          id={9}
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "background": "linear-gradient(to top, #fff200, #1e9600 25%, transparent 25%)",
-            }
-          }
-        >
-          25.0%
-        </td>
-        <td
-          className="simpleTd___1ELya"
-          id={10}
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          style={
-            Object {
-              "background": "linear-gradient(to top, #fff200, #1e9600 25%, transparent 25%)",
-            }
-          }
-        >
-          25.0%
-        </td>
-        <td
-          className="sumCell___2yW_R"
-          id="sum6"
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-        >
-          2000
-        </td>
-        <td
-          className="removeButtonTd___1OWGN addCell___a54He"
-        >
-          <button
-            className="removeButton___2Sb5_ addButton___2a67D"
-            id={6}
-            onClick={[Function]}
-          >
-            ×
-          </button>
-        </td>
-      </tr>
-      <tr
-        id={11}
-      >
-        <td
-          className="simpleTd___1ELya"
-          id={12}
+          id="7"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2198,7 +2095,7 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={13}
+          id="8"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2212,7 +2109,7 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={14}
+          id="9"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2226,7 +2123,7 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={15}
+          id="10"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2240,7 +2137,6 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum11"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -2251,7 +2147,7 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={11}
+            id="6"
             onClick={[Function]}
           >
             ×
@@ -2259,11 +2155,11 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
       </tr>
       <tr
-        id={16}
+        id="11"
       >
         <td
           className="simpleTd___1ELya"
-          id={17}
+          id="12"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2277,7 +2173,7 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={18}
+          id="13"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2291,7 +2187,7 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={19}
+          id="14"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2305,7 +2201,7 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={20}
+          id="15"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2319,7 +2215,6 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum16"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -2330,7 +2225,7 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={16}
+            id="11"
             onClick={[Function]}
           >
             ×
@@ -2338,11 +2233,11 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
       </tr>
       <tr
-        id={21}
+        id="16"
       >
         <td
           className="simpleTd___1ELya"
-          id={22}
+          id="17"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2356,7 +2251,7 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={23}
+          id="18"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2370,7 +2265,7 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={24}
+          id="19"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2384,7 +2279,7 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={25}
+          id="20"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2398,7 +2293,6 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum21"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -2409,7 +2303,7 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={21}
+            id="16"
             onClick={[Function]}
           >
             ×
@@ -2417,11 +2311,11 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
       </tr>
       <tr
-        id={26}
+        id="21"
       >
         <td
           className="simpleTd___1ELya"
-          id={27}
+          id="22"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2435,7 +2329,7 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={28}
+          id="23"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2449,7 +2343,7 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={29}
+          id="24"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2463,7 +2357,7 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
         <td
           className="simpleTd___1ELya"
-          id={30}
+          id="25"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2477,7 +2371,6 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum26"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -2488,7 +2381,85 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={26}
+            id="21"
+            onClick={[Function]}
+          >
+            ×
+          </button>
+        </td>
+      </tr>
+      <tr
+        id="26"
+      >
+        <td
+          className="simpleTd___1ELya"
+          id="27"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id="28"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id="29"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="simpleTd___1ELya"
+          id="30"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          style={
+            Object {
+              "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+            }
+          }
+        >
+          500
+        </td>
+        <td
+          className="sumCell___2yW_R"
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+        >
+          2000
+        </td>
+        <td
+          className="removeButtonTd___1OWGN addCell___a54He"
+        >
+          <button
+            className="removeButton___2Sb5_ addButton___2a67D"
+            id="26"
             onClick={[Function]}
           >
             ×
@@ -2545,11 +2516,11 @@ exports[`testing Array methods own should render correctly after click on the ad
   >
     <tbody>
       <tr
-        id={1}
+        id="1"
       >
         <td
           className="simpleTd___1ELya"
-          id={2}
+          id="2"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2563,7 +2534,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={3}
+          id="3"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2577,7 +2548,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={4}
+          id="4"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2591,7 +2562,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={5}
+          id="5"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2605,7 +2576,6 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum1"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -2616,7 +2586,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={1}
+            id="1"
             onClick={[Function]}
           >
             ×
@@ -2624,11 +2594,11 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
       </tr>
       <tr
-        id={6}
+        id="6"
       >
         <td
           className="simpleTd___1ELya"
-          id={7}
+          id="7"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2642,7 +2612,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={8}
+          id="8"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2656,7 +2626,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={9}
+          id="9"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2670,7 +2640,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={10}
+          id="10"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2684,7 +2654,6 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum6"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -2695,7 +2664,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={6}
+            id="6"
             onClick={[Function]}
           >
             ×
@@ -2703,11 +2672,11 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
       </tr>
       <tr
-        id={11}
+        id="11"
       >
         <td
           className="simpleTd___1ELya"
-          id={12}
+          id="12"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2721,7 +2690,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={13}
+          id="13"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2735,7 +2704,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={14}
+          id="14"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2749,7 +2718,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={15}
+          id="15"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2763,7 +2732,6 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum11"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -2774,7 +2742,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={11}
+            id="11"
             onClick={[Function]}
           >
             ×
@@ -2782,11 +2750,11 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
       </tr>
       <tr
-        id={16}
+        id="16"
       >
         <td
           className="simpleTd___1ELya"
-          id={17}
+          id="17"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2800,7 +2768,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={18}
+          id="18"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2814,7 +2782,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={19}
+          id="19"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2828,7 +2796,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={20}
+          id="20"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2842,7 +2810,6 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum16"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -2853,7 +2820,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={16}
+            id="16"
             onClick={[Function]}
           >
             ×
@@ -2861,11 +2828,11 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
       </tr>
       <tr
-        id={21}
+        id="21"
       >
         <td
           className="simpleTd___1ELya"
-          id={22}
+          id="22"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2879,7 +2846,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={23}
+          id="23"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2893,7 +2860,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={24}
+          id="24"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2907,7 +2874,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={25}
+          id="25"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2921,7 +2888,6 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum21"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -2932,7 +2898,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={21}
+            id="21"
             onClick={[Function]}
           >
             ×
@@ -2940,11 +2906,11 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
       </tr>
       <tr
-        id={26}
+        id="26"
       >
         <td
           className="simpleTd___1ELya"
-          id={27}
+          id="27"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2958,7 +2924,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={28}
+          id="28"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2972,7 +2938,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={29}
+          id="29"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -2986,7 +2952,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="simpleTd___1ELya"
-          id={30}
+          id="30"
           onClick={[Function]}
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
@@ -3000,7 +2966,6 @@ exports[`testing Array methods own should render correctly after click on the ad
         </td>
         <td
           className="sumCell___2yW_R"
-          id="sum26"
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
         >
@@ -3011,7 +2976,7 @@ exports[`testing Array methods own should render correctly after click on the ad
         >
           <button
             className="removeButton___2Sb5_ addButton___2a67D"
-            id={26}
+            id="26"
             onClick={[Function]}
           >
             ×

@@ -59,7 +59,7 @@ const ArrayRow = ({
           onIncrease={onIncrease}
         />
       ))}
-      <SumCell id={"sum" + id} onHover={hoverHandler} sum={sumCell} />
+      <SumCell onHover={hoverHandler} sum={sumCell} />
       <td styleName="removeButtonTd">
         <button styleName="removeButton" onClick={onRemove} id={id}>
           &times;
