@@ -484,22 +484,22 @@ exports[`testing Array methods for ArrayCell should render correctly after click
       </tr>
       <tr>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.17
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
@@ -1007,22 +1007,22 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
       </tr>
       <tr>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
@@ -1530,22 +1530,22 @@ exports[`testing Array methods for ArrayCell should render correctly after mouse
       </tr>
       <tr>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
@@ -1974,22 +1974,22 @@ exports[`testing Array methods for ArrayRow should render correctly after click 
       </tr>
       <tr>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.20
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
@@ -2497,22 +2497,22 @@ exports[`testing Array methods for ArrayRow should render correctly after mouse 
       </tr>
       <tr>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.17
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
@@ -3020,22 +3020,22 @@ exports[`testing Array methods own should render correctly after click on the ad
       </tr>
       <tr>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>
         <td
-          className="avarageTd___3oJ08"
+          className="averageTd___FDFfU"
         >
           500.00
         </td>

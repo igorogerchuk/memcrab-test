@@ -15,30 +15,24 @@ export const getIlluminatedQty = (state: State) => state.params.x;
 export const getSumColumn = createSelector<State, *, *, *, *>(
   [getRows, getCells],
   (rows, cells) => {
-    const sumColumn = [];
     const cellsIds = Object.keys(rows).map((rowId: string) => rows[rowId]);
-    for (let i = 0; i < cellsIds.length; i++) {
-      let rowTotal = 0;
-      for (let j = 0; j < cellsIds[i].length; j++) {
-        rowTotal += cells[cellsIds[i][j]].amount;
-      }
-      sumColumn.push(rowTotal);
-    }
+    const sumColumn = cellsIds.map((row: $ReadOnlyArray<string>) =>
+      row.reduce((acc, id) => (acc += cells[id].amount), 0)
+    );
     return sumColumn;
   }
 );
-export const getAvarageRow = createSelector<State, *, *, *, *>(
-  [getRows, getCells],
-  (rows, cells) => {
-    const avarageRow = [];
+
+export const getAverageRow = createSelector<State, *, *, *, *, *>(
+  [getRows, getCells, getColumnsQty],
+  (rows, cells, columnsQty) => {
     const cellsIds = Object.keys(rows).map((rowId: string) => rows[rowId]);
-    for (let j = 0; j < cellsIds[0].length; j++) {
-      let columnTotal = 0;
-      for (let i = 0; i < cellsIds.length; i++) {
-        columnTotal += cells[cellsIds[i][j]].amount;
-      }
-      avarageRow.push(columnTotal / cellsIds.length);
-    }
-    return avarageRow;
+    const rowsQty = cellsIds.length;
+    const averageRow = cellsIds.reduce(
+      (acc: Array<number>, row: $ReadOnlyArray<string>) =>
+        row.map((id, index) => (acc[index] += cells[id].amount / rowsQty)),
+      new Array(columnsQty).fill(0)
+    );
+    return averageRow;
   }
 );

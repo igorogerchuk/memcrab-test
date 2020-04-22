@@ -18,7 +18,7 @@ it("getSumColumn should return an array with sums of cells amounts", () => {
   expect(result).toEqual([6, 15]);
 });
 
-it("getSumColumn should return an array with sums of cells amounts", () => {
-  const result = selectors.getAvarageRow.resultFunc(rows, cells);
+it("getAverageRow should return an array with sums of cells amounts", () => {
+  const result = selectors.getAverageRow.resultFunc(rows, cells);
   expect(result).toEqual([2.5, 3.5, 4.5]);
 });

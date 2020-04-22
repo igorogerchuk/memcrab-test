@@ -44,9 +44,11 @@ const cellsReducer = (state: CellsState = {}, action: Action): CellsState => {
     case types.ADD_ROW:
       return { ...state, ...action.payload.cells };
     case types.REMOVE_ROW:
-      const withoutDeleted = { ...state };
-      action.payload.cellsIds.forEach(
-        (cellId) => delete withoutDeleted[cellId]
+      const { cellsIds } = action.payload;
+      const withoutDeleted = Object.keys(state).reduce(
+        (acc: CellsState, cellId: string) =>
+          cellsIds.includes(cellId) ? acc : { ...acc, [cellId]: state[cellId] },
+        {}
       );
       return withoutDeleted;
     case types.SAVE_CELLS:

@@ -45,6 +45,10 @@
       "src/**/*.jsx",
       "src/**/*.js"
     ],
+    "globExcludePatterns": [
+      "**/__test__/**",
+      "src/**/*.test.js"
+    ],
     "reportTypes": [
       "json",
       "text",

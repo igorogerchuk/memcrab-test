@@ -487,22 +487,22 @@ exports[`should render correctly with given random array 5x4 1`] = `
         </tr>
         <tr>
           <td
-            className="avarageTd___3oJ08"
+            className="averageTd___FDFfU"
           >
             500.00
           </td>
           <td
-            className="avarageTd___3oJ08"
+            className="averageTd___FDFfU"
           >
             500.00
           </td>
           <td
-            className="avarageTd___3oJ08"
+            className="averageTd___FDFfU"
           >
             500.00
           </td>
           <td
-            className="avarageTd___3oJ08"
+            className="averageTd___FDFfU"
           >
             500.00
           </td>
