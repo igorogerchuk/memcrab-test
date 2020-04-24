@@ -1,6 +1,6 @@
 // @flow
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, batch } from "react-redux";
 import * as actions from "../../redux/actions";
 import type { Action } from "../../redux/actions";
 import type { Dispatch } from "redux";
@@ -26,13 +26,14 @@ const Inputs = () => {
       alert("array parameters must be more then 0");
       return;
     }
-    dispatch(actions.saveParams({ n: columnsQty, x: illuminatedQty }));
+    batch(() => {
+      dispatch(actions.saveParams({ n: columnsQty, x: illuminatedQty }));
 
-    const { array, rows, cells } = createRandomArray(rowsQty, columnsQty);
-    dispatch(actions.saveArray(array));
-    dispatch(actions.saveRows(rows));
-    dispatch(actions.saveCells(cells));
-
+      const { array, rows, cells } = createRandomArray(rowsQty, columnsQty);
+      dispatch(actions.saveArray(array));
+      dispatch(actions.saveRows(rows));
+      dispatch(actions.saveCells(cells));
+    });
     setParams({ m: "", n: "", x: "" });
   };
 
