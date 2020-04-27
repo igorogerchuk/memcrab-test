@@ -1,6 +1,17 @@
-const getClosestNumbers = (cells, pointId, illuminatedQty) => {
-  const { [pointId]: deleted, ...cellsWithoutPoint } = cells;
-  const cellsArray = Object.values(cellsWithoutPoint);
+// @flow
+import type { CellsState } from "../redux/types";
+const getClosestNumbers = (
+  cells: CellsState,
+  pointId: string,
+  illuminatedQty: number
+) => {
+  const cellsWithoutPoint = { ...cells };
+  delete cellsWithoutPoint[pointId];
+  const cellsArray: Array<
+    $ReadOnly<{ id: string, amount: number }>
+  > = Object.keys(cellsWithoutPoint).map(
+    (cell: string) => cellsWithoutPoint[cell]
+  );
 
   if (illuminatedQty < cellsArray.length) {
     const pointCell = cells[pointId];
@@ -13,12 +24,11 @@ const getClosestNumbers = (cells, pointId, illuminatedQty) => {
 
   const closestNumbers = cellsArray.slice(0, illuminatedQty);
 
-  const closestNumbersIds = closestNumbers.reduce(
+  const closestNumbersIds: { [id: string]: boolean } = closestNumbers.reduce(
     (acc, cell) => ({ ...acc, [cell.id]: true }),
     {}
   );
 
   return { [pointId]: true, ...closestNumbersIds };
 };
-
 export default getClosestNumbers;

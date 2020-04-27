@@ -1,5 +1,17 @@
+// @flow
 import React from "react";
-import styles from "./ArrayCell.module.css";
+import "./ArrayCell.module.css";
+
+type ownProps = {|
+  cell: $ReadOnly<{ amount: number, id: string }>,
+  id: string,
+  onHover: (e: SyntheticEvent<HTMLTableCellElement>) => void,
+  offHover: () => void,
+  illuminated: { [id: string]: boolean },
+  onIncrease: (e: SyntheticEvent<HTMLTableCellElement>) => void,
+  sumHover: boolean,
+  sum: number,
+|};
 
 const areEqual = ({ illuminated, id, cell, sumHover }, nextProps) => {
   if (nextProps.illuminated[id] !== illuminated[id]) {
@@ -25,11 +37,11 @@ const ArrayCell = ({
   illuminated,
   onIncrease,
   sumHover,
-  sum
-}) => {
+  sum,
+}: ownProps) => {
   let style = {
     background:
-      "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)"
+      "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
   };
   let value = cell.amount;
 
@@ -46,7 +58,7 @@ const ArrayCell = ({
 
   return (
     <td
-      className={styles.simpleTd}
+      styleName="simpleTd"
       onClick={onIncrease}
       id={id}
       onMouseEnter={onHover}
@@ -57,5 +69,4 @@ const ArrayCell = ({
     </td>
   );
 };
-
-export default React.memo(ArrayCell, areEqual);
+export default React.memo<ownProps>(ArrayCell, areEqual);

@@ -1,102 +1,94 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
+// @flow
+import React, { useState } from "react";
+import { useDispatch, batch } from "react-redux";
 import * as actions from "../../redux/actions";
+import type { Action } from "../../redux/actions";
+import type { Dispatch } from "redux";
 import createRandomArray from "../../services/randomArray";
-import styles from "./Inputs.module.css";
+import "./Inputs.module.css";
 
-class Inputs extends Component {
-  state = { m: "", n: "", x: "" };
+const Inputs = () => {
+  const dispatch = useDispatch<Dispatch<Action>>();
+  const [params, setParams] = useState({ m: "", n: "", x: "" });
+  const { m, n, x } = params;
 
-  inputHandler = e => {
+  const inputHandler = (e: SyntheticInputEvent<HTMLInputElement>) => {
     const { id, value } = e.target;
-    this.setState(state => ({ ...state, [id]: value }));
+    setParams({ ...params, [id]: value });
   };
 
-  submitHandler = e => {
+  const submitHandler = (e: SyntheticInputEvent<HTMLInputElement>) => {
     e.preventDefault();
-    const { m, n, x } = this.state;
-    const { onSaveParams, onSaveArray, onSaveRows, onSaveCells } = this.props;
-    if (m <= 0 || n <= 0 || x < 0) {
+    const rowsQty = +m;
+    const columnsQty = +n;
+    const illuminatedQty = +x;
+    if (rowsQty <= 0 || columnsQty <= 0 || illuminatedQty < 0) {
       alert("array parameters must be more then 0");
       return;
     }
-    onSaveParams({ n, x });
-    const { array, rows, cells } = createRandomArray(m, n);
-    onSaveArray(array);
-    onSaveRows(rows);
-    onSaveCells(cells);
+    batch(() => {
+      dispatch(actions.saveParams({ n: columnsQty, x: illuminatedQty }));
 
-    this.setState({ m: "", n: "", x: "" });
+      const { array, rows, cells } = createRandomArray(rowsQty, columnsQty);
+      dispatch(actions.saveArray(array));
+      dispatch(actions.saveRows(rows));
+      dispatch(actions.saveCells(cells));
+    });
+    setParams({ m: "", n: "", x: "" });
   };
 
-  render() {
-    const { m, n, x } = this.state;
-    return (
-      <div className={styles.formWrapper}>
-        <h1 className={styles.formTitle}>Enter table parameters</h1>
-        <form className={styles.form} onSubmit={this.submitHandler}>
-          <div className={styles.inputWrapper}>
-            <label htmlFor="m" className={styles.label}>
-              Rows quantity:
-            </label>
-            <input
-              className={styles.input}
-              type="number"
-              name="rows"
-              id="m"
-              onChange={this.inputHandler}
-              value={m}
-              placeholder="0"
-            />
-          </div>
-          <div className={styles.inputWrapper}>
-            <label htmlFor="n" className={styles.label}>
-              Columns quantity:
-            </label>
-            <input
-              className={styles.input}
-              type="number"
-              name="columns"
-              id="n"
-              onChange={this.inputHandler}
-              value={n}
-              placeholder="0"
-            />
-          </div>
-          <div className={styles.inputWrapper}>
-            <label htmlFor="m" className={styles.label}>
-              Illuminated cells quantity:
-            </label>
-            <input
-              className={styles.input}
-              type="number"
-              name="illuminate"
-              id="x"
-              onChange={this.inputHandler}
-              value={x}
-              placeholder="0"
-            />
-          </div>
-          <div>
-            <input
-              className={styles.submitButton}
-              type="submit"
-              value="Generate"
-            />
-          </div>
-        </form>
-      </div>
-    );
-  }
-}
-
-const mapDispatchToProps = dispatch => {
-  return {
-    onSaveParams: params => dispatch(actions.saveParams(params)),
-    onSaveArray: array => dispatch(actions.saveArray(array)),
-    onSaveRows: rows => dispatch(actions.saveRows(rows)),
-    onSaveCells: cells => dispatch(actions.saveCells(cells))
-  };
+  return (
+    <div styleName="formWrapper">
+      <h1 styleName="formTitle">Enter table parameters</h1>
+      <form styleName="form" onSubmit={submitHandler} id="form">
+        <div styleName="inputWrapper">
+          <label htmlFor="m" styleName="label">
+            Rows quantity:
+          </label>
+          <input
+            styleName="input"
+            type="number"
+            name="rows"
+            id="m"
+            onChange={inputHandler}
+            value={m}
+            placeholder="0"
+          />
+        </div>
+        <div styleName="inputWrapper">
+          <label htmlFor="n" styleName="label">
+            Columns quantity:
+          </label>
+          <input
+            styleName="input"
+            type="number"
+            name="columns"
+            id="n"
+            onChange={inputHandler}
+            value={n}
+            placeholder="0"
+          />
+        </div>
+        <div styleName="inputWrapper">
+          <label htmlFor="m" styleName="label">
+            Illuminated cells quantity:
+          </label>
+          <input
+            styleName="input"
+            type="number"
+            name="illuminate"
+            id="x"
+            onChange={inputHandler}
+            value={x}
+            placeholder="0"
+          />
+        </div>
+        <div>
+          <input styleName="submitButton" type="submit" value="Generate" />
+        </div>
+      </form>
+    </div>
+  );
 };
 
-export default connect(null, mapDispatchToProps)(Inputs);
+export default Inputs;

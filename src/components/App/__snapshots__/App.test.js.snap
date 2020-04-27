@@ -1,0 +1,609 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly with given random array 5x4 1`] = `
+<div
+  className="container___2qaOc"
+>
+  <div
+    className="formWrapper___Xr_Ln"
+  >
+    <h1
+      className="formTitle___1Sczm"
+    >
+      Enter table parameters
+    </h1>
+    <form
+      className="form___1t6C-"
+      id="form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="inputWrapper___1nGv5"
+      >
+        <label
+          className="label___2sD9G"
+          htmlFor="m"
+        >
+          Rows quantity:
+        </label>
+        <input
+          className="input___3WuZL"
+          id="m"
+          name="rows"
+          onChange={[Function]}
+          placeholder="0"
+          type="number"
+          value=""
+        />
+      </div>
+      <div
+        className="inputWrapper___1nGv5"
+      >
+        <label
+          className="label___2sD9G"
+          htmlFor="n"
+        >
+          Columns quantity:
+        </label>
+        <input
+          className="input___3WuZL"
+          id="n"
+          name="columns"
+          onChange={[Function]}
+          placeholder="0"
+          type="number"
+          value=""
+        />
+      </div>
+      <div
+        className="inputWrapper___1nGv5"
+      >
+        <label
+          className="label___2sD9G"
+          htmlFor="m"
+        >
+          Illuminated cells quantity:
+        </label>
+        <input
+          className="input___3WuZL"
+          id="x"
+          name="illuminate"
+          onChange={[Function]}
+          placeholder="0"
+          type="number"
+          value=""
+        />
+      </div>
+      <div>
+        <input
+          className="submitButton___1e-tC"
+          type="submit"
+          value="Generate"
+        />
+      </div>
+    </form>
+  </div>
+  <div
+    className="tableWrapper___3mKZT"
+  >
+    <table
+      className="table___3XwP7"
+    >
+      <tbody>
+        <tr
+          id="1"
+        >
+          <td
+            className="simpleTd___1ELya"
+            id="2"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="simpleTd___1ELya"
+            id="3"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="simpleTd___1ELya"
+            id="4"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="simpleTd___1ELya"
+            id="5"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="sumCell___2yW_R"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            2000
+          </td>
+          <td
+            className="removeButtonTd___1OWGN addCell___a54He"
+          >
+            <button
+              className="removeButton___2Sb5_ addButton___2a67D"
+              id="1"
+              onClick={[Function]}
+            >
+              ×
+            </button>
+          </td>
+        </tr>
+        <tr
+          id="6"
+        >
+          <td
+            className="simpleTd___1ELya"
+            id="7"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="simpleTd___1ELya"
+            id="8"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="simpleTd___1ELya"
+            id="9"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="simpleTd___1ELya"
+            id="10"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="sumCell___2yW_R"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            2000
+          </td>
+          <td
+            className="removeButtonTd___1OWGN addCell___a54He"
+          >
+            <button
+              className="removeButton___2Sb5_ addButton___2a67D"
+              id="6"
+              onClick={[Function]}
+            >
+              ×
+            </button>
+          </td>
+        </tr>
+        <tr
+          id="11"
+        >
+          <td
+            className="simpleTd___1ELya"
+            id="12"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="simpleTd___1ELya"
+            id="13"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="simpleTd___1ELya"
+            id="14"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="simpleTd___1ELya"
+            id="15"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="sumCell___2yW_R"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            2000
+          </td>
+          <td
+            className="removeButtonTd___1OWGN addCell___a54He"
+          >
+            <button
+              className="removeButton___2Sb5_ addButton___2a67D"
+              id="11"
+              onClick={[Function]}
+            >
+              ×
+            </button>
+          </td>
+        </tr>
+        <tr
+          id="16"
+        >
+          <td
+            className="simpleTd___1ELya"
+            id="17"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="simpleTd___1ELya"
+            id="18"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="simpleTd___1ELya"
+            id="19"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="simpleTd___1ELya"
+            id="20"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="sumCell___2yW_R"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            2000
+          </td>
+          <td
+            className="removeButtonTd___1OWGN addCell___a54He"
+          >
+            <button
+              className="removeButton___2Sb5_ addButton___2a67D"
+              id="16"
+              onClick={[Function]}
+            >
+              ×
+            </button>
+          </td>
+        </tr>
+        <tr
+          id="21"
+        >
+          <td
+            className="simpleTd___1ELya"
+            id="22"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="simpleTd___1ELya"
+            id="23"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="simpleTd___1ELya"
+            id="24"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="simpleTd___1ELya"
+            id="25"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            style={
+              Object {
+                "background": "linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20%,#fff 25%,#f0f0f0 26%,#fff 28%,#ddd 55%,#eee 100%)",
+              }
+            }
+          >
+            500
+          </td>
+          <td
+            className="sumCell___2yW_R"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            2000
+          </td>
+          <td
+            className="removeButtonTd___1OWGN addCell___a54He"
+          >
+            <button
+              className="removeButton___2Sb5_ addButton___2a67D"
+              id="21"
+              onClick={[Function]}
+            >
+              ×
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td
+            className="averageTd___FDFfU"
+          >
+            500.00
+          </td>
+          <td
+            className="averageTd___FDFfU"
+          >
+            500.00
+          </td>
+          <td
+            className="averageTd___FDFfU"
+          >
+            500.00
+          </td>
+          <td
+            className="averageTd___FDFfU"
+          >
+            500.00
+          </td>
+        </tr>
+        <tr>
+          <td
+            className="addCell___a54He"
+            colSpan={4}
+          >
+            <button
+              className="addButton___2a67D"
+              id="addButton"
+              onClick={[Function]}
+            >
+              +
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`should render correctly with initial state from Redux store 1`] = `
+<div
+  className="container___2qaOc"
+>
+  <div
+    className="formWrapper___Xr_Ln"
+  >
+    <h1
+      className="formTitle___1Sczm"
+    >
+      Enter table parameters
+    </h1>
+    <form
+      className="form___1t6C-"
+      id="form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="inputWrapper___1nGv5"
+      >
+        <label
+          className="label___2sD9G"
+          htmlFor="m"
+        >
+          Rows quantity:
+        </label>
+        <input
+          className="input___3WuZL"
+          id="m"
+          name="rows"
+          onChange={[Function]}
+          placeholder="0"
+          type="number"
+          value=""
+        />
+      </div>
+      <div
+        className="inputWrapper___1nGv5"
+      >
+        <label
+          className="label___2sD9G"
+          htmlFor="n"
+        >
+          Columns quantity:
+        </label>
+        <input
+          className="input___3WuZL"
+          id="n"
+          name="columns"
+          onChange={[Function]}
+          placeholder="0"
+          type="number"
+          value=""
+        />
+      </div>
+      <div
+        className="inputWrapper___1nGv5"
+      >
+        <label
+          className="label___2sD9G"
+          htmlFor="m"
+        >
+          Illuminated cells quantity:
+        </label>
+        <input
+          className="input___3WuZL"
+          id="x"
+          name="illuminate"
+          onChange={[Function]}
+          placeholder="0"
+          type="number"
+          value=""
+        />
+      </div>
+      <div>
+        <input
+          className="submitButton___1e-tC"
+          type="submit"
+          value="Generate"
+        />
+      </div>
+    </form>
+  </div>
+</div>
+`;

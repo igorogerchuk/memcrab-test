@@ -1,59 +1,75 @@
-import types from "./types";
-import { combineReducers } from "redux";
+// @flow
 
-const arrayReducer = (state = [], { type, payload }) => {
-  switch (type) {
+import { combineReducers } from "redux";
+import type { Reducer } from "redux";
+import * as types from "./types";
+import type {
+  ArrayState,
+  RowsState,
+  CellsState,
+  ParamsState,
+  State,
+} from "./types";
+import type { Action } from "./actions";
+
+const arrayReducer = (state: ArrayState = [], action: Action): ArrayState => {
+  switch (action.type) {
     case types.ADD_ROW:
-      return [...state, ...payload.rowId];
+      return [...state, ...action.payload.array];
     case types.REMOVE_ROW:
-      return state.filter(rowId => rowId !== payload.id);
+      return state.filter((rowId) => rowId !== action.payload.id);
     case types.SAVE_ARRAY:
-      return payload.array;
+      return action.payload.array;
     default:
       return state;
   }
 };
 
-const rowsReducer = (state = {}, { type, payload }) => {
-  switch (type) {
+const rowsReducer = (state: RowsState = {}, action: Action): RowsState => {
+  switch (action.type) {
     case types.ADD_ROW:
-      return { ...state, ...payload.row };
+      return { ...state, ...action.payload.row };
     case types.REMOVE_ROW:
-      const { [payload.id]: deleted, ...withoutDeleted } = state;
+      const { [action.payload.id]: deleted, ...withoutDeleted } = state;
       return withoutDeleted;
     case types.SAVE_ROWS:
-      return payload.rows;
+      return action.payload.rows;
     default:
       return state;
   }
 };
 
-const cellsReducer = (state = {}, { type, payload }) => {
-  switch (type) {
+const cellsReducer = (state: CellsState = {}, action: Action): CellsState => {
+  switch (action.type) {
     case types.ADD_ROW:
-      return { ...state, ...payload.cells };
+      return { ...state, ...action.payload.cells };
     case types.REMOVE_ROW:
-      const withoutDeleted = payload.cellsIds.reduce((acc, cellId) => {
-        const { [cellId]: deleted, ...withoutDeleted } = acc;
-        return withoutDeleted;
-      }, state);
+      const { cellsIds } = action.payload;
+      const withoutDeleted = Object.keys(state).reduce(
+        (acc: CellsState, cellId: string) =>
+          cellsIds.includes(cellId) ? acc : { ...acc, [cellId]: state[cellId] },
+        {}
+      );
       return withoutDeleted;
     case types.SAVE_CELLS:
-      return payload.cells;
+      return action.payload.cells;
     case types.INCREASE:
       return {
         ...state,
-        [payload.id]: {
-          ...state[payload.id],
-          amount: state[payload.id].amount + 1
-        }
+        [action.payload.id]: {
+          ...state[action.payload.id],
+          amount: state[action.payload.id].amount + 1,
+        },
       };
     default:
       return state;
   }
 };
 
-const paramsReducer = (state = {}, action) => {
+const paramsReducer = (
+  state: ParamsState = {},
+  action: Action
+): ParamsState => {
   switch (action.type) {
     case types.SAVE_PARAMS:
       return action.payload.params;
@@ -62,11 +78,10 @@ const paramsReducer = (state = {}, action) => {
   }
 };
 
-const reducer = combineReducers({
+const reducer: Reducer<State, Action> = combineReducers({
   array: arrayReducer,
   rows: rowsReducer,
   cells: cellsReducer,
-  params: paramsReducer
+  params: paramsReducer,
 });
-
 export default reducer;

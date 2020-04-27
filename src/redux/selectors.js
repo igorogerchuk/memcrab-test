@@ -1,43 +1,38 @@
+// @flow
 import { createSelector } from "reselect";
+import type { State } from "./types";
 
-export const getArray = state => state.array;
+export const getArray = (state: State) => state.array;
 
-export const getRows = state => state.rows;
+export const getRows = (state: State) => state.rows;
 
-export const getCells = state => state.cells;
+export const getCells = (state: State) => state.cells;
 
-export const getColumnsQty = state => Number(state.params.n);
+export const getColumnsQty = (state: State) => state.params.n;
 
-export const getIlluminatedQty = state => Number(state.params.x);
+export const getIlluminatedQty = (state: State) => state.params.x;
 
-export const getSumColumn = createSelector(
+export const getSumColumn = createSelector<State, *, *, *, *>(
   [getRows, getCells],
   (rows, cells) => {
-    const sumColumn = [];
-    const cellsIds = Object.values(rows);
-    for (let i = 0; i < cellsIds.length; i++) {
-      let rowTotal = 0;
-      for (let j = 0; j < cellsIds[i].length; j++) {
-        rowTotal += cells[cellsIds[i][j]].amount;
-      }
-      sumColumn.push(rowTotal);
-    }
+    const cellsIds = Object.keys(rows).map((rowId: string) => rows[rowId]);
+    const sumColumn = cellsIds.map((row: $ReadOnlyArray<string>) =>
+      row.reduce((acc, id) => (acc += cells[id].amount), 0)
+    );
     return sumColumn;
   }
 );
 
-export const getAvarageRow = createSelector(
-  [getRows, getCells],
-  (rows, cells) => {
-    const avarageRow = [];
-    const cellsIds = Object.values(rows);
-    for (let j = 0; j < cellsIds[0].length; j++) {
-      let columnTotal = 0;
-      for (let i = 0; i < cellsIds.length; i++) {
-        columnTotal += cells[cellsIds[i][j]].amount;
-      }
-      avarageRow.push((columnTotal / cellsIds.length).toFixed(2));
-    }
-    return avarageRow;
+export const getAverageRow = createSelector<State, *, *, *, *, *>(
+  [getRows, getCells, getColumnsQty],
+  (rows, cells, columnsQty) => {
+    const cellsIds = Object.keys(rows).map((rowId: string) => rows[rowId]);
+    const rowsQty = cellsIds.length;
+    const averageRow = cellsIds.reduce(
+      (acc: Array<number>, row: $ReadOnlyArray<string>) =>
+        row.map((id, index) => (acc[index] += cells[id].amount / rowsQty)),
+      new Array(columnsQty).fill(0)
+    );
+    return averageRow;
   }
 );

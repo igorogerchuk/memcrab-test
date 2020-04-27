@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# typing
+/flow-coverage
+
 # testing
 /coverage
 

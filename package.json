@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^5.6.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
+    "babel-plugin-react-css-modules": "^5.2.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-redux": "^7.2.0",
@@ -15,12 +17,43 @@
     "uuid": "^3.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "flow": "flow",
+    "coverage": "flow-coverage-report"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!<rootDir>/node_modules/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 95,
+        "functions": 95,
+        "lines": 95,
+        "statements": 95
+      }
+    }
+  },
+  "flow-coverage-report": {
+    "globIncludePatterns": [
+      "src/**/*.jsx",
+      "src/**/*.js"
+    ],
+    "globExcludePatterns": [
+      "**/__test__/**",
+      "src/**/*.test.js"
+    ],
+    "reportTypes": [
+      "json",
+      "text",
+      "html"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -38,7 +71,10 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "flow-bin": "^0.121.0",
+    "flow-coverage-report": "^0.6.1",
+    "gh-pages": "^2.2.0",
+    "react-test-renderer": "^16.13.1"
   },
   "homepage": "http://igorogerchuk.github.io/memcrab-test"
 }

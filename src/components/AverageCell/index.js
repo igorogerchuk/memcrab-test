@@ -1,1 +1,2 @@
-export { default } from "./AvarageCell";
+// @flow
+export { default } from "./AverageCell";

@@ -1,50 +1,53 @@
-import types from "./types";
+// @flow
+import * as types from "./types";
+import type { ArrayState, RowsState, CellsState, ParamsState } from "./types";
 
-export const removeRow = (id, cellsIds) => {
-  return {
-    type: types.REMOVE_ROW,
-    payload: { id, cellsIds }
-  };
-};
+type _ExtractReturn<R, F: (...args: any[]) => R> = R;
+type ExtractReturn<F> = _ExtractReturn<*, F>;
 
-export const addRow = (rowId, row, cells) => {
-  return {
-    type: types.ADD_ROW,
-    payload: { rowId, row, cells }
-  };
-};
+export const removeRow = (id: string, cellsIds: $ReadOnlyArray<string>) => ({
+  type: types.REMOVE_ROW,
+  payload: { id, cellsIds },
+});
 
-export const saveArray = array => {
-  return {
-    type: types.SAVE_ARRAY,
-    payload: { array }
-  };
-};
+export const addRow = (
+  array: ArrayState,
+  row: RowsState,
+  cells: CellsState
+) => ({
+  type: types.ADD_ROW,
+  payload: { array, row, cells },
+});
 
-export const saveRows = rows => {
-  return {
-    type: types.SAVE_ROWS,
-    payload: { rows }
-  };
-};
+export const saveArray = (array: ArrayState) => ({
+  type: types.SAVE_ARRAY,
+  payload: { array },
+});
 
-export const saveCells = cells => {
-  return {
-    type: types.SAVE_CELLS,
-    payload: { cells }
-  };
-};
+export const saveRows = (rows: RowsState) => ({
+  type: types.SAVE_ROWS,
+  payload: { rows },
+});
 
-export const increase = id => {
-  return {
-    type: types.INCREASE,
-    payload: { id }
-  };
-};
+export const saveCells = (cells: CellsState) => ({
+  type: types.SAVE_CELLS,
+  payload: { cells },
+});
 
-export const saveParams = params => {
-  return {
-    type: types.SAVE_PARAMS,
-    payload: { params }
-  };
-};
+export const increase = (id: string) => ({
+  type: types.INCREASE,
+  payload: { id },
+});
+
+export const saveParams = (params: ParamsState) => ({
+  type: types.SAVE_PARAMS,
+  payload: { params },
+});
+export type Action =
+  | ExtractReturn<typeof removeRow>
+  | ExtractReturn<typeof addRow>
+  | ExtractReturn<typeof saveArray>
+  | ExtractReturn<typeof saveRows>
+  | ExtractReturn<typeof saveCells>
+  | ExtractReturn<typeof saveParams>
+  | ExtractReturn<typeof increase>;

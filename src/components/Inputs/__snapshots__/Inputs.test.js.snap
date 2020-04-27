@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testing Input methods should render correctly after form submit 1`] = `
+<div
+  className="formWrapper___Xr_Ln"
+>
+  <h1
+    className="formTitle___1Sczm"
+  >
+    Enter table parameters
+  </h1>
+  <form
+    className="form___1t6C-"
+    id="form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="inputWrapper___1nGv5"
+    >
+      <label
+        className="label___2sD9G"
+        htmlFor="m"
+      >
+        Rows quantity:
+      </label>
+      <input
+        className="input___3WuZL"
+        id="m"
+        name="rows"
+        onChange={[Function]}
+        placeholder="0"
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      className="inputWrapper___1nGv5"
+    >
+      <label
+        className="label___2sD9G"
+        htmlFor="n"
+      >
+        Columns quantity:
+      </label>
+      <input
+        className="input___3WuZL"
+        id="n"
+        name="columns"
+        onChange={[Function]}
+        placeholder="0"
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      className="inputWrapper___1nGv5"
+    >
+      <label
+        className="label___2sD9G"
+        htmlFor="m"
+      >
+        Illuminated cells quantity:
+      </label>
+      <input
+        className="input___3WuZL"
+        id="x"
+        name="illuminate"
+        onChange={[Function]}
+        placeholder="0"
+        type="number"
+        value=""
+      />
+    </div>
+    <div>
+      <input
+        className="submitButton___1e-tC"
+        type="submit"
+        value="Generate"
+      />
+    </div>
+  </form>
+</div>
+`;
+
+exports[`testing Input methods should render correctly after some number was typed into form input 1`] = `
+<div
+  className="formWrapper___Xr_Ln"
+>
+  <h1
+    className="formTitle___1Sczm"
+  >
+    Enter table parameters
+  </h1>
+  <form
+    className="form___1t6C-"
+    id="form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="inputWrapper___1nGv5"
+    >
+      <label
+        className="label___2sD9G"
+        htmlFor="m"
+      >
+        Rows quantity:
+      </label>
+      <input
+        className="input___3WuZL"
+        id="m"
+        name="rows"
+        onChange={[Function]}
+        placeholder="0"
+        type="number"
+        value={5}
+      />
+    </div>
+    <div
+      className="inputWrapper___1nGv5"
+    >
+      <label
+        className="label___2sD9G"
+        htmlFor="n"
+      >
+        Columns quantity:
+      </label>
+      <input
+        className="input___3WuZL"
+        id="n"
+        name="columns"
+        onChange={[Function]}
+        placeholder="0"
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      className="inputWrapper___1nGv5"
+    >
+      <label
+        className="label___2sD9G"
+        htmlFor="m"
+      >
+        Illuminated cells quantity:
+      </label>
+      <input
+        className="input___3WuZL"
+        id="x"
+        name="illuminate"
+        onChange={[Function]}
+        placeholder="0"
+        type="number"
+        value=""
+      />
+    </div>
+    <div>
+      <input
+        className="submitButton___1e-tC"
+        type="submit"
+        value="Generate"
+      />
+    </div>
+  </form>
+</div>
+`;

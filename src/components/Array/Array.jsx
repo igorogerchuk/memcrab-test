@@ -1,28 +1,29 @@
+// @flow
 import React, { useState } from "react";
-import { connect } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import ArrayRow from "../ArrayRow";
-import AvarageRow from "../AvarageRow";
+import AverageRow from "../AverageRow";
 import * as selectors from "../../redux/selectors";
 import * as actions from "../../redux/actions";
 import getClosestNumbers from "../../services/closestNumbers";
 import createRandomArray from "../../services/randomArray";
-import styles from "./Array.module.css";
+import "./Array.module.css";
+import type { Action } from "../../redux/actions";
+import type { Dispatch } from "redux";
+import type { State } from "../../redux/types";
 
-const Array = ({
-  array,
-  rows,
-  cells,
-  illuminatedQty,
-  onIncrease,
-  sumColumn,
-  onRemove,
-  onAdd,
-  columnQty
-}) => {
+const Array = () => {
+  const { array, rows, cells } = useSelector<State, State>((state) => state);
+  const illuminatedQty = useSelector(selectors.getIlluminatedQty);
+  const columnQty = useSelector(selectors.getColumnsQty);
+  const sumColumn = useSelector(selectors.getSumColumn);
+
+  const dispatch = useDispatch<Dispatch<Action>>();
+
   const [illuminated, setIlluminated] = useState({});
 
-  const hoverOnHandler = e => {
-    const { id } = e.target;
+  const hoverOnHandler = (e: SyntheticEvent<HTMLTableCellElement>) => {
+    const { id } = e.currentTarget;
     const closestNumbers = getClosestNumbers(cells, id, illuminatedQty);
     setIlluminated(closestNumbers);
   };
@@ -31,25 +32,25 @@ const Array = ({
     setIlluminated({});
   };
 
-  const increaseHandler = e => {
-    const { id } = e.target;
-    onIncrease(id);
+  const increaseHandler = (e: SyntheticEvent<HTMLTableCellElement>) => {
+    const { id } = e.currentTarget;
+    dispatch(actions.increase(id));
   };
 
-  const removeHandler = e => {
-    const { id } = e.target.parentNode.parentNode;
-    onRemove(id, rows[id]);
+  const removeHandler = (e: SyntheticEvent<HTMLButtonElement>) => {
+    const { id } = e.currentTarget;
+    dispatch(actions.removeRow(id, rows[id]));
   };
 
   const addHandler = () => {
     const { array, rows, cells } = createRandomArray(1, columnQty);
-    onAdd(array, rows, cells);
+    dispatch(actions.addRow(array, rows, cells));
   };
 
   return (
     array.length > 0 && (
-      <div className={styles.tableWrapper}>
-        <table className={styles.table}>
+      <div styleName="tableWrapper">
+        <table styleName="table">
           <tbody>
             {array.map((rowId, index) => (
               <ArrayRow
@@ -65,10 +66,14 @@ const Array = ({
                 onRemove={removeHandler}
               />
             ))}
-            <AvarageRow />
+            <AverageRow />
             <tr>
-              <td className={styles.addCell} colSpan={columnQty}>
-                <button className={styles.addButton} onClick={addHandler}>
+              <td styleName="addCell" colSpan={columnQty}>
+                <button
+                  id="addButton"
+                  styleName="addButton"
+                  onClick={addHandler}
+                >
                   +
                 </button>
               </td>
@@ -80,21 +85,4 @@ const Array = ({
   );
 };
 
-const mapStateToProps = state => ({
-  array: selectors.getArray(state),
-  rows: selectors.getRows(state),
-  cells: selectors.getCells(state),
-  illuminatedQty: selectors.getIlluminatedQty(state),
-  sumColumn: selectors.getSumColumn(state),
-  columnQty: selectors.getColumnsQty(state)
-});
-
-const mapDispatchToProps = dispatch => {
-  return {
-    onIncrease: id => dispatch(actions.increase(id)),
-    onRemove: (id, cellsIds) => dispatch(actions.removeRow(id, cellsIds)),
-    onAdd: (rowId, row, cells) => dispatch(actions.addRow(rowId, row, cells))
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(React.memo(Array));
+export default Array;
