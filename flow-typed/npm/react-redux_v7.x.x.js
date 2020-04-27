@@ -75,7 +75,7 @@ declare module "react-redux" {
   // happens here in `MP: P`. It means that type wise MP belongs to P,
   // so to say MP >= P.
   declare type Connector<P, OP, MP: P> = <WC: React$ComponentType<P>>(
-    WC,
+    WC
   ) => Class<ConnectedComponent<OP, WC>> & WC;
 
   // No `mergeProps` argument
@@ -91,7 +91,7 @@ declare module "react-redux" {
     mapStateToProps?: null | void,
     mapDispatchToProps?: null | void,
     mergeProps?: null | void,
-    options?: ?Options<S, OP, {||}, MergeOP<OP, D>>,
+    options?: ?Options<S, OP, {||}, MergeOP<OP, D>>
   ): Connector<P, OP, MergeOP<OP, D>>;
 
   declare export function connect<-P, -OP, -SP, -DP, -S, -D>(
@@ -99,7 +99,7 @@ declare module "react-redux" {
     mapStateToProps: MapStateToProps<S, OP, SP>,
     mapDispatchToProps?: null | void,
     mergeProps?: null | void,
-    options?: ?Options<S, OP, SP, MergeOPSP<OP, SP, D>>,
+    options?: ?Options<S, OP, SP, MergeOPSP<OP, SP, D>>
   ): Connector<P, OP, MergeOPSP<OP, SP, D>>;
 
   // In this case DP is an object of functions which has been bound to dispatch
@@ -108,7 +108,7 @@ declare module "react-redux" {
     mapStateToProps: null | void,
     mapDispatchToProps: MapDispatchToPropsFn<D, OP, DP>,
     mergeProps?: null | void,
-    options?: ?Options<S, OP, {||}, MergeOPDP<OP, DP>>,
+    options?: ?Options<S, OP, {||}, MergeOPDP<OP, DP>>
   ): Connector<P, OP, MergeOPDP<OP, DP>>;
 
   // In this case DP is an object of action creators not yet bound to dispatch,
@@ -118,7 +118,7 @@ declare module "react-redux" {
     mapStateToProps: null | void,
     mapDispatchToProps: DP,
     mergeProps?: null | void,
-    options?: ?Options<S, OP, {||}, MergeOPDP<OP, DP>>,
+    options?: ?Options<S, OP, {||}, MergeOPDP<OP, DP>>
   ): Connector<P, OP, MergeOPDP<OP, $ObjMap<DP, Bind<D>>>>;
 
   declare export function connect<-P, -OP, -SP, -DP, S, D>(
@@ -126,7 +126,7 @@ declare module "react-redux" {
     mapStateToProps: MapStateToProps<S, OP, SP>,
     mapDispatchToProps: MapDispatchToPropsFn<D, OP, DP>,
     mergeProps?: null | void,
-    options?: ?Options<S, OP, SP, {| ...OP, ...SP, ...DP |}>,
+    options?: ?Options<S, OP, SP, {| ...OP, ...SP, ...DP |}>
   ): Connector<P, OP, {| ...OP, ...SP, ...DP |}>;
 
   declare export function connect<-P, -OP, -SP, -DP, S, D>(
@@ -134,7 +134,7 @@ declare module "react-redux" {
     mapStateToProps: MapStateToProps<S, OP, SP>,
     mapDispatchToProps: DP,
     mergeProps?: null | void,
-    options?: ?Options<S, OP, SP, MergeOPSPDP<OP, SP, DP>>,
+    options?: ?Options<S, OP, SP, MergeOPSPDP<OP, SP, DP>>
   ): Connector<P, OP, MergeOPSPDP<OP, SP, $ObjMap<DP, Bind<D>>>>;
 
   // With `mergeProps` argument
@@ -142,7 +142,7 @@ declare module "react-redux" {
   declare type MergeProps<+P, -OP, -SP, -DP> = (
     stateProps: SP,
     dispatchProps: DP,
-    ownProps: OP,
+    ownProps: OP
   ) => P;
 
   declare export function connect<-P, -OP, -SP: {||}, -DP: {||}, S, D>(
@@ -150,7 +150,7 @@ declare module "react-redux" {
     mapDispatchToProps: null | void,
     // If you get error here try adding return type to you mapStateToProps function
     mergeProps: MergeProps<P, OP, {||}, {| dispatch: D |}>,
-    options?: ?Options<S, OP, {||}, P>,
+    options?: ?Options<S, OP, {||}, P>
   ): Connector<P, OP, P>;
 
   declare export function connect<-P, -OP, -SP, -DP: {||}, S, D>(
@@ -158,7 +158,7 @@ declare module "react-redux" {
     mapDispatchToProps: null | void,
     // If you get error here try adding return type to you mapStateToProps function
     mergeProps: MergeProps<P, OP, SP, {| dispatch: D |}>,
-    options?: ?Options<S, OP, SP, P>,
+    options?: ?Options<S, OP, SP, P>
   ): Connector<P, OP, P>;
 
   // In this case DP is an object of functions which has been bound to dispatch
@@ -167,7 +167,7 @@ declare module "react-redux" {
     mapStateToProps: null | void,
     mapDispatchToProps: MapDispatchToPropsFn<D, OP, DP>,
     mergeProps: MergeProps<P, OP, {||}, DP>,
-    options?: ?Options<S, OP, {||}, P>,
+    options?: ?Options<S, OP, {||}, P>
   ): Connector<P, OP, P>;
 
   // In this case DP is an object of action creators not yet bound to dispatch,
@@ -177,7 +177,7 @@ declare module "react-redux" {
     mapStateToProps: null | void,
     mapDispatchToProps: DP,
     mergeProps: MergeProps<P, OP, {||}, $ObjMap<DP, Bind<D>>>,
-    options?: ?Options<S, OP, {||}, P>,
+    options?: ?Options<S, OP, {||}, P>
   ): Connector<P, OP, P>;
 
   // In this case DP is an object of functions which has been bound to dispatch
@@ -186,7 +186,7 @@ declare module "react-redux" {
     mapStateToProps: MapStateToProps<S, OP, SP>,
     mapDispatchToProps: MapDispatchToPropsFn<D, OP, DP>,
     mergeProps: MergeProps<P, OP, SP, DP>,
-    options?: ?Options<S, OP, SP, P>,
+    options?: ?Options<S, OP, SP, P>
   ): Connector<P, OP, P>;
 
   // In this case DP is an object of action creators not yet bound to dispatch,
@@ -196,18 +196,19 @@ declare module "react-redux" {
     mapStateToProps: MapStateToProps<S, OP, SP>,
     mapDispatchToProps: DP,
     mergeProps: MergeProps<P, OP, SP, $ObjMap<DP, Bind<D>>>,
-    options?: ?Options<S, OP, SP, P>,
+    options?: ?Options<S, OP, SP, P>
   ): Connector<P, OP, P>;
 
   // ------------------------------------------------------------
   // Typings for Hooks
   // ------------------------------------------------------------
+  declare export function batch(() => void): void;
 
   declare export function useDispatch<D>(): D;
 
   declare export function useSelector<S, SS>(
     selector: (state: S) => SS,
-    equalityFn?: (a: SS, b: SS) => boolean,
+    equalityFn?: (a: SS, b: SS) => boolean
   ): SS;
 
   declare export function useStore<Store>(): Store;
@@ -224,7 +225,7 @@ declare module "react-redux" {
 
   declare export function createProvider(
     storeKey?: string,
-    subKey?: string,
+    subKey?: string
   ): Class<Provider<*>>;
 
   // ------------------------------------------------------------
@@ -256,7 +257,7 @@ declare module "react-redux" {
 
   declare type MapStateToPropsEx<S: Object, SP: Object, RSP: Object> = (
     state: S,
-    props: SP,
+    props: SP
   ) => RSP;
 
   declare type SelectorFactory<
@@ -265,10 +266,10 @@ declare module "react-redux" {
     S: Object,
     OP: Object,
     EFO: Object,
-    CP: Object,
+    CP: Object
   > = (
     dispatch: Dispatch,
-    factoryOptions: SelectorFactoryOptions<Com> & EFO,
+    factoryOptions: SelectorFactoryOptions<Com> & EFO
   ) => MapStateToPropsEx<S, OP, CP>;
 
   declare export function connectAdvanced<
@@ -278,10 +279,10 @@ declare module "react-redux" {
     OP: Object,
     CP: Object,
     EFO: Object,
-    ST: { [_: $Keys<Com>]: any, ... },
+    ST: { [_: $Keys<Com>]: any, ... }
   >(
     selectorFactory: SelectorFactory<Com, D, S, OP, EFO, CP>,
-    connectAdvancedOptions: ?(ConnectAdvancedOptions & EFO),
+    connectAdvancedOptions: ?(ConnectAdvancedOptions & EFO)
   ): (component: Com) => React$ComponentType<OP> & $Shape<ST>;
 
   declare export default {
