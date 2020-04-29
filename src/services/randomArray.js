@@ -27,7 +27,6 @@ const createRandomArray = (rowsQty: number, columnsQty: number) => {
     ),
     {}
   );
-
   return { array, rows, cells };
 };
 export default createRandomArray;
