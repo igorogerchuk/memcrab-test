@@ -7,7 +7,11 @@ import configureStore from "./redux/store";
 
 const root = document.getElementById("root");
 
-const store = configureStore(window.__REDUX_STATE__);
+const reduxState = window.__REDUX_STATE__;
+
+delete window.__REDUX_STATE__;
+
+const store = configureStore(reduxState);
 
 if (root) {
   ReactDOM.hydrate(
