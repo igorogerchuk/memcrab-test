@@ -1,8 +1,8 @@
-import qs from "qs";
-import express from "express";
-import fs from "fs";
 import path from "path";
+import qs from "qs";
+import fs from "fs";
 
+import express from "express";
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 import { Provider } from "react-redux";
@@ -15,11 +15,12 @@ const app = express();
 
 const PORT = 3000;
 
-app.use(handleRender);
+const router = express.Router();
 
-function handleRender(req, res) {
+const serverRenderedContent = (req, res, next) => {
   let store;
   const params = qs.parse(req.query);
+  console.log(params);
   if (Object.keys(params).length !== 0) {
     const { rows, columns, illuminate } = params;
     const array = createRandomArray(+rows, +columns);
@@ -39,10 +40,10 @@ function handleRender(req, res) {
 
   const reduxState = JSON.stringify(store.getState());
 
-  fs.readFile(path.resolve("./build/index.html"), "utf-8", (err, data) => {
+  fs.readFile(path.resolve("./build/index.html"), "utf8", (err, data) => {
     if (err) {
-      console.log(err);
-      return res.status(500).send("Error");
+      console.error(err);
+      return res.status(500).send("An error occurred");
     }
     return res.send(
       data
@@ -50,9 +51,20 @@ function handleRender(req, res) {
         .replace("__REDUX_STATE__={}", `__REDUX_STATE__=${reduxState}`)
     );
   });
-}
+};
 
-app.use(express.static(path.resolve(__dirname, "..", "build")));
+router.use(
+  express.static(path.resolve(__dirname, "..", "build"), { maxAge: "30d" })
+);
+
+router.use("^/$", serverRenderedContent);
+
+router.use(
+  "^/?rows=:rows&columns=:columns&illuminate=:illuminate$",
+  serverRenderedContent
+);
+
+app.use(router);
 
 app.listen(PORT, () => {
   console.log(`App launched on port ${PORT}`);
