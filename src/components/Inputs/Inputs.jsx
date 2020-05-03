@@ -28,7 +28,6 @@ const Inputs = () => {
     }
     batch(() => {
       dispatch(actions.saveParams({ n: columnsQty, x: illuminatedQty }));
-
       const { array, rows, cells } = createRandomArray(rowsQty, columnsQty);
       dispatch(actions.saveArray(array));
       dispatch(actions.saveRows(rows));

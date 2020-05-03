@@ -15,7 +15,7 @@ const app = express();
 
 const PORT = 3000;
 
-// const router = express.Router();
+const router = express.Router();
 
 const serverRenderedContent = (req, res, next) => {
   let store;
@@ -55,19 +55,19 @@ const serverRenderedContent = (req, res, next) => {
 
 app.use(express.static(path.resolve(__dirname, "..", "build")));
 
-app.use(serverRenderedContent);
-// router.use(
-//   express.static(path.resolve(__dirname, "..", "build"), { maxAge: "30d" })
-// );
+// app.use(serverRenderedContent);
 
-// router.use("^/$", serverRenderedContent);
+router.use("^/$", serverRenderedContent);
 
-// router.use(
-//   "^/?rows=:rows&columns=:columns&illuminate=:illuminate$",
-//   serverRenderedContent
-// );
+router.use(
+  "^/?rows=:rows&columns=:columns&illuminate=:illuminate$",
+  serverRenderedContent
+);
 
-// app.use(router);
+router.use(
+  express.static(path.resolve(__dirname, "..", "build"), { maxAge: "30d" })
+);
+app.use(router);
 
 app.listen(PORT, () => {
   console.log(`App launched on port ${PORT}`);
