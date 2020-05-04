@@ -5,8 +5,13 @@ import type { State } from "./types";
 import type { Dispatch } from "redux";
 import type { Action } from "./actions";
 
-const store = createStore<State, Action, Dispatch<Action>>(
-  reducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-);
-export default store;
+const defaultState = {
+  array: [],
+  rows: {},
+  cells: {},
+  params: {},
+};
+
+export default function configureStore(initialState = defaultState) {
+  return createStore<State, Action, Dispatch<Action>>(reducer, initialState);
+}
